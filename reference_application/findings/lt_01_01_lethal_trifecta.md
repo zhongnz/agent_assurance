@@ -131,7 +131,7 @@ Re-review is required on material configuration change. "Material" requires defi
 
 ## Connection to other findings
 
-This finding is one of approximately fifteen primary findings the methodology would produce against the reference deployment. The most directly related findings:
+This finding is one of approximately fifteen primary findings the methodology would produce against the reference deployment, corresponding to the gap analysis's High-severity Absent and Partially-present controls. The most directly related findings:
 
 - **IA-01-01** (principal-propagation gap) addresses one of the trifecta's enabling architectural conditions.
 - **TF-01-01** (toxic-flow analysis gap) addresses the compositional-path analysis that informs the architectural review's compensating-control design.

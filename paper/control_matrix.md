@@ -52,7 +52,7 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Cross-cutting patterns.** Tool poisoning.
 
-**Regulatory anchors.** DORA Article 28 (third-party risk management) — *Direct*; DORA Article 29 (key contractual provisions) — *Direct* where contractual relationships exist; DORA Article 30 (key contractual provisions for ICT services supporting critical or important functions) — *Direct* for relevant deployments.
+**Regulatory anchors.** DORA Article 28 (general principles for third-party risk management) — *Direct*; DORA Article 29 (preliminary assessment of ICT concentration risk and further sub-outsourcing arrangements) — *Direct* where the third-party MCP server qualifies under that article's scope; DORA Article 30 (key contractual provisions) — *Direct* for any contractual relationship with the third-party operator, with stricter requirements where the deployment supports critical or important functions.
 
 **Standards references.** ISO/IEC 42001:2023 Annex A.6.2 (third-party relationships) — *Direct*; NIST AI RMF Manage 2 — *Direct*.
 
@@ -360,7 +360,7 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Statement.** Agent operations must implement resource-consumption limits (per-session token budgets, per-user invocation rate limits, per-deployment infrastructure caps) with defined degradation behaviour when limits are reached, such that resource overload does not cascade into operational failures or security-control bypasses.
 
-**OWASP ASI references.** ASI05 (Resource Overload).
+**OWASP ASI references.** *Gap* — resource overload is not represented as a category in the OWASP Top 10 for Agentic Applications (December 2025); RO-01 addresses the operational-resilience surface that the OWASP taxonomy leaves to operational-resilience standards (DORA, ISO 27001 capacity management).
 
 **Regulatory anchors.** DORA Article 11 (response and recovery) — *Indirect*; DORA Article 12 (backup, restoration and recovery) — *Indirect*; AI Act Article 15 (robustness) — *Direct*.
 
@@ -384,7 +384,7 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **OWASP ASI references.** ASI09 (Human-Agent Trust Exploitation).
 
-**Cross-cutting patterns.** Evidence-first design (cross-cutting all patterns).
+**Cross-cutting patterns.** Applies across all five §3.2 cross-cutting patterns; runtime evidence is the operational expression of the *evidence-first* design principle and the precondition for after-the-fact reconstruction in any of the patterns.
 
 **Regulatory anchors.** AI Act Article 12 (record-keeping) — *Direct*; AI Act Article 26(6) (six-month minimum log retention) — *Direct*; AI Act Article 19 (technical documentation retention) — *Indirect*; DORA Article 9 — *Indirect*.
 
@@ -628,15 +628,15 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 ## Coverage notes
 
-**OWASP Top 10 for Agentic Applications coverage.** ASI01 (Agent Goal Hijack) — LT-01, ZC-01, IA-03 via composition. ASI02 (Tool Misuse) — TP-01, TP-03, LT-01, LT-02, TF-01. ASI03 (Identity & Privilege Abuse) — IA-01, IA-02, IA-03, LT-01. ASI04 (Agentic Supply Chain Vulnerabilities) — TP-01, TP-02, TP-03, TF-01, TF-02, MC-01, IC-01, CF-01. ASI05 (Resource Overload) — RO-01, with cascade considerations in CF-01. ASI06 (Memory & Context Poisoning) — MC-01, MC-02, ZC-02, TF-02, RA-01. ASI07 (Insecure Inter-Agent Communication) — IC-01, with supporting controls IA-01 and IA-03. ASI08 (Cascading Failures) — CF-01, with supporting controls TF-02 and RO-01. ASI09 (Human-Agent Trust Exploitation) — ZC-01, ZC-02, AT-01, IA-03, LT-02, RA-01. ASI10 (Rogue Agents) — RA-01, with supporting controls MC-01, MC-02, IC-01, AT-01, GP-01, GP-02. The cross-cutting governance controls (GP-01, GP-02, GP-03) establish the institutional framing under which all category-specific controls operate.
+**OWASP Top 10 for Agentic Applications coverage.** ASI01 (Agent Goal Hijack) — LT-01, ZC-01, IA-03 via composition. ASI02 (Tool Misuse) — TP-01, TP-03, LT-01, LT-02, TF-01. ASI03 (Identity & Privilege Abuse) — IA-01, IA-02, IA-03, LT-01. ASI04 (Agentic Supply Chain Vulnerabilities) — TP-01, TP-02, TP-03, TF-01, TF-02, MC-01. ASI05 (Unexpected Code Execution) — *Gap*; v1.0 of the matrix does not address agent-generated code execution or sandbox-escape patterns directly. Deployments where the agent generates, modifies, or runs code require additional controls beyond v1.0; the gap is acknowledged here for revision in a future major version. ASI06 (Memory & Context Poisoning) — MC-01, MC-02, ZC-02, TF-02, RA-01. ASI07 (Insecure Inter-Agent Communication) — IC-01, with supporting controls IA-01 and IA-03. ASI08 (Cascading Failures) — CF-01, with supporting controls TF-02 and RO-01. ASI09 (Human-Agent Trust Exploitation) — ZC-01, ZC-02, AT-01, IA-03, LT-02, RA-01. ASI10 (Rogue Agents) — RA-01, with supporting controls MC-01, MC-02, IC-01, AT-01, GP-01, GP-02. Resource overload (out-of-OWASP-taxonomy operational-resilience concern) — RO-01, with cascade considerations in CF-01. The cross-cutting governance controls (GP-01, GP-02, GP-03) establish the institutional framing under which all category-specific controls operate.
 
-**Cross-cutting threat pattern coverage.** Tool poisoning (TP-01, TP-02, TP-03); identity and privilege abuse (IA-01, IA-02, IA-03, with cross-agent extension in IC-01); lethal trifecta (LT-01, LT-02, with composition-tracking via TF-01); toxic flows (TF-01, TF-02); zero-click exfiltration (ZC-01, ZC-02, with composition-tracking via TF-01); memory and context poisoning (MC-01, MC-02, ZC-02, RA-01).
+**Cross-cutting threat pattern coverage.** The paper's §3.2 names five cross-cutting threat patterns; each receives matrix coverage. Tool poisoning (TP-01, TP-02, TP-03); identity and privilege abuse (IA-01, IA-02, IA-03, with cross-agent extension in IC-01); lethal trifecta (LT-01, LT-02, with composition-tracking via TF-01); toxic flows (TF-01, TF-02); zero-click exfiltration (ZC-01, ZC-02, with composition-tracking via TF-01). Memory and context poisoning is treated under ASI06 above (MC-01, MC-02, ZC-02, RA-01) rather than as a sixth cross-cutting pattern.
 
 **Design-principle coverage.** Each of the five design principles is the explicit derivation source for at least three controls. *Evidence-first* anchors AT-01, AT-02, AT-03, RA-01, plus contributions to most others. *Framework-anchored* anchors TP-02, GP-01, plus contributions throughout. *Regulator-legible* anchors HC-01 directly; the regulator-legibility quality is built into evidence and reporting structure across the matrix. *Composable and continuous* anchors LT-01, LT-02, TF-01, TF-02, GP-02, GP-03, IC-01, CF-01, RA-01. *Principal-bound* anchors IA-01, IA-02, IA-03, IC-01, with contributions to ZC-01 and RA-01.
 
 **Regulatory-anchor coverage.** AI Act: Articles 9, 10, 11, 12, 13, 14, 15, 17, 19, 23, 26 across the matrix. DORA: Articles 5, 6, 8, 9, 11, 12, 13, 17, 18, 25, 26, 27, 28, 29, 30. ISO/IEC 42001:2023: Annexes A.5.4, A.5.5, A.6.1, A.6.2 (sub-clauses .2, .4, .6), A.7, A.8.1, A.8.3, A.8.4, A.10. ISO/IEC 27001:2022: Annexes A.5.14, A.5.15, A.5.16, A.5.29, A.5.30, A.5.34, A.8.6, A.8.15, A.8.20, A.8.32. NIST AI RMF: Govern (GV-1, GV-2, GV-3), Map (MP-1, MP-3, MP-5), Measure (MS-1, MS-2), Manage (MG-1, MG-3, MG-4). NIST SP 800-207. GDPR Articles 25, 32. ISO/IEC 27701.
 
-**Total controls.** Twenty-six, organised across twelve control families. Five reproduced from §4.3 of the paper; twenty-one introduced in this matrix.
+**Total controls.** Twenty-six, organised across thirteen control families (TP, IA, LT, TF, ZC, MC, RO, AT, HC, GP, IC, CF, RA). Five reproduced from §4.3 of the paper; twenty-one introduced in this matrix.
 
 ## Revision protocol
 

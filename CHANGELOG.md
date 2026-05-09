@@ -2,6 +2,42 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.7 — May 2026
+
+Second round of correctness fixes following deeper audit. The fixes do not change the methodology or its claims; they correct factual errors, taxonomy errors, and traceability gaps the audit surfaced.
+
+**ASI05 taxonomy correction.** `paper/control_matrix.md` and `reference_application/threat_register.md` previously labelled ASI05 as "Resource Overload"; OWASP's Top 10 for Agentic Applications (December 2025) identifies ASI05 as **Unexpected Code Execution**. The matrix's RO-01 control is reanchored as a *Gap* relative to the OWASP taxonomy — resource overload is an operational-resilience concern addressed by DORA and ISO 27001 capacity management rather than an OWASP ASI category. The Coverage Notes acknowledge ASI05 (Unexpected Code Execution) as a coverage gap in matrix v1.0, with the note that deployments where the agent generates, modifies, or runs code require additional controls beyond v1.0. The threat register adds an ASI05 (Unexpected Code Execution) section confirming the threat is not present in the reference deployment's configuration, and reframes its resource-overload section as an out-of-OWASP-taxonomy operational-resilience concern. Aggregate severity counts are updated: 1 Critical, 6 High, 5 Medium, 1 Low (was 1 Critical, 7 High, 5 Medium, 1 Low; the duplicate cross-cutting "Memory and context poisoning" was removed in this round — see below).
+
+**Approximately fifteen primary controls → twenty-five applicable controls.** `paper/full.md` and `paper/section_05_applied_demonstration.md` previously said "approximately fifteen primary controls and a larger set of supporting controls"; the §5.3 enumeration explicitly lists 25 selected controls (5 primary in §4.3 plus 20 further). The text is corrected to "twenty-five applicable controls — the matrix's twenty-six minus IC-01, which is not applicable to the deployment's single-agent configuration." The downstream "fifteen primary findings" formulations (in `paper/full.md`, `paper/section_05_applied_demonstration.md`, `reference_application/README.md`, `reference_application/findings/lt_01_01_lethal_trifecta.md`) are reanchored to the gap analysis: the methodology produces a primary finding for each High-severity Absent or Partially-present control, of which the gap analysis surfaces approximately fifteen.
+
+**§5.3 lethal-trifecta egress externality.** `paper/full.md` and `paper/section_05_applied_demonstration.md` previously characterised the deployment's egress as internal-only with insider-attacker scenarios. The deployment in fact has customer-facing notification channels (per `deployment_specification.md`, `threat_register.md`, `gap_analysis.md`, `findings/lt_01_01_lethal_trifecta.md`); the §5.3 paragraph is corrected to reflect that recommendation routing, payment instructions, and customer notifications all constitute egress, with the customer-notification channel constituting an external destination outside the institution's perimeter.
+
+**Cross-cutting threat patterns standardised at five.** The paper's §3.2 names five cross-cutting patterns (tool poisoning, identity & privilege abuse, lethal trifecta, toxic flows, zero-click exfiltration). The matrix's Coverage Notes previously listed six (adding memory and context poisoning); the threat register previously included a separate "Memory and context poisoning" cross-cutting section that duplicated ASI06. The matrix Coverage Notes are updated to reflect five with an explicit note that memory and context poisoning is treated under ASI06 rather than as a sixth pattern. The threat register's duplicate cross-cutting section is removed; its introduction is updated to note that tool poisoning and identity & privilege abuse are treated within the matching ASI categories (ASI04 and ASI03 respectively) since their content overlaps materially.
+
+**Verification log §6.5 → §6.4.** `supporting/verification_log.md:123` previously cited a non-existent §6.5 for CBEST/TIBER-EU; the correct anchor is §6.4.
+
+**EchoLeak January 2025 disclosure.** The case study's recurring "January 2025 disclosure to MSRC" claim now has its own verification-log entry, with HackTheBox, Checkmarx, and SOC Prime confirmed as convergent secondary sources for the disclosure timeline. Previously the verification log only confirmed the 11 June 2025 CVE publication, leaving the case study's January 2025 anchor unsupported in the audit register.
+
+**Case study finding count (4, not 5).** `case_studies/echoleak.md:135` previously said "five primary findings"; §6 of the case study explicitly states three of the five matrix controls apply directly, one applies with adaptation, and TP-01 does not apply, yielding four primary findings (LT-01, TF-01, IA-01, ZC-01).
+
+**Case study §1.1 anchor.** `case_studies/echoleak.md:109` previously cited a "§1.1 footnote" for Copilot's constrained delegated-authority configuration; the claim sits in §1.1 body, not the footnote (which addresses source attribution only). Anchor updated to "§1.1 boundary note."
+
+**TP-02 DORA Article 28/29/30 disambiguation.** `paper/control_matrix.md:55` previously cited Articles 29 and 30 with near-identical "key contractual provisions" labels. Article 29 is preliminary assessment of ICT concentration risk and further sub-outsourcing arrangements; Article 30 is key contractual provisions. The anchors are corrected and disambiguated.
+
+**Finding IA-01-01 title.** The reference application's finding doc previously titled "Principal-propagation gap in claims-processing agent" is renamed to match the paper's §5.4 title: "Service-account authority exceeds requesting-principal authority across customer record retrieval."
+
+**DNB statistic standardised.** Five different phrasings of the DNB *AI bij verzekeraars* 15-of-36 statistic across `paper/full.md`, `paper/section_01_shape_of_the_problem.md`, `paper/section_06_regulatory_horizon.md`, `reference_application/deployment_specification.md`, and `supporting/verification_log.md` are standardised on "fraud detection and claim-amount estimation," matching the verification log's canonical phrasing.
+
+**Wrapper sample matrix reference.** `briefing/wrapper_sample_tier2_risk.md` previously placed the control matrix "in §4" of the paper; the matrix is a companion artifact at `paper/control_matrix.md`. The wrapper is updated to reflect this.
+
+**AT-01 cross-cutting-patterns field.** `paper/control_matrix.md:387` previously misused the cross-cutting-patterns field for a design-principle reference. Updated to name the §3.2 patterns and note evidence capture as the operational expression of the *evidence-first* design principle.
+
+**Twelve → thirteen control families.** `paper/control_matrix.md:639` previously said "Twenty-six, organised across twelve control families"; the actual count is thirteen (TP, IA, LT, TF, ZC, MC, RO, AT, HC, GP, IC, CF, RA).
+
+**README status update.** `README.md:83` updated from v0.8.5 to v0.8.7 with corresponding extension of the version range.
+
+**Deferred to a future revision.** The audit also surfaced matrix-structural items the v0.8.7 fixes do not address: the *Cross-cutting patterns* field is missing on 8 of 26 controls (RO-01, AT-02, AT-03, HC-01, HC-02, GP-01, GP-02, GP-03); AI Act Article 15's mapping-strength label is inconsistent (Indirect on most controls, Direct on RO-01/CF-01/RA-01); AT-02/AT-03/HC-01/HC-02/GP-01/GP-03 use "OWASP ASI references. None" instead of the *Gap* mapping-strength label the §4.2 convention defines; ZC-01/MC-02/AT-03 cite "DORA Articles 17–18" with the Article 17 label only; IC-01's single-agent inapplicability is not flagged in the matrix entry; AT-01's GDPR Article 25 anchor sits in the *Derivation* field rather than *Regulatory anchors*; the Conventions list at line 17 omits the TF prefix; and the Coverage Notes' ASI04 line includes IC-01 and CF-01 although IC-01's primary anchor is ASI07. These items will be addressed in a v0.8.8 matrix-structural pass.
+
 ## v0.8.6 — May 2026
 
 Correctness and consistency fixes following peer review. The fixes do not change the methodology or its claims; they correct factual errors and traceability gaps in the v0.8.5 release.

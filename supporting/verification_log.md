@@ -4,7 +4,7 @@ This log records the primary-source verification performed on the 51 [VERIFY:] /
 
 ## Section 1 — The Shape of the Problem (9 markers, all resolved)
 
-**§1.1 EchoLeak / CVE-2025-32711 / Aim Labs.** Microsoft as CNA confirmed via OpenCVE / NVD record (cveMetadata.assignerOrgId = Microsoft, datePublished 2025-06-11T13:22:38.935Z). Aim Labs of Aim Security confirmed as discloser via aim.security/lp/aim-labs-echoleak-m365 reference in the CVE record and via secondary corroboration (Checkmarx, SOC Prime, Information Security Buzz). Mechanism description refined: exfiltration via reference-style markdown image link auto-fetched through Microsoft Teams proxy permitted by content security policy — confirmed via arXiv paper 2509.10540 (academic case study) and Checkmarx technical writeup.
+**§1.1 EchoLeak / CVE-2025-32711 / Aim Labs.** Microsoft as CNA confirmed via OpenCVE / NVD record (cveMetadata.assignerOrgId = Microsoft, datePublished 2025-06-11T13:22:38.935Z). Aim Labs of Aim Security confirmed as discloser via aim.security/lp/aim-labs-echoleak-m365 reference in the CVE record and via secondary corroboration (Checkmarx, SOC Prime, Information Security Buzz). Mechanism description refined: exfiltration via reference-style markdown image link auto-fetched through Microsoft Teams proxy permitted by content security policy — confirmed via arXiv paper 2509.10540 (academic case study) and Checkmarx technical writeup. Disclosure timeline (load-bearing for the case study at `case_studies/echoleak.md`): Aim Labs working proof-of-concept and disclosure to Microsoft Security Response Center in January 2025, server-side fix deployed by Microsoft in May 2025, CVE published 11 June 2025 — confirmed via HackTheBox, Checkmarx, and SOC Prime technical writeups, all convergent on the January 2025 disclosure date.
 
 **§1.1 SpAIware (Rehberger).** 20 September 2024 BSides Vancouver Island disclosure confirmed via Embrace The Red original blog post (timeline section explicitly lists "September, 20 2024: Disclosure at BSides Vancouver Island 2024"). Independent corroboration via The Hacker News, Vulcan Cyber, SC World.
 
@@ -120,7 +120,7 @@ This log records the primary-source verification performed on the 51 [VERIFY:] /
 
 **§6.3 BIS publications.** Generalised to forms supported by available evidence (BIS Working Papers and FSI Insights series on regulating AI in the financial sector) rather than claiming specific publication identifiers I have not independently confirmed.
 
-**§6.5 CBEST/TIBER-EU.** See §1.3 verification above.
+**§6.4 CBEST/TIBER-EU.** See §1.3 verification above.
 
 ## Section 7 — Recommendations (1 marker, resolved)
 

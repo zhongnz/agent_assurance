@@ -1,6 +1,6 @@
 # Threat register — claims-processing agent reference deployment
 
-*Structured threat enumeration produced by the synthesis methodology applied to the deployment specified in `deployment_specification.md`. The register is organised by OWASP Top 10 for Agentic Applications categories as the consensus ground-truth taxonomy, supplemented by the cross-cutting threat patterns from §3.2 of the position paper. Each threat is paired with the deployment-specific configuration that creates exposure, the severity classification, and the evidence requirements the methodology's evidence-first principle imposes.*
+*Structured threat enumeration produced by the synthesis methodology applied to the deployment specified in `deployment_specification.md`. The register is organised by OWASP Top 10 for Agentic Applications categories as the consensus ground-truth taxonomy, supplemented by the cross-cutting threat patterns from §3.2 of the position paper. The §3.2 patterns of *tool poisoning* and *identity and privilege abuse* are treated within the matching ASI categories (ASI04 and ASI03 respectively) rather than as standalone cross-cutting sections, since their content overlaps the corresponding ASI categories materially; *lethal trifecta*, *toxic flows*, and *zero-click exfiltration* are treated as standalone cross-cutting sections. Each threat is paired with the deployment-specific configuration that creates exposure, the severity classification, and the evidence requirements the methodology's evidence-first principle imposes.*
 
 ## Conventions
 
@@ -58,9 +58,21 @@ Each threat references the relevant control(s) from the matrix at `paper/control
 
 **Recommended controls.** TP-01 (tool metadata integrity), TP-02 (third-party MCP server qualification), TP-03 (first-party tool change control), TF-01 (toxic-flow analysis).
 
-### ASI05: Resource Overload — Low severity
+### ASI05: Unexpected Code Execution — Not present
 
-**Threat.** Adversarial submissions could attempt to exhaust agent resources — tokens, retrieval-store quota, foundation-model API rate limits — to deny service or to force degraded operating modes that bypass security controls.
+**Threat.** Agent generates, modifies, or runs code or commands in ways that create security or operational risk.
+
+**Configuration exposure.** None. The deployment's tool inventory does not include code-execution capabilities; the agent does not author, modify, or execute code as part of its claims-processing workflow. Recommendation drafting produces structured output rather than executable instructions.
+
+**Compensating controls in current configuration.** Tool inventory excludes code-execution tools by design; tool-registry change control would surface any future addition.
+
+**Evidence requirements.** Periodic confirmation that the tool inventory continues to exclude code-execution capabilities; documented rationale for the exclusion.
+
+**Recommended controls.** Maintain current tool-inventory discipline; revisit if future deployment needs introduce code-execution capabilities.
+
+### Resource overload (out-of-OWASP-taxonomy operational-resilience concern) — Low severity
+
+**Threat.** Adversarial submissions could attempt to exhaust agent resources — tokens, retrieval-store quota, foundation-model API rate limits — to deny service or to force degraded operating modes that bypass security controls. Resource overload is not a category in the OWASP Top 10 for Agentic Applications; it is an operational-resilience concern addressed under DORA and ISO 27001 capacity management.
 
 **Configuration exposure.** Per-session token budgets are configured at the orchestration layer; foundation-model API rate limits are vendor-imposed; retrieval-store quota is generously provisioned. Cross-deployment resource sharing introduces additional exposure: overload in the customer-service triage agent could affect the claims-processing agent.
 
@@ -160,17 +172,9 @@ Each threat references the relevant control(s) from the matrix at `paper/control
 
 **Recommended controls.** ZC-01 (asynchronous-processing risk gating), ZC-02 (content-source provenance preservation), AT-01 (runtime evidence capture).
 
-### Memory and context poisoning — High severity
-
-**Pattern.** The vector store of past claim summaries introduces persistent state that propagates across sessions. Manipulation at one session affects reasoning over subsequent sessions, with the propagation visible only through behavioural drift over time.
-
-**Severity rationale.** High because the latent nature of the threat makes detection difficult and the propagation horizon long; a single successful manipulation could shape reasoning over related claims for months before behavioural drift becomes apparent.
-
-**Recommended controls.** MC-01 (retrieval-context integrity), MC-02 (memory-poisoning detection and response), RA-01 (agent-behaviour drift detection).
-
 ## Aggregate severity assessment
 
-One threat is classified Critical (the lethal trifecta as a cross-cutting pattern). Seven are High (ASI01, ASI03, ASI04, ASI06, ASI09; toxic flows; memory and context poisoning). Five are Medium (ASI02, ASI07, ASI08, ASI10; zero-click exfiltration). One is Low (ASI05).
+One threat is classified Critical (the lethal trifecta as a cross-cutting pattern). Six are High (ASI01, ASI03, ASI04, ASI06, ASI09; toxic flows). Five are Medium (ASI02, ASI07, ASI08, ASI10; zero-click exfiltration). One is Low (resource overload, treated as out-of-OWASP-taxonomy). ASI05 (Unexpected Code Execution) is not present in the deployment's configuration.
 
 The classification reflects the deployment's deliberate calibration as a stress case rather than a recommendation. A more conservative deployment configuration — first-party MCP servers only, principal propagation through tool chains, no auto-approval, supervised vector-store writes — would substantially reduce the residual risk profile. The methodology's value at deployments with conservative configurations is the discipline of treating residual risk explicitly even where its severity is lower; the deployment described here surfaces the methodology's analytical content most fully.
 

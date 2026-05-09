@@ -17,7 +17,7 @@ This directory contains the methodology's outputs against the §5 reference depl
 - `lt_01_01_lethal_trifecta.md` — the lethal-trifecta architectural configuration without explicit residual-risk acceptance.
 - `tf_01_01_toxic_flow.md` — the absence of toxic-flow analysis of the authorised tool inventory.
 
-The full engagement output would include findings of comparable structure for each control identified in the gap analysis — approximately fifteen primary findings the methodology would generate, plus a larger set of secondary findings covering operational hygiene, documentation gaps, and lower-severity issues. The three findings included demonstrate the form across different control families and severity levels.
+The full engagement output would include findings of comparable structure for each High-severity Absent or Partially-present control the gap analysis identifies — approximately fifteen such controls in the reference deployment — plus a larger set of secondary findings covering operational hygiene, documentation gaps, and lower-severity issues. The three findings included demonstrate the form across different control families and severity levels.
 
 ## Relation to the rest of the repository
 

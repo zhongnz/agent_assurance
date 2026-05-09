@@ -1,4 +1,4 @@
-# Finding IA-01-01: Principal-propagation gap in claims-processing agent
+# Finding IA-01-01: Service-account authority exceeds requesting-principal authority across customer record retrieval
 
 *Engagement-style finding produced by the synthesis methodology applied to the reference deployment specified in `deployment_specification.md`. The finding addresses the deployment's service-account principal model and the architectural authority gap it creates. This finding extends the illustrative finding in §5.4 of the position paper into the form a complete engagement output would carry.*
 
