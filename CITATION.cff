@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: "Agent Assurance in Regulated Financial Services"
+message: "If you cite this work, please include the version (see CHANGELOG) and a permanent link to this repository."
+type: software
+authors:
+  - family-names: "Zhong"
+    given-names: "Peter"
+abstract: >-
+  A working paper, applied case study, control matrix, and reference application
+  on assurance methodology for autonomous AI agents deployed by European banks
+  and insurers. The methodology is articulated as five design principles
+  operationalised through a control matrix anchored to the AI Act, DORA,
+  ISO/IEC 42001, NIST AI RMF, and OWASP's agent-specific threat taxonomy,
+  applied to a reference deployment, and calibrated to the supervisory record
+  now in active formation.
+keywords:
+  - AI agent assurance
+  - agentic AI security
+  - DORA
+  - EU AI Act
+  - regulated financial services
+  - model risk management
+  - AI governance
+  - cybersecurity
+  - OWASP Top 10 for Agentic Applications
+license: CC-BY-4.0
+version: "0.8.5"
+date-released: "2026-05-08"

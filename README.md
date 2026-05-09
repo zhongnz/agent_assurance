@@ -1,105 +1,105 @@
-# Agent Assurance
+# Agent Assurance in Regulated Financial Services
 
-*Agent assurance methodology for regulated EU financial services. Position paper, case study, distribution surface, supporting documentation, and operational scaffolding.*
+A working paper, applied case study, and supporting documents on assurance methodology for autonomous AI agents deployed by European banks and insurers. The methodology is preliminary; the architectural argument is not.
 
-This repository contains the project's full set of artifacts as of May 2026. The intellectual contribution is in the position paper and the case study; everything else either supports or distributes them.
+## What's here
 
-If you are reading the work for the first time, the suggested entry sequence depends on what you have time for: 5 minutes — the briefing note. 15 minutes — the briefing note plus the case study's section 7 (the supervisory-engageable finding). 30 minutes — the full case study. Several hours — the position paper.
+The repository hosts five substantive artifacts: a position paper articulating a synthesis methodology for agent assurance, a control matrix populating the methodology with operational specifications, an applied case study demonstrating the methodology against a documented incident (EchoLeak / CVE-2025-32711), a reference application demonstrating the methodology against a hypothetical deployment, and a general-audience briefing surface. Supporting evidentiary documentation makes the work auditable.
 
-## Layout
+The position paper is the conceptual foundation. The control matrix populates the framework the paper describes. The case study and reference application are the methodology's two demonstrations — retrospective against a real incident, prospective against a constructed deployment. The briefing surface compresses the paper for readers who need orientation rather than depth.
+
+## Repository layout
 
 ```
 .
-├── paper/                      # The canonical position paper
-│   ├── paper_sections_1_to_8_v0.8.1.md   # Current consolidated paper
-│   ├── sections/               # Per-section files (substance identical to consolidated)
-│   ├── archive/                # Superseded versions retained for verification anchor
-│   ├── revision_history.md     # Internal revision history through v0.8.1
-│   ├── verification_log_v0.8.md  # Audit trail for the 51 verification markers
-│   └── appendix_c_source_status_v1.md  # Source-status appendix (four buckets)
-├── case_study/                 # EchoLeak case study + supporting research
-├── distribution/               # Audience-facing surface (briefing, abstract, visual, wrapper)
-├── elliott/                    # Elliott Ash review package
-├── plans/                      # Operational plans (PoC build plan)
-└── decks/                      # Slide decks
+├── README.md
+├── CHANGELOG.md
+├── LICENSE
+├── CITATION.cff
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── paper/
+│   ├── full.md                            consolidated 27,000-word paper
+│   ├── section_01 through section_08      same content as per-section files
+│   └── control_matrix.md                  v1.0 control matrix, 26 controls
+├── case_studies/
+│   └── echoleak.md                        the case study (5,400 words)
+├── reference_application/
+│   ├── README.md                          orientation for the directory
+│   ├── deployment_specification.md        the §5 deployment, operationally detailed
+│   ├── threat_register.md                 structured threat enumeration
+│   ├── gap_analysis.md                    current-state vs target-state per control
+│   └── findings/                          three engagement-style findings
+├── briefing/
+│   ├── briefing_note.md                   one-page summary (~580 words)
+│   ├── general_audience_abstract.md       ~180-word standalone abstract
+│   ├── visual.svg                         single-page architectural visual
+│   └── wrapper_sample_tier2_risk.md       sample audience-specific cover note
+├── supporting/
+│   ├── verification_log.md                audit trail for 51 verified claims
+│   └── source_status.md                   sources catalogued into four evidentiary buckets
+└── decks/
+    ├── Agent-Assurance-Overall-Plan.pptx  venture overview
+    ├── Position-Paper-Outline.pptx        paper presented as slides
+    └── Technical-Appendix.pptx            technical appendix with fact-check log
 ```
 
-## The canonical work
+## Suggested reading order
 
-**`paper/paper_sections_1_to_8_v0.8.1.md`** — the position paper, current version. ~27,000 words across eight sections, working title *Agent Assurance in Regulated Financial Services*. The substantive contribution: the architectural argument, the necessary-but-insufficient critique of the established disciplines, the threat taxonomy, the synthesis methodology with five design principles, the reference application, the regulatory horizon, the operational recommendations, and the closing on what the paper does and does not do. Through three rounds of peer review and four rounds of source verification.
+By time available:
 
-**`paper/sections/section_01_*.md` through `section_08_*.md`** — the same content as the consolidated paper, split into per-section files. Useful for editing and for sending parts of the paper without sending the whole thing. Identical in substance to the consolidated file.
+**Five minutes** — read `briefing/briefing_note.md`. The one-page summary tells you what the methodology is, why existing approaches don't address agent assurance, and where to go for more.
 
-**`paper/archive/paper_sections_1_to_8_v0.8.md`** — the v0.8 paper, retained as the historical anchor for the verification round before editorial compression. v0.8 was the version against which all 51 [VERIFY:] markers were resolved against primary sources; v0.8.1 is the editorial compression on top of that. If a reader ever asks "show me the paper at the point of full primary-source verification, before editorial polish," this is the answer.
+**Twenty minutes** — read `briefing/briefing_note.md` and then `case_studies/echoleak.md`'s section 7 (the supervisory-engageable finding). Together they give you the methodology in compressed form plus a worked example of what it produces.
 
-**`case_study/echoleak_case_study_v2.md`** — the case study, polished and ready to publish. ~5,400 words applying the synthesis methodology retrospectively to CVE-2025-32711 (EchoLeak). The case study is the methodology's first demonstration against a real documented incident.
+**Half an hour** — read the full case study (`case_studies/echoleak.md`). The case study applies the methodology retrospectively to CVE-2025-32711 (EchoLeak), demonstrating each of the methodology's outputs — threat register, toxic-flow analysis, runtime context capture specification, control matrix application, supervisor-engageable finding — against a real documented incident.
 
-## The audience-specific surface
+**Two to three hours** — read the position paper (`paper/full.md`, or the per-section files in `paper/`). The paper develops the architectural argument, examines the established assurance disciplines and develops the necessary-but-insufficient critique, articulates the threat taxonomy, develops the synthesis methodology with five design principles, applies the methodology to a reference deployment, maps the regulatory horizon, and offers operational recommendations.
 
-**`distribution/abstract_general_v1.md`** — 190-word general-audience abstract. The workhorse two-paragraph summary, written for distribution to readers who haven't seen the paper or case study before.
+By interest:
 
-**`distribution/briefing_note_v1.md`** — 547-word one-page summary. Four paragraphs and a bulleted principles list, designed for a reader who has 3-5 minutes and wants to know what the methodology is and whether it warrants further engagement.
+**For the methodology itself**: paper sections 1, 2, and 4. Section 1 establishes that agents are a structurally distinct assurance object; section 2 develops the necessary-but-insufficient critique of the established disciplines; section 4 articulates the synthesis methodology.
 
-**`distribution/agent_assurance_visual_v1.svg`** — the one-page SVG visual. A 5x3 grid of architectural properties × established disciplines, with synthesis layer adjacent. Spatially compresses the paper's argument into one image.
+**For the regulatory and supervisory framing**: paper sections 1.3 and 6. Section 1.3 surveys the supervisory communications that have made agent assurance an active concern; section 6 maps the regulatory horizon including DORA, the AI Act, and the supervisory expectations now forming.
 
-**`distribution/wrapper_sample_tier2_risk_v1.md`** — sample audience-specific wrapper for Tier-2 European bank and insurer risk leaders. Cover note plus reading-order recommendation; demonstrates the wrapper pattern. Three additional audience wrappers (collaborators, regulators, conference circuit) were sketched but not built.
+**For methodology in operation**: the case study, the reference application, and paper section 5 (the reference deployment specification). The case study at `case_studies/echoleak.md` applies the methodology retrospectively to a documented incident; the reference application at `reference_application/` applies it prospectively to a hypothetical deployment with full structured outputs (threat register, gap analysis, findings).
 
-## The Elliott-specific package
+**For the operational specification of the methodology**: `paper/control_matrix.md`. The matrix populates the methodology's framework with 26 controls covering all ten OWASP Top 10 for Agentic Applications categories, the five cross-cutting threat patterns, and additional governance and evidence-capture areas, with full regulatory and standards anchoring.
 
-These three artifacts were built to send the paper to Elliott Ash (scientific advisor, ETH Zurich) for review. Built but not yet used; available if you decide to circulate the paper to him.
+**For the evidentiary discipline**: `supporting/verification_log.md` and `supporting/source_status.md`. The verification log documents the audit trail for every load-bearing claim in the paper; the source status document catalogues sources into four evidentiary buckets.
 
-**`elliott/abstract_v1.md`** — academic abstract drafts (A claim-first, A' claim-first with split definition, B vignette-first). A' is the locked-in version.
+## How to engage
 
-**`elliott/cover_note_elliott_v1.md`** — ~370-word cover note framing the paper for Elliott specifically, with three high-level feedback questions. Two placeholders remain for your judgement: salutation register and timing line.
+The work is offered as a contribution to a developing field, not as a definitive statement of it. Reactions of any kind are welcome.
 
-**`elliott/executive_summary_v1.md`** — 770-word executive summary with thesis, eight-section walk-through, four areas where Elliott's perspective would be especially useful, and pointer to §8.2 for boundaries.
+For substantive comments on the paper or case study, GitHub Issues is the cleanest channel. Issues can reference specific sections, support threaded discussion, and remain visible for other readers who may have similar questions. See `CONTRIBUTING.md` for issue conventions and the kinds of engagement that are most useful.
 
-## The case-study supporting documents
+For private feedback, professional inquiries, or engagement opportunities, reach out via the contact link on the author's GitHub profile.
 
-**`case_study/echoleak_case_study_plan_v1.md`** — the two-week build plan that produced the case study. Eight-section structure with proportional word budgets, day-by-day deliverables, and risk callouts.
+For sensitive disclosures (security concerns about the methodology, identification of confidential information, or similar concerns warranting non-public channels), see `SECURITY.md`.
 
-**`case_study/echoleak_research_notes_v1.md`** — primary-source research notes from the case-study build. Five-step attack chain, RAG spraying technique, LLM Scope Violation terminology, bypassed defences inventory, OWASP categorisation, Microsoft response, source manifest. Working notes rather than a polished artifact, but the research compounds — the same notes will support any future case study on agent-security incidents.
+## Status
 
-**`case_study/echoleak_publishing_metadata_v1.md`** — publishing metadata for the case study. Title, subtitle, byline guidance, abstract, target audience description, channel guidance, short-form announcement draft, final-checklist items.
+The repository is at v0.8.5 (see CHANGELOG). The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.5 added the control matrix, the reference application materials, repository hygiene infrastructure, and the cleanup of internal scaffolding; the paper's argument and citations are stable across these.
 
-## The operational scaffolding
+The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 
-**`paper/appendix_c_source_status_v1.md`** — the source-status appendix the third reviewer suggested. Catalogues the paper's load-bearing sources into four evidentiary buckets (primary regulatory documents, direct technical disclosures, secondary technical analyses, inferential or generalised claims) with reading guidance.
+The case study is the first applied demonstration of the methodology against a documented incident. The reference application is the first applied demonstration against a constructed deployment. Additional case studies and reference applications are likely as the work progresses.
 
-**`plans/poc_build_plan_v1.md`** — eight-week build plan for the proof-of-concept (Version 2: working agent + applied methodology in a Git repository). Self-build, week-by-week deliverables. Currently deferred — the case study was identified as the right substitute for an assurance venture's first artifact, and the PoC build is on hold pending strategic clarity.
+## A note on what the work does and does not claim
 
-**`paper/revision_history.md`** — internal revision history of the position paper through v0.8.1. Documents what changed in each version and why.
+The methodology produces assurance, not prevention. The framework's outputs help institutions deploy autonomous agents with structured, supervisor-engageable positions about residual risk; they do not guarantee that incidents will not occur.
 
-**`paper/verification_log_v0.8.md`** — the audit trail for all 51 verification markers resolved during the v0.8 round, organised by section. Documents primary or directly-corroborating sources for every load-bearing claim.
+The methodology is for institutional assurance posture, not for governance of which deployments to authorise. The latter is upstream work the methodology supports but does not substitute for.
 
-## The slide decks
+The methodology is anchored in the regulatory and standards stack that European financial-services institutions are already subject to — DORA, the EU AI Act, ISO/IEC 42001, NIST AI RMF, and OWASP's Top 10 for Agentic Applications. The framework is offered as a contribution to existing supervisory and standards work, not as a replacement for any of it.
 
-**`decks/Agent-Assurance-Overall-Plan.pptx`** — venture overview deck.
+## Citation
 
-**`decks/Position-Paper-Outline.pptx`** — the position paper presented in slide form.
+The working title for the paper is *Agent Assurance in Regulated Financial Services*. If you cite the paper or the case study, please include the version (see CHANGELOG) and a permanent link to this repository.
 
-**`decks/Technical-Appendix-v0.4.pptx`** — technical appendix deck with the fact-check log slides updated to v0.8 status. The fact-check log slides 19-20 document every correction and verification round.
+A `CITATION.cff` file in the repository root provides citation metadata in the Citation File Format. GitHub renders this metadata in the repository sidebar, allowing readers to cite the work in standard formats.
 
-## How the artifacts compose for different uses
+## License
 
-For an academic-style review by Elliott or another senior reader: the position paper plus the verification log plus the revision history. The Elliott-specific cover note and executive summary are available if helpful, though Elliott himself doesn't need orienting artifacts.
-
-For a Tier-2 risk-leader engagement conversation: the briefing note as opener, the one-page visual as memorable anchor, position paper sections 1, 4, 6, and 7 as targeted depth, the case study as proof of methodology in operation. The Tier-2 wrapper sample illustrates how to assemble this combination as a package.
-
-For a conference submission or industry-publication piece: the general-audience abstract becomes the submission abstract, the case study becomes the submitted piece, the position paper is referenced as the methodological foundation. The publishing metadata document handles supporting material around the case study itself.
-
-For an investor or collaborator who wants to understand the venture: the briefing note plus the case study. The position paper is available as depth-evidence backstop but isn't necessarily read in full.
-
-For someone discovering the work cold (through Substack, LinkedIn, or word of mouth): the case study is the entry point, with the position paper available as the canonical methodology reference.
-
-## Status notes
-
-**The position paper has not yet been sent to Elliott for review.** The Elliott-specific package is built and ready when you decide to circulate.
-
-**The case study is publishable as soon as the byline and channel decisions are made.** The working-title substitution has been applied; remaining decisions are operational rather than substantive.
-
-**The PoC build is on hold.** The eight-week build plan exists and could be executed if specific conversations require working code rather than analytical artifacts.
-
-**Three additional audience wrappers (collaborators, regulators, conference circuit) are not built.** Wrapper-building was deemed downstream of network clarity; building them speculatively would risk producing artifacts for hypothetical rather than real conversations.
-
-**The continuous-assurance platform — stage two of the venture's services-to-platform-to-rating-authority arc — has no spec.** Correctly out of scope for the current phase.
+The work in this repository is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). You are free to share and adapt the material for any purpose, including commercially, with appropriate credit. See `LICENSE` for the full terms.

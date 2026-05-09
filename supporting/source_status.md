@@ -1,17 +1,17 @@
-# Appendix C — Source Status
+# Source Status
 
 *Companion to the position paper. Catalogues the load-bearing sources by evidentiary status so the reader can see, at a glance, which kinds of evidence underlie which kinds of claim.*
 
 ## Convention
 
-The paper makes claims of varying evidentiary status. This appendix sorts the load-bearing sources and claims into four buckets:
+The paper makes claims of varying evidentiary status. This document sorts the load-bearing sources and claims into four buckets:
 
 - **Primary regulatory and standards documents** — official sources whose authority derives from the issuing institution. Cited as the institution states them; no inference beyond document content.
 - **Direct technical disclosures** — first-party security disclosures (CVE records, vendor advisories, researcher-disclosed incidents with vendor confirmation). Time-stamped, attributable, reproducibly cited.
 - **Secondary technical analyses** — academic papers, security-firm analyses, attribution claims that synthesise primary technical material into named patterns or threats.
 - **Inferential or generalised claims** — places where the paper makes claims that depend on inference from available evidence rather than direct primary verification. The paper text marks these explicitly where they occur.
 
-Verification of each source's identifier, date, and substantive content was performed in v0.7 (four high-priority citations) and v0.8 (batch resolution of all remaining markers); the full audit trail is in `verification_log_v0.8.md`.
+Verification of each source's identifier, date, and substantive content was performed in v0.7 (four high-priority citations) and v0.8 (batch resolution of all remaining markers); the full audit trail is in `verification_log.md`.
 
 ## Bucket 1 — Primary regulatory and standards documents
 
@@ -108,6 +108,6 @@ These places acknowledge in the paper text that the claim depends on inference o
 
 ## Reading guidance
 
-A reader assessing the paper's evidentiary discipline can use this appendix in two ways. First, to spot-check any claim against the source bucket it draws from: a Bucket 1 claim should be reproducible by reading the cited document; a Bucket 4 claim should be read with the explicit caveat the paper attaches to it. Second, to assess where the paper's confidence is concentrated: most load-bearing claims sit in Buckets 1 and 2; the architectural argument and the design principles in §4 are analytical contributions of the paper itself, supported by but not derived from the bucketed sources.
+A reader assessing the paper's evidentiary discipline can use this document in two ways. First, to spot-check any claim against the source bucket it draws from: a Bucket 1 claim should be reproducible by reading the cited document; a Bucket 4 claim should be read with the explicit caveat the paper attaches to it. Second, to assess where the paper's confidence is concentrated: most load-bearing claims sit in Buckets 1 and 2; the architectural argument and the design principles in §4 are analytical contributions of the paper itself, supported by but not derived from the bucketed sources.
 
-The verification log v0.8 documents the audit trail for each marker resolved during paper preparation; this appendix sits alongside it as the publication-level evidentiary map.
+The verification log documents the audit trail for each marker resolved during paper preparation; this document sits alongside it as the publication-level evidentiary map.

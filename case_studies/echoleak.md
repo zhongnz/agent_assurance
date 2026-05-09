@@ -1,6 +1,6 @@
 # EchoLeak: a case study in agent-assurance methodology
 
-*A retrospective application of the synthesis methodology developed in the position paper *Agent Assurance in Regulated Financial Services* (working title) to CVE-2025-32711, the zero-click prompt injection vulnerability in Microsoft 365 Copilot disclosed by Aim Labs in January 2025 and patched by Microsoft in May 2025.*
+*A retrospective application of the synthesis methodology developed in the position paper Agent Assurance in Regulated Financial Services (working title) to CVE-2025-32711, the zero-click prompt injection vulnerability in Microsoft 365 Copilot disclosed by Aim Labs in January 2025 and patched by Microsoft in May 2025.*
 
 ## 1. The incident
 
