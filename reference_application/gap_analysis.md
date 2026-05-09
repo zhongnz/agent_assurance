@@ -248,9 +248,9 @@ This gap is the subject of finding TF-01-01 (`findings/tf_01_01_toxic_flow.md`).
 
 ## Aggregate gap assessment
 
-Of the 26 controls in the matrix, the deployment has zero in fully-Present state. Eight are Partially present (TP-02, TP-03, IA-02, IA-03, ZC-01, RO-01, AT-01, AT-02, HC-02, GP-01, GP-02, CF-01 — the count above is 12 which corrects an earlier draft count).
+Of the 26 controls in the matrix, the deployment has zero in fully-Present state. Twelve are Partially present (TP-02, TP-03, IA-02, IA-03, ZC-01, RO-01, AT-01, AT-02, HC-02, GP-01, GP-02, CF-01).
 
-Fourteen are Absent (TP-01, IA-01, LT-01, LT-02, TF-01, TF-02, ZC-02, MC-01, MC-02, AT-03, HC-01, GP-03, RA-01, plus the components of partially-present controls that fall short of substantive requirements).
+Thirteen are Absent (TP-01, IA-01, LT-01, LT-02, TF-01, TF-02, ZC-02, MC-01, MC-02, AT-03, HC-01, GP-03, RA-01). The components of partially-present controls that fall short of substantive requirements compound the absent set without adding to its count.
 
 One (IC-01) is not applicable in current configuration.
 

@@ -164,4 +164,4 @@ The case study is bounded by what a methodology applied to public information ca
 
 **Comparable disclosures referenced.** AgentFlayer, Zenity Labs (Bargury and Sharbat), Black Hat USA 6 August 2025; Shadow Escape, Operant AI, 22 October 2025.
 
-**Position paper references.** The synthesis methodology, design principles, control matrix, and illustrative findings format referenced throughout this case study are developed in *Agent Assurance in Regulated Financial Services* (working title; in preparation). Section references (§1.1, §3.2, §4.1, §5.4, etc.) are to that paper.
+**Position paper references.** The synthesis methodology, design principles, control matrix, and illustrative findings format referenced throughout this case study are developed in *Agent Assurance in Regulated Financial Services* (working title), available in this repository at `paper/full.md`. Section references (§1.1, §3.2, §4.1, §5.4, etc.) are to that paper.

@@ -2,6 +2,30 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.6 — May 2026
+
+Correctness and consistency fixes following peer review. The fixes do not change the methodology or its claims; they correct factual errors and traceability gaps in the v0.8.5 release.
+
+§6.2 (`paper/full.md`, `paper/section_06_regulatory_horizon.md`) and the verification log entry — Digital Omnibus state updated. The provisional agreement reached in the early hours of 7 May 2026, confirming the deferred dates of 2 December 2027 (Annex III) and 2 August 2028 (Annex I), is now reflected; the prior framing of the trilogue process as "in motion at the time of writing" has been replaced with a post-agreement framing acknowledging that formal adoption is pending. Sources include the Council of the EU press release of 7 May 2026 and convergent law-firm analyses (Bird & Bird, IAPP, DLA Piper, Hogan Lovells, Timelex, Ropes & Gray, A&O Shearman, NicFab).
+
+§5.3 (`paper/full.md`, `paper/section_05_applied_demonstration.md`) — three traceability fixes:
+
+- The matrix-contributed-controls paragraph rewritten to use actual matrix control IDs (TP-02, TP-03, IA-02, IA-03, LT-02, TF-02, ZC-02, MC-01, MC-02, RO-01, AT-01–AT-03, HC-01, HC-02, GP-01–GP-03, CF-01, RA-01) rather than naming controls absent from the matrix (foundation-model version pinning, service-account credential rotation, incident-response controls aligned with DORA Article 17). Incident response under DORA Article 17 is reframed as an institutional obligation outside the matrix's scope that HC-01 informs but does not displace. IC-01 is noted as not applicable to the single-agent configuration.
+
+- The current-state-assessment paragraph reframed to describe the structured threat register paired with the deployment specification, rather than naming a separate threat-model document and a standalone toxic-flow analysis. The toxic-flow analysis is now described as elaborated through a dedicated engagement-level finding rather than a standalone artifact, matching what the reference application produces.
+
+- The control-selection-phase paragraph reframed to describe the gap analysis as the integrated form of the control-matrix extract, control-gap memo, and initial remediation guidance that an actual engagement might separate into discrete artifacts.
+
+Reference-application count fixes:
+
+- `reference_application/gap_analysis.md` — corrected aggregate counts. Twelve controls are Partially present (was "Eight … the count above is 12 which corrects an earlier draft count" — a half-completed edit); thirteen are Absent (was "Fourteen"); one (IC-01) is Not applicable; zero are fully Present. Counts sum to the matrix's 26.
+
+- `reference_application/threat_register.md` — corrected aggregate severity counts to match the threat headings: one Critical (the lethal trifecta), seven High, five Medium, one Low (was "two Critical and six High").
+
+- `reference_application/threat_register.md` — removed the cross-reference to `findings/at_01_01_evidence_capture.md`, which does not exist as a finding in the reference application; the evidence-capture gap is described in the threat register and gap analysis without a dedicated finding document.
+
+`case_studies/echoleak.md` — position-paper reference updated from "(working title; in preparation)" to a reference to `paper/full.md` in this repository, the paper now being available alongside the case study.
+
 ## v0.8.5 — May 2026
 
 Repository cleanup and consistency review.

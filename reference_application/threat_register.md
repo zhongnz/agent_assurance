@@ -170,7 +170,7 @@ Each threat references the relevant control(s) from the matrix at `paper/control
 
 ## Aggregate severity assessment
 
-Two threats are classified Critical (lethal trifecta as cross-cutting pattern). Six are High (ASI01, ASI03, ASI04, ASI06, ASI09; toxic flows; memory and context poisoning). Five are Medium (ASI02, ASI07, ASI08, ASI10; zero-click exfiltration). One is Low (ASI05).
+One threat is classified Critical (the lethal trifecta as a cross-cutting pattern). Seven are High (ASI01, ASI03, ASI04, ASI06, ASI09; toxic flows; memory and context poisoning). Five are Medium (ASI02, ASI07, ASI08, ASI10; zero-click exfiltration). One is Low (ASI05).
 
 The classification reflects the deployment's deliberate calibration as a stress case rather than a recommendation. A more conservative deployment configuration — first-party MCP servers only, principal propagation through tool chains, no auto-approval, supervised vector-store writes — would substantially reduce the residual risk profile. The methodology's value at deployments with conservative configurations is the discipline of treating residual risk explicitly even where its severity is lower; the deployment described here surfaces the methodology's analytical content most fully.
 
@@ -185,6 +185,6 @@ Across the threats enumerated above, the deployment requires substantial expansi
 - Per-recommendation provenance preservation that cannot be suppressed by content within the agent's reasoning context (currently absent).
 - Failure-mode and cascade-prevention test reports (currently absent).
 
-The aggregate gap between current evidence posture and methodology-required evidence posture is the most consequential operational finding from this register. The findings document `findings/at_01_01_evidence_capture.md` (where present) elaborates this gap into an engagement-style finding.
+The aggregate gap between current evidence posture and methodology-required evidence posture is the most consequential operational finding from this register; an engagement of comparable scope would normally produce a dedicated finding (provisionally AT-01-01) elaborating it.
 
 The methodology's recommendation is not that all of the above evidence be captured uniformly. The evidence-first principle requires designed capture, with privacy properties documented and assured under GDPR Article 25. The institution's specific data-protection posture, retention policies, and operational constraints will shape which evidence is captured at what granularity.
