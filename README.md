@@ -80,7 +80,7 @@ For sensitive disclosures (security concerns about the methodology, identificati
 
 ## Status
 
-The repository is at v0.8.7 (see CHANGELOG). The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.7 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, and the correctness fixes documented in the CHANGELOG; the paper's argument and citations are stable across these.
+The repository is at v0.8.8 (see CHANGELOG). The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.8 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, and the correctness and structural fixes documented in the CHANGELOG; the paper's argument and citations are stable across these.
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 

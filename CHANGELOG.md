@@ -2,6 +2,26 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.8 — May 2026
+
+Matrix-structural pass deferred from v0.8.7. The fixes apply the matrix's own §4.2 conventions consistently across all 26 controls; they do not change any control's substance.
+
+**Cross-cutting-patterns field added on eight controls.** RO-01, AT-02, AT-03, HC-01, HC-02, GP-01, GP-02, and GP-03 previously omitted the *Cross-cutting patterns* field that the §4.2 convention specifies. Each now carries the field with content reflecting the control's relationship to §3.2's five cross-cutting patterns. RO-01 acknowledges that resource overload sits adjacent to rather than within the §3.2 patterns. The seven cross-cutting/governance/audit controls each note that they apply across all five patterns.
+
+***Gap* mapping-strength label applied where previously "None".** AT-02, AT-03, HC-01, HC-02, GP-01, and GP-03 previously stated "OWASP ASI references. None ([rationale])," which is inconsistent with the §4.2 convention defining *Gap* as the label for "no specific anchor exists, and the absence is itself part of the methodology's contribution." Each control now uses the *Gap* label with a brief explanation of why no OWASP ASI category applies and what the underlying anchor is (typically a design principle plus a regulatory or standards reference outside the OWASP taxonomy). GP-02's existing "Cross-cutting; testing programme covers all categories" framing is preserved as an alternative defensible labelling for a control whose ASI scope genuinely is all categories.
+
+**DORA Article 17 / Article 18 packaging error corrected.** ZC-01, MC-02, and AT-03 previously cited "DORA Articles 17–18" with the Article 17 label only. Article 17 is the ICT-related incident management process; Article 18 is the classification of ICT-related incidents. The two articles are now cited separately with each carrying its proper label and an appropriate mapping-strength annotation per control.
+
+**IC-01 single-agent applicability flag added.** The control entry now carries an *Applicability* field stating that IC-01 applies to deployments using inter-agent communication patterns and is not applicable to single-agent deployments. This aligns the matrix with the §5 prose's treatment of IC-01 as not applicable to the reference deployment.
+
+**AT-01 GDPR Article 25 repositioned.** The control's GDPR Article 25 anchor previously sat in the *Derivation* field with a *Direct* mapping-strength label that the *Derivation* convention does not contemplate. The anchor now sits in *Regulatory anchors* with the *Direct* label; *Derivation* references the anchor without re-labelling.
+
+**Conventions section: AI Act Article 15 mapping note added.** A brief note now explains the labelling rule: Article 15 is cited as *Direct* where a control directly produces one of Article 15's three named qualities (accuracy, robustness, cybersecurity) at the level of the quality itself, and as *Indirect* where the control implements a specific mechanism in service of Article 15's broader objectives. This addresses the audit's "inconsistency without explicit justification" by making the rule explicit. Per-control labels are not changed; the rule is articulated to support readers in interpreting them.
+
+**README status updated.** v0.8.7 → v0.8.8.
+
+The audit's remaining items have been addressed; the matrix is internally consistent against its own §4.2 conventions across all 26 controls.
+
 ## v0.8.7 — May 2026
 
 Second round of correctness fixes following deeper audit. The fixes do not change the methodology or its claims; they correct factual errors, taxonomy errors, and traceability gaps the audit surfaced.

@@ -14,6 +14,8 @@ Five of the twenty-six controls are reproduced from §4.3 of the paper, where th
 
 Each control specifies a statement, the OWASP categories and cross-cutting patterns it addresses, the regulatory anchors and standards references with explicit mapping-strength labels, the test procedure, the evidence artifact, the frequency of validation, and the ownership across the three lines of defence. Mapping-strength labels follow the convention introduced in §4.2 of the paper: *Direct* (the article addresses the control's subject specifically); *Indirect* (the article requires a broader category of work the control falls within); *Analogical* (the article addresses an analogous concern at a different layer); *Gap* (no specific anchor exists, and the absence is itself part of the methodology's contribution).
 
+A note on AI Act Article 15 mapping. Article 15 names three qualities — accuracy, robustness, cybersecurity — that high-risk AI systems shall achieve in light of their intended purpose throughout the lifecycle. Controls that directly produce one of those qualities at the level of the quality (RO-01 robustness through availability; CF-01 robustness through fault tolerance; RA-01 robustness through behavioural consistency) cite Article 15 as *Direct*. Controls that implement a specific cybersecurity or robustness mechanism in service of Article 15's broader objectives (e.g. tool metadata integrity, principal propagation, retrieval-context integrity) cite Article 15 as *Indirect*. The labels reflect this distinction; alternative labellings are defensible.
+
 Controls are numbered by the OWASP category or threat pattern they primarily respond to. The TP-, IA-, LT-, TF-, ZC- prefixes from the paper's §4.3 are preserved; new controls take prefixes by their primary OWASP category or substantive area (MC for Memory and Context, RO for Resource Overload, AT for Audit Trail, HC for Human Confidence and supervisory readiness, GP for Governance Process, IC for Inter-agent Communication, CF for Cascading Failures, RA for Rogue-Agent and behavioural drift). Numeric suffixes (e.g., TP-01, TP-02) distinguish multiple controls within the same prefix.
 
 The matrix is structured for readability rather than for tooling ingestion; institutions implementing the methodology may convert the matrix to whatever data format their GRC tooling supports.
@@ -268,7 +270,7 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Cross-cutting patterns.** Zero-click exfiltration.
 
-**Regulatory anchors.** AI Act Article 14 (human oversight) — *Indirect*; AI Act Article 15 (accuracy, robustness and cybersecurity) — *Indirect*; DORA Article 9 (protection and prevention) — *Indirect*; DORA Articles 17–18 (ICT-related incident management process) — *Analogical*.
+**Regulatory anchors.** AI Act Article 14 (human oversight) — *Indirect*; AI Act Article 15 (accuracy, robustness and cybersecurity) — *Indirect*; DORA Article 9 (protection and prevention) — *Indirect*; DORA Article 17 (ICT-related incident management process) — *Analogical* (gate-triggered events feed the institution's incident-management process); DORA Article 18 (classification of ICT-related incidents) — *Indirect*.
 
 **Standards references.** ISO 42001 Annex A.8.3 (human oversight) — *Indirect*; A.5.5 (information security) — *Indirect*; NIST AI RMF Govern (GV-3) — *Indirect*; Manage (MG-4) — *Indirect*.
 
@@ -340,7 +342,7 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Cross-cutting patterns.** Memory and context poisoning.
 
-**Regulatory anchors.** AI Act Article 15 (cybersecurity) — *Indirect*; DORA Articles 17–18 (incident management) — *Direct* for the response procedure.
+**Regulatory anchors.** AI Act Article 15 (cybersecurity) — *Indirect*; DORA Article 17 (ICT-related incident management process) — *Direct* for the response procedure; DORA Article 18 (classification of ICT-related incidents) — *Direct* for the classification of detected events.
 
 **Standards references.** ISO/IEC 42001:2023 Annex A.6.2.6 (incident response) — *Direct*; NIST AI RMF Manage (MG-4) — *Indirect*.
 
@@ -361,6 +363,8 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 **Statement.** Agent operations must implement resource-consumption limits (per-session token budgets, per-user invocation rate limits, per-deployment infrastructure caps) with defined degradation behaviour when limits are reached, such that resource overload does not cascade into operational failures or security-control bypasses.
 
 **OWASP ASI references.** *Gap* — resource overload is not represented as a category in the OWASP Top 10 for Agentic Applications (December 2025); RO-01 addresses the operational-resilience surface that the OWASP taxonomy leaves to operational-resilience standards (DORA, ISO 27001 capacity management).
+
+**Cross-cutting patterns.** Not directly addressed by §3.2's five patterns; resource overload is an adjacent operational-resilience concern rather than a §3.2 threat pattern, with cascade considerations addressed in CF-01.
 
 **Regulatory anchors.** DORA Article 11 (response and recovery) — *Indirect*; DORA Article 12 (backup, restoration and recovery) — *Indirect*; AI Act Article 15 (robustness) — *Direct*.
 
@@ -386,7 +390,7 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Cross-cutting patterns.** Applies across all five §3.2 cross-cutting patterns; runtime evidence is the operational expression of the *evidence-first* design principle and the precondition for after-the-fact reconstruction in any of the patterns.
 
-**Regulatory anchors.** AI Act Article 12 (record-keeping) — *Direct*; AI Act Article 26(6) (six-month minimum log retention) — *Direct*; AI Act Article 19 (technical documentation retention) — *Indirect*; DORA Article 9 — *Indirect*.
+**Regulatory anchors.** AI Act Article 12 (record-keeping) — *Direct*; AI Act Article 26(6) (six-month minimum log retention) — *Direct*; AI Act Article 19 (technical documentation retention) — *Indirect*; DORA Article 9 — *Indirect*; GDPR Article 25 (data protection by design) — *Direct* for the privacy corollary applied across the capture infrastructure.
 
 **Standards references.** ISO/IEC 42001:2023 Annex A.6.2.4 (logging) — *Direct*; ISO/IEC 27001:2022 Annex A.8.15 (logging) — *Direct*; NIST AI RMF Manage (MG-3) — *Indirect*.
 
@@ -398,7 +402,7 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Ownership.** First-line: agent architecture and platform teams. Second-line: ICT risk function; data privacy function for content-review and minimisation. Designated accountable: ICT risk function.
 
-**Derivation.** From the *evidence-first* principle, with privacy discipline mandated by GDPR Article 25 (data protection by design) — *Direct* — applied throughout.
+**Derivation.** From the *evidence-first* principle, with the privacy discipline anchored in GDPR Article 25 applied throughout the capture infrastructure.
 
 ---
 
@@ -406,7 +410,9 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Statement.** The evidence-capture infrastructure must implement data minimisation, access control, encryption in transit and at rest, retention governance, and privacy-impact assessment, with sensitive content classes (personal data, customer secrets, privileged communications) redactable or excludable by design.
 
-**OWASP ASI references.** None (the control addresses evidence-infrastructure privacy, not an agent-specific threat pattern).
+**OWASP ASI references.** *Gap* — evidence-capture privacy controls are not represented in the OWASP ASI taxonomy; the requirement derives from GDPR's data-protection regime and the evidence-first principle's privacy corollary.
+
+**Cross-cutting patterns.** Applies across all five §3.2 patterns; privacy discipline operates on capture irrespective of which pattern's threat triggered the captured event.
 
 **Regulatory anchors.** GDPR Article 25 (data protection by design) — *Direct*; GDPR Article 32 (security of processing) — *Direct*; AI Act Article 10 (data and data governance) — *Indirect*.
 
@@ -428,9 +434,11 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Statement.** The evidence store must support reconstruction queries (given a session ID, given an output, given a network anomaly, given a malicious input pattern) that return the evidence necessary for after-the-fact analysis without requiring custom code per query type.
 
-**OWASP ASI references.** None (cross-cutting capability).
+**OWASP ASI references.** *Gap* — reconstruction queryability is not represented in the OWASP ASI taxonomy; the requirement derives from the evidence-first principle's after-the-fact reconstruction objective.
 
-**Regulatory anchors.** AI Act Article 12 — *Indirect*; DORA Articles 17–18 (incident management) — *Direct* for the response use case.
+**Cross-cutting patterns.** Applies across all five §3.2 patterns; reconstruction supports investigation of incidents arising from any pattern's exploitation.
+
+**Regulatory anchors.** AI Act Article 12 — *Indirect*; DORA Article 17 (ICT-related incident management process) — *Direct* for the response use case.
 
 **Standards references.** ISO/IEC 27001:2022 Annex A.8.15 (logging) — *Indirect*; ISO/IEC 42001:2023 Annex A.6.2.6 (incident response) — *Indirect*.
 
@@ -450,7 +458,9 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Statement.** For each agent deployment, the institution must maintain a supervisory-engagement repository containing inventory record, regulatory mapping, accountability documentation, threat register, gap analysis, toxic-flow analysis, adversarial testing results, implemented control documentation, residual-risk acceptance, and runtime evidence supporting each control's operation. The repository must support supervisor-engageable retrieval without translation work.
 
-**OWASP ASI references.** None (cross-cutting capability).
+**OWASP ASI references.** *Gap* — the supervisory-engagement repository is not represented in the OWASP ASI taxonomy; the requirement derives from the *regulator-legible* design principle and the documentation/cooperation obligations of the AI Act and DORA.
+
+**Cross-cutting patterns.** Applies across all five §3.2 patterns; the repository consolidates findings, evidence, and residual-risk acceptances across all pattern-specific controls.
 
 **Regulatory anchors.** AI Act Article 19 (technical documentation retention) — *Direct*; AI Act Article 23 (cooperation with competent authorities) — *Direct*; DORA Article 5 (ICT risk management framework) — *Indirect*; DORA Article 6 (governance and organisation) — *Indirect*.
 
@@ -472,7 +482,9 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Statement.** Second-line risk functions must conduct periodic review of agent deployments at a cadence proportional to the deployment's risk classification, with review covering the deployment's threat register status, residual-risk acceptance currency, control-test results, and supervisory communications received.
 
-**OWASP ASI references.** None (cross-cutting capability).
+**OWASP ASI references.** *Gap* — second-line review cadence is not represented in the OWASP ASI taxonomy; the requirement derives from the institution's three-lines-of-defence governance discipline and the *framework-anchored* design principle.
+
+**Cross-cutting patterns.** Applies across all five §3.2 patterns; second-line review covers controls anchored to all patterns.
 
 **Regulatory anchors.** DORA Article 5 (ICT risk management framework) — *Direct*; DORA Article 6 (governance and organisation) — *Direct*; AI Act Article 17 (quality management system) — *Indirect*.
 
@@ -494,7 +506,9 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Statement.** Agent deployments must be authorised through a documented process specifying the deployment's intended function, principal model, threat surface, and accountable executive, with authorisation contingent on completion of LT-01, TF-01, and the relevant additional controls applicable to the deployment.
 
-**OWASP ASI references.** None (governance process; preconditions for the substantive controls).
+**OWASP ASI references.** *Gap* — deployment authorisation is institutional governance rather than an OWASP-categorised threat surface; the requirement is anchored in ISO 42001's policy framework and the AI Act's risk-management and deployer obligations, and operates as the precondition for the substantive controls.
+
+**Cross-cutting patterns.** Applies across all five §3.2 patterns; deployment authorisation covers controls addressing all patterns.
 
 **Regulatory anchors.** AI Act Article 17 (quality management system) — *Direct*; AI Act Article 26 (deployer obligations) — *Direct* for high-risk deployments; DORA Article 5 (ICT risk management framework) — *Direct*; DORA Article 6 (governance and organisation) — *Direct*.
 
@@ -516,7 +530,9 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Statement.** The institution must operate an ongoing adversarial testing programme covering its agent deployment portfolio, with testing scope including indirect prompt injection scenarios, tool poisoning scenarios, zero-click exfiltration scenarios, and lethal-trifecta exploitation scenarios. The programme must align to the institution's threat-led penetration testing regime where DORA TLPT applies.
 
-**OWASP ASI references.** Cross-cutting; testing programme covers all categories.
+**OWASP ASI references.** Cross-cutting; the testing programme covers all OWASP ASI categories.
+
+**Cross-cutting patterns.** Applies across all five §3.2 patterns; the testing programme covers indirect prompt injection (lethal trifecta + zero-click), tool poisoning, and toxic-flow scenarios as named in the control statement.
 
 **Regulatory anchors.** DORA Article 25 (digital operational resilience testing) — *Direct*; DORA Articles 26–27 (advanced testing through threat-led penetration testing) — *Direct* where TLPT applies; AI Act Article 15 (robustness, cybersecurity) — *Indirect*.
 
@@ -538,7 +554,9 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Statement.** The institution must operate a documented mechanism for revising its agent assurance methodology in response to new threat patterns, supervisory communications, and engagement findings, with the revision mechanism tracking the institution's local methodology version against the published methodology version and against the institution's deployment portfolio.
 
-**OWASP ASI references.** None (institutional learning; cross-cutting).
+**OWASP ASI references.** *Gap* — methodology revision and learning is institutional process rather than an OWASP-categorised threat surface; the requirement derives from the *composable and continuous* design principle and DORA's learning-and-evolving obligation.
+
+**Cross-cutting patterns.** Applies across all five §3.2 patterns; methodology learning addresses pattern-specific findings as well as cross-pattern observations.
 
 **Regulatory anchors.** DORA Article 13 (learning and evolving) — *Direct*; AI Act Article 17 (quality management system) — *Direct* for high-risk deployments; AI Act Article 9 (risk management system) — *Indirect*.
 
@@ -561,6 +579,8 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 **Statement.** Where agents communicate with other agents — whether internal multi-agent systems or external agentic services — the deployment must implement message-level authentication, integrity verification, and policy enforcement at every inter-agent boundary, with policies specifying which agents may instruct which others, what action classes are permissible across agent boundaries, and what evidence is captured for cross-agent invocations.
 
 **OWASP ASI references.** ASI07 (Insecure Inter-Agent Communication).
+
+**Applicability.** Applies to deployments using inter-agent communication patterns (multi-agent systems, external agentic services, or agent-to-agent tool invocation across organisational boundaries). For single-agent deployments without inter-agent communication, IC-01 is not applicable; the gap analysis at `reference_application/gap_analysis.md` reflects this for the reference deployment.
 
 **Cross-cutting patterns.** Identity and privilege abuse (cross-agent variant); toxic flows (where compositional flows span agent boundaries).
 
