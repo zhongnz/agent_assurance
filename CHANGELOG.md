@@ -2,6 +2,22 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.11 — May 2026
+
+Operational scaffolding for the open-source project framing.
+
+`.github/ISSUE_TEMPLATE/` added with five templates matching the engagement categories in `CONTRIBUTING.md`: substantive critique, correction, extension proposal, engagement experience, editorial feedback. The templates channel contributions into the forms that are most useful for an evolving methodology repository.
+
+`.github/ISSUE_TEMPLATE/config.yml` disables blank issues and surfaces `SECURITY.md` and the private-contact channel as alternative routes for non-issue concerns.
+
+`.github/PULL_REQUEST_TEMPLATE.md` added to structure pull request descriptions around scope, affected sections, change type, rationale, and a small checklist.
+
+`README.md` gains a CC BY 4.0 license badge near the title for at-a-glance license identification.
+
+`CITATION.cff` version and date-released bumped to current state. The file had drifted from `0.8.5` / `2026-05-08` to the actual v0.8.10 / 18 May 2026 over the recent revision rounds; the citation metadata is now in sync with the repository state.
+
+The additions do not change the methodology or any substantive artifact; they support the project's contribution surface.
+
 ## v0.8.10 — May 2026
 
 Content trim reducing the repository to its substantive artifacts. The following are removed:
