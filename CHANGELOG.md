@@ -2,6 +2,20 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.10 — May 2026
+
+Content trim reducing the repository to its substantive artifacts. The following are removed:
+
+- The `decks/` directory and its three slide decks (`Agent-Assurance-Overall-Plan.pptx`, `Position-Paper-Outline.pptx`, `Technical-Appendix.pptx`). The decks duplicated content the position paper, the control matrix, and the verification log carry authoritatively; the fact-check log slides in particular were a presentation rendering of material in `supporting/verification_log.md`.
+
+- `briefing/wrapper_sample_tier2_risk.md`. The sample audience-specific wrapper carried a `[name]` placeholder template that reads as draft scaffolding rather than substantive content; the wrapper pattern is an operational distribution choice rather than methodology material.
+
+- `paper/section_01_*.md` through `paper/section_08_*.md`. The per-section files duplicated content the consolidated `paper/full.md` carries; the duplication served editing convenience that is no longer load-bearing now that the paper's substantive content has stabilised at the v0.8.1 level.
+
+`README.md` updated to reflect the new file set: layout block trimmed, the "per-section files in paper/" alternative in the reading-order guidance removed, status bumped to v0.8.10.
+
+These deletions do not change the methodology, the argument, or any of the substantive artifacts (position paper, control matrix, case study, reference application, briefing surface, supporting credibility documents). They reduce the repository to its substantive content ahead of the transition from private working repository to public open-source project.
+
 ## v0.8.9 — May 2026
 
 `ROADMAP.md` added at the root. The roadmap articulates direction for v0.9 and v1.0, what is deliberately out of scope through v1.0, and what kinds of contributions are most welcome. It is the project-level document that distinguishes an active project from a static publication — without committing to timelines the project does not control.

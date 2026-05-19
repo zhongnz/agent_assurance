@@ -20,7 +20,6 @@ The position paper is the conceptual foundation. The control matrix populates th
 ├── SECURITY.md
 ├── paper/
 │   ├── full.md                            consolidated 27,000-word paper
-│   ├── section_01 through section_08      same content as per-section files
 │   └── control_matrix.md                  v1.0 control matrix, 26 controls
 ├── case_studies/
 │   └── echoleak.md                        the case study (5,400 words)
@@ -33,15 +32,10 @@ The position paper is the conceptual foundation. The control matrix populates th
 ├── briefing/
 │   ├── briefing_note.md                   one-page summary (~580 words)
 │   ├── general_audience_abstract.md       ~180-word standalone abstract
-│   ├── visual.svg                         single-page architectural visual
-│   └── wrapper_sample_tier2_risk.md       sample audience-specific cover note
+│   └── visual.svg                         single-page architectural visual
 ├── supporting/
 │   ├── verification_log.md                audit trail for 51 verified claims
 │   └── source_status.md                   sources catalogued into four evidentiary buckets
-├── decks/
-│   ├── Agent-Assurance-Overall-Plan.pptx  venture overview
-│   ├── Position-Paper-Outline.pptx        paper presented as slides
-│   └── Technical-Appendix.pptx            technical appendix with fact-check log
 └── ROADMAP.md                              direction for v0.9, v1.0, and what is out of scope
 ```
 
@@ -55,7 +49,7 @@ By time available:
 
 **Half an hour** — read the full case study (`case_studies/echoleak.md`). The case study applies the methodology retrospectively to CVE-2025-32711 (EchoLeak), demonstrating each of the methodology's outputs — threat register, toxic-flow analysis, runtime context capture specification, control matrix application, supervisor-engageable finding — against a real documented incident.
 
-**Two to three hours** — read the position paper (`paper/full.md`, or the per-section files in `paper/`). The paper develops the architectural argument, examines the established assurance disciplines and develops the necessary-but-insufficient critique, articulates the threat taxonomy, develops the synthesis methodology with five design principles, applies the methodology to a reference deployment, maps the regulatory horizon, and offers operational recommendations.
+**Two to three hours** — read the position paper at `paper/full.md`. The paper develops the architectural argument, examines the established assurance disciplines and develops the necessary-but-insufficient critique, articulates the threat taxonomy, develops the synthesis methodology with five design principles, applies the methodology to a reference deployment, maps the regulatory horizon, and offers operational recommendations.
 
 By interest:
 
@@ -81,7 +75,7 @@ For sensitive disclosures (security concerns about the methodology, identificati
 
 ## Status
 
-The repository is at v0.8.9 (see CHANGELOG). The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.9 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, the correctness and structural fixes documented in the CHANGELOG, and the project-level roadmap; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
+The repository is at v0.8.10 (see CHANGELOG). The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.10 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, the correctness and structural fixes documented in the CHANGELOG, the project-level roadmap, and the final pre-public-release content trim; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 
