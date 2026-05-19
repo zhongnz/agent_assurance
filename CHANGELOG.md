@@ -2,6 +2,14 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.9 — May 2026
+
+`ROADMAP.md` added at the root. The roadmap articulates direction for v0.9 and v1.0, what is deliberately out of scope through v1.0, and what kinds of contributions are most welcome. It is the project-level document that distinguishes an active project from a static publication — without committing to timelines the project does not control.
+
+The addition supports the open-source publication mode the work sits in. The repository's prior artifacts (paper, control matrix, case study, reference application, briefing surface, supporting credibility documents) document what the work *is*; the roadmap documents where the work is *going*. Both are required for readers to engage with the work as an ongoing project rather than as a static publication.
+
+`README.md` updated to reference `ROADMAP.md` in the repository layout block and to bump the version reference from v0.8.8 to v0.8.9.
+
 ## v0.8.8 — May 2026
 
 Matrix-structural pass deferred from v0.8.7. The fixes apply the matrix's own §4.2 conventions consistently across all 26 controls; they do not change any control's substance.

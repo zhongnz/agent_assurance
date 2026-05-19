@@ -38,10 +38,11 @@ The position paper is the conceptual foundation. The control matrix populates th
 ├── supporting/
 │   ├── verification_log.md                audit trail for 51 verified claims
 │   └── source_status.md                   sources catalogued into four evidentiary buckets
-└── decks/
-    ├── Agent-Assurance-Overall-Plan.pptx  venture overview
-    ├── Position-Paper-Outline.pptx        paper presented as slides
-    └── Technical-Appendix.pptx            technical appendix with fact-check log
+├── decks/
+│   ├── Agent-Assurance-Overall-Plan.pptx  venture overview
+│   ├── Position-Paper-Outline.pptx        paper presented as slides
+│   └── Technical-Appendix.pptx            technical appendix with fact-check log
+└── ROADMAP.md                              direction for v0.9, v1.0, and what is out of scope
 ```
 
 ## Suggested reading order
@@ -80,7 +81,7 @@ For sensitive disclosures (security concerns about the methodology, identificati
 
 ## Status
 
-The repository is at v0.8.8 (see CHANGELOG). The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.8 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, and the correctness and structural fixes documented in the CHANGELOG; the paper's argument and citations are stable across these.
+The repository is at v0.8.9 (see CHANGELOG). The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.9 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, the correctness and structural fixes documented in the CHANGELOG, and the project-level roadmap; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 
