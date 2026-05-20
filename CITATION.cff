@@ -31,5 +31,8 @@ version: "0.8.12"
 date-released: "2026-05-20"
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.20308910"
+    description: "Zenodo archive of v0.8.12 (current release)"
+  - type: doi
     value: "10.5281/zenodo.20308659"
-    description: "Zenodo archive of v0.8.11; subsequent tagged releases receive their own version-specific DOIs"
+    description: "Zenodo archive of v0.8.11"

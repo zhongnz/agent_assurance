@@ -1,6 +1,6 @@
 # Agent Assurance in Regulated Financial Services
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20308659.svg)](https://doi.org/10.5281/zenodo.20308659)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20308910.svg)](https://doi.org/10.5281/zenodo.20308910)
 
 A position paper, control matrix, applied case study, reference application, and supporting credibility documents on assurance methodology for autonomous AI agents deployed by European banks and insurers. The methodology is preliminary; the architectural argument is not.
 
@@ -95,7 +95,7 @@ The methodology is anchored in the regulatory and standards stack that European 
 
 The working title for the paper is *Agent Assurance in Regulated Financial Services*. If you cite the work, please include the version (see CHANGELOG) and the DOI of the specific release you are citing.
 
-The current release (v0.8.11) is archived at Zenodo with DOI [10.5281/zenodo.20308659](https://doi.org/10.5281/zenodo.20308659). Subsequent tagged releases will receive their own version-specific DOIs.
+The current release (v0.8.12) is archived at Zenodo with DOI [10.5281/zenodo.20308910](https://doi.org/10.5281/zenodo.20308910). The prior v0.8.11 release is archived at [10.5281/zenodo.20308659](https://doi.org/10.5281/zenodo.20308659). Each subsequent tagged release receives its own version-specific DOI.
 
 A copy-and-paste BibTeX entry for the current release:
 
@@ -105,8 +105,8 @@ A copy-and-paste BibTeX entry for the current release:
   title     = {Agent Assurance in Regulated Financial Services},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {v0.8.11},
-  doi       = {10.5281/zenodo.20308659},
+  version   = {v0.8.12},
+  doi       = {10.5281/zenodo.20308910},
   url       = {https://github.com/zhongnz/agent_assurance}
 }
 ```
