@@ -27,12 +27,12 @@ keywords:
   - cybersecurity
   - OWASP Top 10 for Agentic Applications
 license: CC-BY-4.0
-version: "0.8.12"
+version: "0.8.13"
 date-released: "2026-05-20"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20308910"
-    description: "Zenodo archive of v0.8.12 (current release)"
+    description: "Zenodo archive of v0.8.12 (most recently tagged release); each subsequent tagged release receives its own version-specific DOI."
   - type: doi
     value: "10.5281/zenodo.20308659"
-    description: "Zenodo archive of v0.8.11"
+    description: "Zenodo archive of v0.8.11 (prior tagged release)."

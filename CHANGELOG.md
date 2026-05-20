@@ -2,6 +2,28 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.13 — May 2026
+
+Post-public-release calibration pass following a second deep audit. The fixes correct a small number of substantive and rhetorical issues that the audit surfaced; the methodology is unchanged.
+
+**`briefing/briefing_note.md` opening paragraph and cybersecurity sentence reframed.** The opening previously read "In June 2025, security researchers demonstrated that a single email could cause..." which collapsed three EchoLeak milestones (January 2025 PoC and private disclosure; May 2025 server-side fix; June 2025 public disclosure) into one date. Updated to anchor on the public-disclosure event ("In June 2025, the public disclosure of CVE-2025-32711 showed..."). The cybersecurity-discipline sentence previously read "Cybersecurity presumes attackers detectable at the network perimeter or by per-action access checks" — a perimeter framing that has been superseded by zero-trust architecture (NIST SP 800-207, August 2020) which the paper §2.3 itself recognises; updated to "Cybersecurity — including the zero-trust architecture that succeeded the perimeter model — addresses attackers through identity, access, and per-action authorisation; agent attacks operate inside fully-authorised workflows..."
+
+**`case_studies/echoleak.md` subtitle disclosure framing.** Previously read "disclosed by Aim Labs in January 2025 and patched by Microsoft in May 2025" — conflating private MSRC disclosure (January) with public disclosure (11 June). Updated to "privately reported to Microsoft by Aim Labs in January 2025, patched server-side in May 2025, and publicly disclosed on 11 June 2025."
+
+**`case_studies/echoleak.md` "convergence" framing calibrated.** Two paragraphs (in §6 IA-01 mapping and §8 What the case study establishes) previously framed the convergence between the methodology's *principal-bound* design principle and Aim Labs's "LLM Scope Violation" terminology as "external corroboration of the framework that the framework's own development could not provide." Both framings draw on the same underlying tradition (confused-deputy reasoning, zero-trust principal-propagation, the NIST SP 800-207 lineage that §4.1 itself anchors to); the convergence is consistent with that shared lineage rather than independent corroboration. Updated to "the convergence is not independent corroboration of the framework; it indicates that the architectural concern is recognised across the security-research and assurance-methodology communities, which is a useful signal for the methodology's standing without overclaiming what a single convergence demonstrates."
+
+**`case_studies/echoleak.md` LT-01-01 finding compensating-controls description.** Previously read "five compensating controls... Each was bypassed." Reference-mention markers are a UI provenance signal manipulated by an embedded directive in the attacker-controlled content, not a security control bypassed at the system layer. Updated to distinguish "four security guardrails" (XPIA classifier, external-link redaction, image redaction, browser-enforced CSP — each bypassed) from "a UI provenance signal" (reference-mention markers — instructed-away rather than bypassed).
+
+**`case_studies/echoleak.md` LT-01-01 ASI references clarified.** The finding lists ASI01+ASI06+ASI09 as its compositional reference; the matrix's LT-01 control uses a generic ASI01+ASI02+ASI03 reference. A parenthetical now notes that EchoLeak's deployment-specific composition substitutes ASI06+ASI09 for ASI02+ASI03 to reflect the RAG-spraying retrieval-poisoning mechanism and the UI-trust manipulation.
+
+**`paper/full.md` §1.3 firm-naming line generalised.** The line previously named "JPMorgan, Goldman Sachs, ING among them" with no primary-source citation, sitting in a paragraph otherwise meticulous about source discipline. Generalised to "several major European and US banks" rather than retaining unsourced specificity.
+
+**`README.md` artifact count reconciled to six.** The opening tagline and the "What's here" paragraph previously enumerated five artifacts in differing breakdowns (one omitted the briefing surface; one demoted supporting documents to a trailing sentence) while the CITATION.cff abstract lists six. Both README sentences now enumerate six artifacts consistently: position paper, control matrix, case study, reference application, briefing surface, supporting credibility documents.
+
+**`CITATION.cff` DOI identifier descriptions extended.** Both identifier entries now include the forward-pointing language indicating that subsequent tagged releases receive their own version-specific DOIs; the v0.8.11 entry is labelled as the prior tagged release.
+
+**`README.md` and `CITATION.cff` versions bumped to v0.8.13.**
+
 ## v0.8.12 — May 2026
 
 Open-source consistency pass following a deep audit against OSS conventions. No substantive change to the methodology; the fixes bring the repository surface into consistency with public-project conventions.
@@ -25,6 +47,8 @@ Open-source consistency pass following a deep audit against OSS conventions. No 
 `.gitignore` added with basic entries for common operating-system, editor, and tool artifacts (the file had been removed during the v0.8.5 refresh; re-added here as standard OSS hygiene).
 
 `README.md` and `CITATION.cff` versions bumped to v0.8.12; date-released advanced to 2026-05-20.
+
+*(Post-tag note.)* Following the v0.8.12 release tag, Zenodo minted DOI [10.5281/zenodo.20308910](https://doi.org/10.5281/zenodo.20308910) for the v0.8.12 archive. In a follow-up commit, `README.md` (badge, Citation section text, BibTeX) and `CITATION.cff` (identifiers block) were updated to reference the v0.8.12 DOI as the current and the v0.8.11 DOI as the prior historical archive.
 
 ## v0.8.11 — May 2026
 
