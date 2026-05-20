@@ -2,6 +2,30 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.12 — May 2026
+
+Open-source consistency pass following a deep audit against OSS conventions. No substantive change to the methodology; the fixes bring the repository surface into consistency with public-project conventions.
+
+`LICENSE` replaced with the full canonical Creative Commons Attribution 4.0 International legal text (previously held only the human-readable summary plus a link to the canonical text). The full text is what GitHub's license detection and downstream adopters expect.
+
+`CITATION.cff` extended with top-level `repository-code` and `url` fields per the CFF 1.2.0 schema convention; the DOI identifier description clarified to note that the listed DOI archives v0.8.11 and that subsequent tagged releases receive their own version-specific DOIs.
+
+`ROADMAP.md` v0.9 anticipation paragraph reframed to reference the paper's substantive-content level (v0.8.1, stable through v0.8.12) rather than the now-stale v0.8.8 anchor. The "continuous-assurance platform" out-of-scope entry rewritten to describe what the platform would be in repository-facing terms, removing private-business-plan framing.
+
+`README.md` opening tagline and "What's here" reconciled to the same five-artifact framing (position paper, control matrix, case study, reference application, supporting documents) carried in the CITATION.cff abstract. The Status section's "final pre-public-release content trim" qualifier removed. The maintainer's name (Peter Zhong) added to the Status section. A copy-and-paste BibTeX citation snippet added to the Citation section.
+
+`CHANGELOG.md` v0.8.10 entry's trailing "ahead of the transition from private working repository to public open-source project" clause trimmed; the deletion description stands on its own.
+
+`SECURITY.md` opening of the "How to report" section reframed: the apologetic "the maintainer is solo" clause removed; response-time framing kept.
+
+`supporting/verification_log.md` title updated to remove the stale "v0.8" anchor (the log is the living audit register; the version anchor read as frozen-in-time). First-person voice in three audit notes ("specific details I have not independently confirmed") rewritten in passive voice. The "Items still pending direct primary-source verification before publication" section heading renamed to "Pending verification," since the work is no longer pre-publication.
+
+`briefing/visual.svg` footer attribution updated from "Position paper · v0.8 · figure 1" to "Agent assurance methodology · figure 1," removing the stale version anchor.
+
+`.gitignore` added with basic entries for common operating-system, editor, and tool artifacts (the file had been removed during the v0.8.5 refresh; re-added here as standard OSS hygiene).
+
+`README.md` and `CITATION.cff` versions bumped to v0.8.12; date-released advanced to 2026-05-20.
+
 ## v0.8.11 — May 2026
 
 Operational scaffolding for the open-source project framing.
@@ -30,7 +54,7 @@ Content trim reducing the repository to its substantive artifacts. The following
 
 `README.md` updated to reflect the new file set: layout block trimmed, the "per-section files in paper/" alternative in the reading-order guidance removed, status bumped to v0.8.10.
 
-These deletions do not change the methodology, the argument, or any of the substantive artifacts (position paper, control matrix, case study, reference application, briefing surface, supporting credibility documents). They reduce the repository to its substantive content ahead of the transition from private working repository to public open-source project.
+These deletions do not change the methodology, the argument, or any of the substantive artifacts (position paper, control matrix, case study, reference application, briefing surface, supporting credibility documents). They reduce the repository to its substantive content.
 
 ## v0.8.9 — May 2026
 

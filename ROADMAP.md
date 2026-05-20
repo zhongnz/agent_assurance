@@ -6,7 +6,7 @@
 
 Subsequent point-version revisions are expected to incorporate, in roughly the following order of likelihood:
 
-- **External-reviewer feedback.** The position paper at v0.8.8 has been through three rounds of peer review and four rounds of source verification; further review by external readers will inform v0.9 revisions to the argument and supporting evidence.
+- **External-reviewer feedback.** The position paper's substantive content (at the v0.8.1 level, stable through v0.8.12) has been through three rounds of peer review and four rounds of source verification; further review by external readers will inform v0.9 revisions to the argument and supporting evidence.
 
 - **Additional case studies.** The EchoLeak case study at `case_studies/echoleak.md` is the first applied demonstration of the methodology against a documented incident. Subsequent disclosed incidents that exercise the methodology's analytical content — incidents that exhibit different combinations of the §3.2 cross-cutting patterns, that occur in different deployment contexts, or that surface methodology gaps — are likely candidates.
 
@@ -28,7 +28,7 @@ The following are not in scope for any version through v1.0. The methodology may
 
 - **Foundation-model layer engagement.** The methodology addresses deployers of agent systems, not providers of foundation models. Provider-side assurance is downstream of the foundation-model vendor's own work and outside the methodology's scope.
 
-- **The continuous-assurance platform.** Stage two of the venture's services-to-platform-to-rating-authority arc has no spec and is not in this repository.
+- **A continuous-assurance platform.** Automation of the methodology's evidence-capture and gap-analysis outputs in software — a possible future work-stream beyond the analytical methodology this repository carries — is not in scope and has no spec in this repository.
 
 - **Working-code proof-of-concept.** A working agent deployment with applied methodology was a deferred work-stream. The case study and reference application together demonstrate the methodology's analytical content; a working-code PoC is not anticipated through v1.0. Future engagement may produce specific pull for working code, at which point a build plan can be reconstructed against the specific need.
 

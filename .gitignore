@@ -1,0 +1,15 @@
+# Operating-system artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor and tooling backups
+*~
+*.swp
+*.swo
+
+# Office-app temporary files
+~$*
+
+# Local tool/agent state (not project content)
+.claude/

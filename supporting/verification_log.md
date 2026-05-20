@@ -1,6 +1,6 @@
-# Verification Log — Position Paper v0.8
+# Verification Log
 
-This log records the primary-source verification performed on the 51 [VERIFY:] / [UNCERTAIN:] markers carried in v0.7. All have been resolved through web verification of primary or directly-corroborating sources. No markers remain in the paper.
+This log records the primary-source verification performed on the 51 [VERIFY:] / [UNCERTAIN:] markers carried in v0.7 of the position paper. All have been resolved through web verification of primary or directly-corroborating sources; no markers remain. Subsequent point versions (v0.8.1 onward) have refined the source register and updated specific entries as the regulatory landscape has evolved (notably the Digital Omnibus provisional agreement of 7 May 2026); the audit trail below reflects the current state.
 
 ## Section 1 — The Shape of the Problem (9 markers, all resolved)
 
@@ -72,7 +72,7 @@ This log records the primary-source verification performed on the 51 [VERIFY:] /
 
 **§3.3 FSB report.** *The Financial Stability Implications of Artificial Intelligence*, published 14 November 2024 — confirmed via fsb.org primary site and BIS executive summary mirror. Vulnerabilities: third-party dependencies and service-provider concentration, market correlations, cyber risks, model risk and data quality and governance.
 
-**§3.3 Other macroprudential references.** BoE FPC, ECB FSR, IMF GFSR, BIS publications consolidated to forms supported by available evidence (see §6.3 below for the BoE FPC verification). Specific paper references (BIS Papers 154, ECB FSR May 2024 Leitner et al., IMF GFSR October 2024 Chapter 3, Lopez-Lira NBER WP 34054) generalised in body text to avoid claiming specific details I have not independently confirmed; the substantive claim — that concentration and correlation are flagged macroprudential concerns — is well-supported.
+**§3.3 Other macroprudential references.** BoE FPC, ECB FSR, IMF GFSR, BIS publications consolidated to forms supported by available evidence (see §6.3 below for the BoE FPC verification). Specific paper references (BIS Papers 154, ECB FSR May 2024 Leitner et al., IMF GFSR October 2024 Chapter 3, Lopez-Lira NBER WP 34054) generalised in body text to avoid claiming specific details that have not been independently verified; the substantive claim — that concentration and correlation are flagged macroprudential concerns — is well-supported.
 
 ## Section 4 — Synthesis Framework (10 markers, all resolved)
 
@@ -118,7 +118,7 @@ This log records the primary-source verification performed on the 51 [VERIFY:] /
 
 **§6.3 BoE FPC.** *Financial Stability in Focus: AI in the financial system*, published 9 April 2025 — confirmed via Global Regulation Tomorrow, A&O Shearman, Bank of England written evidence to Treasury Committee. Four areas: greater use of AI in banks' and insurers' core financial decision-making, greater use of AI in financial markets, operational risks in relation to AI service providers, changing external cyber threat environment.
 
-**§6.3 BIS publications.** Generalised to forms supported by available evidence (BIS Working Papers and FSI Insights series on regulating AI in the financial sector) rather than claiming specific publication identifiers I have not independently confirmed.
+**§6.3 BIS publications.** Generalised to forms supported by available evidence (BIS Working Papers and FSI Insights series on regulating AI in the financial sector) rather than claiming specific publication identifiers that have not been independently verified.
 
 **§6.4 CBEST/TIBER-EU.** See §1.3 verification above.
 
@@ -126,12 +126,12 @@ This log records the primary-source verification performed on the 51 [VERIFY:] /
 
 **§7 AgentDojo.** Active and current as of late 2025/early 2026 — confirmed via NeurIPS 2024 publication (arXiv:2406.13352, Debenedetti et al., ETH Zurich SPY Lab); GitHub repository at ethz-spylab/agentdojo with leaderboard at agentdojo.spylab.ai; UK and US AI Safety Institute extension as part of joint red-teaming exercise (per UK Government BEIS Inspect Evals integration documentation). Continues to be cited as comparative benchmark in active research literature through 2025/early 2026.
 
-## Items still pending direct primary-source verification before publication
+## Pending verification
 
-— None as of v0.8. All 51 markers from v0.7 resolved.
+None. All 51 verification markers identified in v0.7 were resolved against primary sources in v0.8; subsequent point versions carry no new pending markers.
 
 ## Verification methodology
 
 The verification was performed through targeted web searches against primary or directly-corroborating secondary sources. For dated publications (CVE records, regulatory documents, academic papers), date and identifier verification used the issuing authority's primary site or an authoritative mirror (NIST CSRC, ECB, EIOPA PDF, BaFin German/English releases, OWASP project pages, vendor security advisories, NeurIPS and arXiv records). For attribution claims (e.g. "Simon Willison coined the term lethal trifecta"), verification used the original blog post or speech text, supplemented by independent corroboration. For incident timelines, verification cross-referenced disclosing-firm announcements with vendor responses and independent security reporting. For institutional positions and timelines (Digital Omnibus on AI, trilogue process), verification used multiple law-firm and policy-tracker analyses convergent on the same dates and substantive content.
 
-Where independent primary verification of a specific publication identifier was not feasible within the verification scope, the body text was generalised to forms supported by the available evidence rather than claiming specific details I had not confirmed (notably: BIS Papers 154, IMF GFSR Chapter 3 specifics, ECB FSR Leitner et al., Lopez-Lira NBER WP 34054). The substantive claim — that concentration and correlation are flagged macroprudential concerns — remains supported by the FSB report and the broader regulatory record.
+Where independent primary verification of a specific publication identifier was not feasible within the verification scope, the body text was generalised to forms supported by the available evidence rather than claiming specific details that had not been independently verified (notably: BIS Papers 154, IMF GFSR Chapter 3 specifics, ECB FSR Leitner et al., Lopez-Lira NBER WP 34054). The substantive claim — that concentration and correlation are flagged macroprudential concerns — remains supported by the FSB report and the broader regulatory record.

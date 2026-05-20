@@ -1,8 +1,8 @@
 # Agent Assurance in Regulated Financial Services
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20308659.svg)](https://doi.org/10.5281/zenodo.20308659)
 
-A working paper, applied case study, and supporting documents on assurance methodology for autonomous AI agents deployed by European banks and insurers. The methodology is preliminary; the architectural argument is not.
+A position paper, control matrix, applied case study, reference application, and supporting credibility documents on assurance methodology for autonomous AI agents deployed by European banks and insurers. The methodology is preliminary; the architectural argument is not.
 
 ## What's here
 
@@ -77,7 +77,7 @@ For sensitive disclosures (security concerns about the methodology, identificati
 
 ## Status
 
-The repository is at v0.8.11 (see CHANGELOG). The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.11 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, the correctness and structural fixes documented in the CHANGELOG, the project-level roadmap, the final pre-public-release content trim, and the contribution-template scaffolding under `.github/`; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
+The repository is at v0.8.12 (see CHANGELOG) and is maintained by Peter Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.12 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, the correctness and structural fixes documented in the CHANGELOG, the project-level roadmap, the contribution-template scaffolding under `.github/`, and the open-source consistency pass; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 
@@ -93,9 +93,25 @@ The methodology is anchored in the regulatory and standards stack that European 
 
 ## Citation
 
-The working title for the paper is *Agent Assurance in Regulated Financial Services*. If you cite the paper or the case study, please include the version (see CHANGELOG) and a permanent link to this repository.
+The working title for the paper is *Agent Assurance in Regulated Financial Services*. If you cite the work, please include the version (see CHANGELOG) and the DOI of the specific release you are citing.
 
-A `CITATION.cff` file in the repository root provides citation metadata in the Citation File Format. GitHub renders this metadata in the repository sidebar, allowing readers to cite the work in standard formats.
+The current release (v0.8.11) is archived at Zenodo with DOI [10.5281/zenodo.20308659](https://doi.org/10.5281/zenodo.20308659). Subsequent tagged releases will receive their own version-specific DOIs.
+
+A copy-and-paste BibTeX entry for the current release:
+
+```bibtex
+@misc{zhong2026agentassurance,
+  author    = {Zhong, Peter},
+  title     = {Agent Assurance in Regulated Financial Services},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {v0.8.11},
+  doi       = {10.5281/zenodo.20308659},
+  url       = {https://github.com/zhongnz/agent_assurance}
+}
+```
+
+A `CITATION.cff` file in the repository root provides citation metadata in the Citation File Format, including the DOI as an identifier. GitHub renders this metadata in the repository sidebar, allowing readers to cite the work in standard formats.
 
 ## License
 

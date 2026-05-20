@@ -18,7 +18,7 @@ The following classes of concern warrant the dedicated channel below rather than
 
 Use the contact mechanism on the author's GitHub profile, marked as a security concern. Do not open public issues for these classes of concern.
 
-The work is preliminary and the maintainer is solo; response time depends on the substance and urgency of the concern. Concerns identifying immediate harm receive priority; concerns that would benefit from substantive consideration may take longer.
+Response time depends on the substance and urgency of the concern. Concerns identifying immediate harm receive priority; concerns that would benefit from substantive consideration may take longer.
 
 ## What this is not
 
