@@ -94,17 +94,17 @@ Each threat references the relevant control(s) from the matrix at `paper/control
 
 **Recommended controls.** MC-01 (retrieval-context integrity), MC-02 (memory-poisoning detection and response), RA-01 (agent-behaviour drift detection).
 
-### ASI07: Insecure Inter-Agent Communication — Medium severity
+### ASI07: Insecure Inter-Agent Communication — Not applicable in current configuration
 
-**Threat.** The deployment shares foundation-model API access, orchestration-framework infrastructure, and parts of the evidence-capture infrastructure with two other internal agent deployments. Cross-deployment communication paths are present but not analysed in current configuration.
+**Threat.** Inter-agent communication risks apply to deployments where the agent communicates directly with other agents — multi-agent systems, external agentic services, or agent-to-agent tool invocation. The current claims-processing deployment is single-agent.
 
-**Configuration exposure.** Indirect exposure rather than direct: the claims agent does not directly communicate with the customer-service triage agent or the internal-operations workflow agent. However, shared retrieval stores and shared evidence-capture infrastructure create paths through which one agent's outputs could reach another's reasoning context, by design or by exploitation.
+**Configuration exposure.** The deployment shares foundation-model API access, orchestration-framework infrastructure, and parts of the evidence-capture infrastructure with two other internal agent deployments. This is shared resource access rather than inter-agent communication; the cross-deployment risks it creates — paths through which one agent's outputs could reach another's reasoning context — are properly captured under TF-02 (cross-deployment flow review) and CF-01 (failure-domain isolation and cascade prevention) rather than under IC-01.
 
 **Compensating controls in current configuration.** Logical separation between deployment configurations at orchestration layer; no shared agent-to-agent message channels by design.
 
-**Evidence requirements.** Cross-deployment infrastructure inventory; identification of any shared state or shared reasoning context across deployments; adversarial testing of cross-deployment exposure.
+**Evidence requirements.** See the TF-02 and CF-01 sections of the gap analysis for the cross-deployment infrastructure inventory, identification of shared state, and adversarial testing requirements.
 
-**Recommended controls.** IC-01 (inter-agent message authentication and policy enforcement), TF-02 (cross-deployment flow review).
+**Recommended controls.** TF-02 (cross-deployment flow review) and CF-01 (failure-domain isolation and cascade prevention) for the cross-deployment infrastructure concerns. IC-01 (inter-agent message authentication) would become applicable if the deployment evolved toward multi-agent architecture.
 
 ### ASI08: Cascading Failures — Medium severity
 
@@ -174,7 +174,7 @@ Each threat references the relevant control(s) from the matrix at `paper/control
 
 ## Aggregate severity assessment
 
-One threat is classified Critical (the lethal trifecta as a cross-cutting pattern). Six are High (ASI01, ASI03, ASI04, ASI06, ASI09; toxic flows). Five are Medium (ASI02, ASI07, ASI08, ASI10; zero-click exfiltration). One is Low (resource overload, treated as out-of-OWASP-taxonomy). ASI05 (Unexpected Code Execution) is not present in the deployment's configuration.
+One threat is classified Critical (the lethal trifecta as a cross-cutting pattern). Six are High (ASI01, ASI03, ASI04, ASI06, ASI09; toxic flows). Four are Medium (ASI02, ASI08, ASI10; zero-click exfiltration). One is Low (resource overload, treated as out-of-OWASP-taxonomy). ASI05 (Unexpected Code Execution) is not present in the deployment's configuration; ASI07 (Insecure Inter-Agent Communication) is not applicable in the current single-agent configuration — the cross-deployment infrastructure concerns previously catalogued under ASI07 are addressed under TF-02 and CF-01.
 
 The classification reflects the deployment's deliberate calibration as a stress case rather than a recommendation. A more conservative deployment configuration — first-party MCP servers only, principal propagation through tool chains, no auto-approval, supervised vector-store writes — would substantially reduce the residual risk profile. The methodology's value at deployments with conservative configurations is the discipline of treating residual risk explicitly even where its severity is lower; the deployment described here surfaces the methodology's analytical content most fully.
 

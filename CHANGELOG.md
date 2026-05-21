@@ -2,6 +2,26 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.14 — May 2026
+
+Third-audit traceability and release-integrity pass. No substantive change to the methodology; the fixes address overstated coverage claims, an internal contradiction in the reference application, evidence-register imprecision, and the security-disclosure channel.
+
+**OWASP coverage claim corrected (maps vs covers).** `README.md`, `briefing/briefing_note.md`, and `paper/control_matrix.md` previously asserted that the 26 controls "cover all ten OWASP Top 10 for Agentic Applications categories." The Coverage Notes of the matrix (revised in v0.8.7) explicitly acknowledge ASI05 (Unexpected Code Execution) as a coverage gap in v1.0 — RO-01 was reanchored as out-of-OWASP-taxonomy in the same revision. The README, briefing, and matrix introduction are now updated to say the matrix *maps* all ten categories and *covers* nine, with ASI05 acknowledged as a coverage gap in v1.0.
+
+**ASI07/IC-01 contradiction in the reference application resolved.** `reference_application/threat_register.md` previously classified the deployment's shared foundation-model API, orchestration framework, and evidence-capture infrastructure under ASI07 (Insecure Inter-Agent Communication) with IC-01 as a recommended control. `reference_application/gap_analysis.md` correctly states that shared resource access is not inter-agent communication and marks IC-01 not applicable. The threat register is now updated to mark ASI07 as not applicable in the current single-agent configuration, with the cross-deployment infrastructure concerns reclassified under TF-02 (cross-deployment flow review) and CF-01 (failure-domain isolation and cascade prevention), aligning with the gap analysis. Aggregate severity counts updated accordingly: now 1 Critical + 6 High + 4 Medium + 1 Low.
+
+**Verification scope clarified.** `README.md` previously read "the verification log documents the audit trail for every load-bearing claim in the paper." The log records the 51 markers identified in the position paper's v0.7 verification round; the control matrix, the case study, and the reference application carry their own citations and are not exhaustively audited in the log. The claim is now scoped accordingly.
+
+**DNB verification entry strengthened to primary source.** `supporting/verification_log.md` §1.3 DNB entry previously cited only Stibbe and Lexology secondary analyses for the DNB *AI bij verzekeraars* publication, when the DNB primary publication is accessible at dnb.nl. The entry now cites the DNB primary publication with the secondary analyses as corroboration.
+
+**AI Act and DORA article enumeration in source_status updated.** `supporting/source_status.md:19,21` listed AI Act articles "6, 12, 14, 15" and DORA articles "9, 17–18, 24–27, 28" — a subset of what the position paper and the control matrix actually cite. The enumeration is now expanded to reflect the actual citation footprint: AI Act Articles 9, 10, 11, 12, 13, 14, 15, 17, 19, 23, 26 plus Article 6(2) and Annex III; DORA Articles 5, 6, 8, 9, 11, 12, 13, 17, 18, 25, 26, 27, 28, 29, 30.
+
+**Private Vulnerability Reporting enabled.** GitHub's Private Vulnerability Reporting feature has been enabled on the repository, providing a dedicated private channel for sensitive disclosures (https://github.com/zhongnz/agent_assurance/security/advisories/new). `SECURITY.md` now references this as the primary disclosure path; `.github/ISSUE_TEMPLATE/config.yml` updates the security contact link to point at the PVR form rather than the SECURITY.md document. The previous "contact mechanism on the author's GitHub profile" framing was unspecific for a security-adjacent repository.
+
+**CITATION.cff `preferred-citation` block added.** The top-level `type: software` (the CFF schema default for repositories) is retained for the repository-as-artifact citation; a `preferred-citation:` block of `type: report` now provides reference managers with publication-style metadata (title, authors, year, URL, DOI, abstract) for citing the paper itself rather than the repository. This addresses the audit observation that citing a documents-only repository as "software" reads oddly to academic readers.
+
+**Versions bumped to v0.8.14; date-released 2026-05-21.** README status section updated.
+
 ## v0.8.13 — May 2026
 
 Post-public-release calibration pass following a second deep audit. The fixes correct a small number of substantive and rhetorical issues that the audit surfaced; the methodology is unchanged.

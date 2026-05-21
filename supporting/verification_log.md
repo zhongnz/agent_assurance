@@ -18,7 +18,7 @@ This log records the primary-source verification performed on the 51 [VERIFY:] /
 
 **§1.3 BaFin guidance.** 18 December 2025 (German publication) and 30 January 2026 (English) — *Guidance on ICT Risks in the Use of AI at Financial Entities* — verified in earlier rounds. Treats AI systems as a sub-case of network and information systems under DORA Article 3(2); addresses AI strategy, asset inventory, ICT lifecycle integration, and adversarial-input handling.
 
-**§1.3 DNB *AI bij verzekeraars*.** Published 27 March 2025 (English title: *AI at Insurers: opportunities and risks*) confirmed via Stibbe and Lexology technical analyses. 36-insurer 2024 survey, 15 reporting AI use in fraud detection / claim-amount estimation. SAFEST principles framework (predecessor 2019 joint with AFM) identified as foundation.
+**§1.3 DNB *AI bij verzekeraars*.** Published 27 March 2025 (English title: *AI at Insurers: opportunities and risks*) confirmed via the DNB primary publication on dnb.nl and corroborating Stibbe and Lexology technical analyses. 36-insurer 2024 survey, 15 reporting AI use in fraud detection / claim-amount estimation. SAFEST principles framework (predecessor 2019 joint with AFM) identified as foundation.
 
 **§1.3 ACPR Beau speech.** 27 October 2025 Lisbon "A compass to guide us toward intelligent AI supervision" + December 2025 *Archives de philosophie du droit* Tome 66 article — verified in earlier rounds. Four-criterion methodology: appropriate data management, performance, stability, explainability.
 

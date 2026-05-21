@@ -61,9 +61,9 @@ By interest:
 
 **For methodology in operation**: the case study, the reference application, and paper section 5 (the reference deployment specification). The case study at `case_studies/echoleak.md` applies the methodology retrospectively to a documented incident; the reference application at `reference_application/` applies it prospectively to a hypothetical deployment with full structured outputs (threat register, gap analysis, findings).
 
-**For the operational specification of the methodology**: `paper/control_matrix.md`. The matrix populates the methodology's framework with 26 controls covering all ten OWASP Top 10 for Agentic Applications categories, the five cross-cutting threat patterns, and additional governance and evidence-capture areas, with full regulatory and standards anchoring.
+**For the operational specification of the methodology**: `paper/control_matrix.md`. The matrix populates the methodology's framework with 26 controls mapping all ten OWASP Top 10 for Agentic Applications categories (with ASI05 Unexpected Code Execution acknowledged as a coverage gap in v1.0), the five cross-cutting threat patterns, and additional governance and evidence-capture areas, with full regulatory and standards anchoring.
 
-**For the evidentiary discipline**: `supporting/verification_log.md` and `supporting/source_status.md`. The verification log documents the audit trail for every load-bearing claim in the paper; the source status document catalogues sources into four evidentiary buckets.
+**For the evidentiary discipline**: `supporting/verification_log.md` and `supporting/source_status.md`. The verification log documents the audit trail for the 51 load-bearing claims identified in the position paper's v0.7 verification round, resolved against primary or directly-corroborating sources; the source status document catalogues sources into four evidentiary buckets. The control matrix, case study, and reference application carry their own citations and are not exhaustively audited in the verification log.
 
 ## How to engage
 
@@ -77,7 +77,7 @@ For sensitive disclosures (security concerns about the methodology, identificati
 
 ## Status
 
-The repository is at v0.8.13 (see CHANGELOG) and is maintained by Peter Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.13 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, the correctness and structural fixes documented in the CHANGELOG, the project-level roadmap, the contribution-template scaffolding under `.github/`, the open-source consistency pass, and post-public-release calibrations to the case study and briefing surface; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
+The repository is at v0.8.14 (see CHANGELOG) and is maintained by Peter Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.14 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, the correctness and structural fixes documented in the CHANGELOG, the project-level roadmap, the contribution-template scaffolding under `.github/`, the open-source consistency pass, post-public-release calibrations, and the third-audit traceability and release-integrity pass; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 

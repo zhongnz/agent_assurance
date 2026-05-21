@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Security concerns
-    url: https://github.com/zhongnz/agent_assurance/blob/main/SECURITY.md
-    about: Methodology errors with security consequences, identification of confidential information, non-public incident references, or adversarial-use concerns. Use the channel documented in SECURITY.md rather than opening a public issue.
+  - name: Security concerns (private vulnerability reporting)
+    url: https://github.com/zhongnz/agent_assurance/security/advisories/new
+    about: Methodology errors with security consequences, identification of confidential information, non-public incident references, or adversarial-use concerns. Report privately through GitHub's Security tab; do not open a public issue. See SECURITY.md for the full disclosure policy.
   - name: Private feedback or professional inquiry
     url: https://github.com/zhongnz
     about: Professional inquiries, engagement opportunities, or feedback not suited to a public issue. Use the contact mechanism on the author's GitHub profile.

@@ -27,12 +27,29 @@ keywords:
   - cybersecurity
   - OWASP Top 10 for Agentic Applications
 license: CC-BY-4.0
-version: "0.8.13"
-date-released: "2026-05-20"
+version: "0.8.14"
+date-released: "2026-05-21"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20308910"
-    description: "Zenodo archive of v0.8.12 (most recently tagged release); each subsequent tagged release receives its own version-specific DOI."
+    description: "Zenodo archive of v0.8.12 (most recently tagged release at the time of this metadata); each subsequent tagged release receives its own version-specific DOI."
   - type: doi
     value: "10.5281/zenodo.20308659"
     description: "Zenodo archive of v0.8.11 (prior tagged release)."
+preferred-citation:
+  type: report
+  title: "Agent Assurance in Regulated Financial Services"
+  authors:
+    - family-names: "Zhong"
+      given-names: "Peter"
+  year: 2026
+  url: "https://github.com/zhongnz/agent_assurance"
+  doi: "10.5281/zenodo.20308910"
+  abstract: >-
+    A position paper on assurance methodology for autonomous AI agents
+    deployed by European banks and insurers, articulated as five design
+    principles operationalised through a control matrix anchored to the
+    AI Act, DORA, ISO/IEC 42001, NIST AI RMF, and OWASP's agent-specific
+    threat taxonomy. The repository at the URL above hosts the paper and
+    companion artifacts (control matrix, applied case study, reference
+    application, briefing surface, supporting credibility documents).
