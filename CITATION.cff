@@ -31,11 +31,14 @@ version: "0.8.14"
 date-released: "2026-05-21"
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.20320343"
+    description: "Zenodo archive of v0.8.14 (current release); each subsequent tagged release receives its own version-specific DOI."
+  - type: doi
     value: "10.5281/zenodo.20308910"
-    description: "Zenodo archive of v0.8.12 (most recently tagged release at the time of this metadata); each subsequent tagged release receives its own version-specific DOI."
+    description: "Zenodo archive of v0.8.12 (prior tagged release)."
   - type: doi
     value: "10.5281/zenodo.20308659"
-    description: "Zenodo archive of v0.8.11 (prior tagged release)."
+    description: "Zenodo archive of v0.8.11 (initial public release)."
 preferred-citation:
   type: report
   title: "Agent Assurance in Regulated Financial Services"
@@ -44,7 +47,7 @@ preferred-citation:
       given-names: "Peter"
   year: 2026
   url: "https://github.com/zhongnz/agent_assurance"
-  doi: "10.5281/zenodo.20308910"
+  doi: "10.5281/zenodo.20320343"
   abstract: >-
     A position paper on assurance methodology for autonomous AI agents
     deployed by European banks and insurers, articulated as five design
