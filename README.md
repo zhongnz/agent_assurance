@@ -77,7 +77,7 @@ For sensitive disclosures (security concerns about the methodology, identificati
 
 ## Status
 
-The repository is at v0.8.15 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.14 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, the correctness and structural fixes documented in the CHANGELOG, the project-level roadmap, the contribution-template scaffolding under `.github/`, the open-source consistency pass, post-public-release calibrations, and the third-audit traceability and release-integrity pass; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
+The repository is at v0.8.16 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.16 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, the correctness and structural fixes documented in the CHANGELOG, the project-level roadmap, the contribution-template scaffolding under `.github/`, the open-source consistency pass, post-public-release calibrations, the third-audit traceability and release-integrity pass, the author-name correction, and the fourth-audit propagation fixes; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 
@@ -95,9 +95,9 @@ The methodology is anchored in the regulatory and standards stack that European 
 
 The working title for the paper is *Agent Assurance in Regulated Financial Services*. If you cite the work, please include the version (see CHANGELOG) and the DOI of the specific release you are citing.
 
-The current release (v0.8.14) is archived at Zenodo with DOI [10.5281/zenodo.20320343](https://doi.org/10.5281/zenodo.20320343). Prior releases are archived at [10.5281/zenodo.20308910](https://doi.org/10.5281/zenodo.20308910) (v0.8.12) and [10.5281/zenodo.20308659](https://doi.org/10.5281/zenodo.20308659) (v0.8.11). Each subsequent tagged release receives its own version-specific DOI.
+The most recently DOI-minted release is v0.8.14 ([10.5281/zenodo.20320343](https://doi.org/10.5281/zenodo.20320343)); v0.8.15 (author-name correction) and v0.8.16 (audit-round-4 propagation fixes) have been tagged and will receive their own DOIs as Zenodo processes the release tags. Prior releases are archived at [10.5281/zenodo.20308910](https://doi.org/10.5281/zenodo.20308910) (v0.8.12) and [10.5281/zenodo.20308659](https://doi.org/10.5281/zenodo.20308659) (v0.8.11).
 
-A copy-and-paste BibTeX entry for the current release:
+A copy-and-paste BibTeX entry for the most recently DOI-minted release:
 
 ```bibtex
 @misc{zhong2026agentassurance,
@@ -105,7 +105,7 @@ A copy-and-paste BibTeX entry for the current release:
   title     = {Agent Assurance in Regulated Financial Services},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {v0.8.15},
+  version   = {v0.8.14},
   doi       = {10.5281/zenodo.20320343},
   url       = {https://github.com/zhongnz/agent_assurance}
 }

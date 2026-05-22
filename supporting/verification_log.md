@@ -92,7 +92,7 @@ This log records the primary-source verification performed on the 51 [VERIFY:] /
 
 **§4.3 ISO 42001 Annex A.6.2 / NIST AI RMF Manage 2.** ISO 42001 Annex A controls including third-party relationships clause; NIST AI RMF Manage function 2 (managing risks from third-party AI systems and resources) — confirmed.
 
-**§4.2/§4.3 Control matrix references.** The full control matrix is now presented as a companion document (`paper/control_matrix.md`) covering 26 controls across all ten OWASP Top 10 for Agentic Applications categories, the five cross-cutting threat patterns, and additional governance and evidence-capture areas. Earlier paper revisions referenced the matrix as forthcoming; v1.0 of the matrix is now in the repository.
+**§4.2/§4.3 Control matrix references.** The full control matrix is now presented as a companion document (`paper/control_matrix.md`) with 26 controls mapping all ten OWASP Top 10 for Agentic Applications categories — ASI05 (Unexpected Code Execution) acknowledged as a coverage gap in v1.0 — the five cross-cutting threat patterns, and additional governance and evidence-capture areas. Earlier paper revisions referenced the matrix as forthcoming; v1.0 of the matrix is now in the repository.
 
 ## Section 5 — Illustrative Reference Application (4 markers, all resolved)
 

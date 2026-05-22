@@ -2,6 +2,22 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.16 — May 2026
+
+Fourth-audit propagation pass. The audit identified places where prior calibrations (v0.8.13 EchoLeak guardrail re-framing; v0.8.14 OWASP coverage correction) did not propagate to all surfaces. No substantive change to the methodology.
+
+**EchoLeak "four security guardrails + one UI provenance signal" propagated.** The v0.8.13 calibration distinguished four security guardrails (XPIA classifier, external-link redaction, image redaction, CSP — each bypassed) from one UI provenance signal (reference-mention markers — instructed-away rather than bypassed). The fix landed in the LT-01-01 finding only; the case study narrative at `case_studies/echoleak.md` retained the "five guardrails bypassed" framing in §1's chain summary, §2's narrative, and §6's pre-disclosure-LT-01 description. The reference-application finding at `reference_application/findings/tf_01_01_toxic_flow.md` carried the same uncorrected framing. All five sites updated to align with the calibrated framing.
+
+**EchoLeak temporal precision propagated to the general-audience abstract.** The v0.8.13 calibration of the briefing note's "In June 2025, security researchers demonstrated..." (which conflated three milestones) was not propagated to `briefing/general_audience_abstract.md`. The abstract now matches the briefing note's framing: "In June 2025, the public disclosure of CVE-2025-32711 showed..."
+
+**OWASP "covers all ten" propagated to the verification log.** The v0.8.14 fix updated README, briefing note, and control matrix introduction from "covers all ten OWASP categories" to "maps all ten, covers nine, with ASI05 acknowledged as a coverage gap in v1.0." `supporting/verification_log.md:95` still carried the un-calibrated framing in its §4.2/§4.3 control-matrix-references entry; updated for consistency.
+
+**ROADMAP version anchor de-staled.** The v0.9 anticipation paragraph referenced "stable through v0.8.12," now stale. Reframed to "stable through subsequent point versions" — version-anchor-free language that does not require maintenance with each point release.
+
+**CITATION.cff and README DOI surface acknowledges the temporal lag between tag and Zenodo deposit.** The v0.8.15 tag was created before its Zenodo DOI was minted; the v0.8.16 commit is made before either v0.8.15 or v0.8.16 DOIs are minted. The CITATION.cff identifier description and the README Citation section now explicitly say the v0.8.14 archive is the most recently DOI-minted release, and that v0.8.15 and v0.8.16 will receive their own DOIs as Zenodo processes them. The BibTeX snippet pairs version and DOI consistently at v0.8.14 / 10.5281/zenodo.20320343, the most recently DOI-minted citation point. CITATION metadata will be updated as the v0.8.15 and v0.8.16 DOIs land.
+
+**Versions bumped to v0.8.16; date-released held at 2026-05-21.**
+
 ## v0.8.15 — May 2026
 
 Author name corrected from "Peter Zhong" to "Fengze Zhong" across all citation surfaces. The change is a name correction, not a change of author; the same individual maintains the work. The previous use of "Peter" reflected a placeholder during the pre-public-release period; the published work uses the author's preferred full name.
