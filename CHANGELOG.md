@@ -2,6 +2,14 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.18 — May 2026
+
+Operational maintenance additions to support active-maintenance signalling for the repository as an open-source project. No methodology or substantive-artifact change.
+
+**GitHub Actions lint workflow added.** `.github/workflows/lint.yml` runs three checks: markdownlint on all `.md` files (configured permissively for prose-heavy content via `.markdownlint.json`), CFF schema validation on `CITATION.cff` via `cffconvert`, and link checking via `lychee` (weekly schedule only; non-blocking, since external link rot shouldn't break the build). The markdownlint and CFF checks block on push and pull-request.
+
+**Issue-template labels created on the repository.** The five labels referenced by `.github/ISSUE_TEMPLATE/` (`critique`, `correction`, `extension`, `engagement`, `editorial`) were defined on the repository via `gh label create/edit` with descriptive text and distinct colors. Previously, issues filed through templates would have landed unlabelled because the labels did not exist on the repository.
+
 ## v0.8.17 — May 2026
 
 Fifth-audit citation-currency and convention-completeness pass. No substantive change to the methodology.

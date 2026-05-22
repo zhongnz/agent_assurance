@@ -1,0 +1,51 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    # Weekly link check on Sunday 00:00 UTC to catch external URL rot.
+    - cron: '0 0 * * 0'
+
+jobs:
+  markdown:
+    name: Markdown lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint markdown
+        uses: DavidAnson/markdownlint-cli2-action@v17
+        with:
+          globs: '**/*.md'
+          config: '.markdownlint.json'
+
+  cff:
+    name: CITATION.cff validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install cffconvert
+        run: python -m pip install --upgrade pip cffconvert
+      - name: Validate CITATION.cff
+        run: cffconvert --validate
+
+  links:
+    name: Link check
+    runs-on: ubuntu-latest
+    # Non-blocking on push/PR (external link rot shouldn't break the build);
+    # run on schedule so issues surface weekly without gating contributions.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: '--no-progress --verbose --exclude-mail --max-redirects 5 "**/*.md"'
+          fail: false
