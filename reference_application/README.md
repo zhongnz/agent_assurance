@@ -10,7 +10,7 @@ This directory contains the methodology's outputs against the §5 reference depl
 
 **`threat_register.md`** — structured threat enumeration organised by OWASP Top 10 for Agentic Applications categories and the cross-cutting threat patterns from §3.2. Each threat is paired with the deployment-specific configuration that creates exposure, severity classification, evidence requirements, and recommended controls from the matrix at `paper/control_matrix.md`.
 
-**`gap_analysis.md`** — comparison between the deployment's current-state configuration and the methodology-recommended target-state configuration. Each control from the matrix is evaluated as Present, Partially present, or Absent, with gap, operational consequence, and recommendation per Partially-present and Absent control.
+**`gap_analysis.md`** — comparison between the deployment's current-state configuration and the methodology-recommended target-state configuration. Each control from the matrix is evaluated as Present, Partially present, Absent, or Not applicable, with gap, operational consequence, and recommendation per Partially-present and Absent control.
 
 **`findings/`** — three engagement-style findings demonstrating the methodology's terminal output form:
 - `ia_01_01_principal_propagation.md` — the principal-propagation gap (extended from §5.4 of the paper).

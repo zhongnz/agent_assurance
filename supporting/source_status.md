@@ -20,7 +20,7 @@ Verification of each source's identifier, date, and substantive content was perf
 - Digital Omnibus on AI proposal (COM(2025) 836, 19 November 2025) — proposes deferral of high-risk obligations to 2 December 2027 (stand-alone) and 2 August 2028 (product-embedded); provisional trilogue agreement reached 7 May 2026
 - DORA (Regulation (EU) 2022/2554) — Articles 5, 6, 8, 9, 11, 12, 13, 17, 18, 25, 26, 27, 28, 29, and 30 cited across the position paper and the control matrix
 - DORA RTS — 2024/1774 (ICT risk management), 2025/532 (subcontracting), 2025/1190 (threat-led penetration testing)
-- GDPR (Regulation (EU) 2016/679) — articles 25, 33, 34 cited
+- GDPR (Regulation (EU) 2016/679) — articles 25, 32, 33, and 34 cited
 
 ### International standards
 - ISO/IEC 42001:2023 (AI Management System) — December 2023

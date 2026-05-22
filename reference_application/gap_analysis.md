@@ -4,7 +4,7 @@
 
 ## Conventions
 
-Each control from the matrix is evaluated against three possible states. *Present* means the control's substantive requirements are implemented in the current deployment, possibly with operational refinements still useful but not addressing material gaps. *Partially present* means some elements of the control's requirements are implemented, but material gaps remain. *Absent* means the control's substantive requirements are not implemented in the current deployment.
+Each control from the matrix is evaluated against four possible states. *Present* means the control's substantive requirements are implemented in the current deployment, possibly with operational refinements still useful but not addressing material gaps. *Partially present* means some elements of the control's requirements are implemented, but material gaps remain. *Absent* means the control's substantive requirements are not implemented in the current deployment. *Not applicable* means the control's substantive requirements do not apply to the current deployment configuration — for example, inter-agent communication controls in a single-agent deployment — and the state is recorded explicitly so the evaluation status is visible rather than implicit.
 
 For each Partially-present and Absent control, the gap analysis specifies the gap, the operational consequences of the gap, and the recommended remediation path. The gap analysis does not estimate implementation cost or timeline; those are properly the institution's operational decisions.
 

@@ -128,7 +128,7 @@ This log records the primary-source verification performed on the 51 [VERIFY:] /
 
 ## Pending verification
 
-None. All 51 verification markers identified in v0.7 were resolved against primary sources in v0.8; subsequent point versions carry no new pending markers.
+None. All 51 verification markers identified in v0.7 were resolved against primary or directly-corroborating sources in v0.8; subsequent point versions carry no new pending markers.
 
 ## Verification methodology
 

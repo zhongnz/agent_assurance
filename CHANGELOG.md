@@ -2,6 +2,26 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.17 — May 2026
+
+Fifth-audit citation-currency and convention-completeness pass. No substantive change to the methodology.
+
+**DOI references updated for v0.8.15 and v0.8.16 archives.** Zenodo minted [10.5281/zenodo.20344199](https://doi.org/10.5281/zenodo.20344199) for v0.8.15 and [10.5281/zenodo.20344315](https://doi.org/10.5281/zenodo.20344315) for v0.8.16. CITATION.cff identifiers extended (now five DOIs from v0.8.11 through v0.8.16); preferred-citation DOI updated to v0.8.16's. README badge URL, Citation section text, and BibTeX snippet updated to reference v0.8.16 as the most recently DOI-minted release.
+
+**Date-released corrected.** CITATION.cff `date-released` had been held at `2026-05-21` for v0.8.16, but the actual v0.8.16 commit and Zenodo publication both fell on 22 May 2026 (UTC offsets aside). Updated to `2026-05-22` for v0.8.17, which is also the date of this commit.
+
+**Verification-strength wording sharpened.** README:80 and `supporting/verification_log.md:131` both said "all 51 verification markers resolved against primary sources." The verification log's own preamble correctly uses "primary or directly-corroborating sources," and several individual entries (DNB, FSB macroprudential references, BIS publications) rely on directly-corroborating secondary analyses where the primary identifier was not feasibly verifiable within scope. Both occurrences now use the narrower "primary or directly-corroborating sources" wording.
+
+**GDPR Article 32 added to source register.** `supporting/source_status.md:23` previously listed GDPR articles 25, 33, 34; the control matrix cites Article 32 directly (`paper/control_matrix.md:417`, AT-02 evidence-capture privacy controls) and the Coverage Notes summarise Articles 25 and 32 together. Article 32 added to the source-status enumeration.
+
+**Gap-analysis state taxonomy completed to four states.** `reference_application/gap_analysis.md` Conventions and `reference_application/README.md` description previously specified three states (Present, Partially present, Absent). The actual analysis uses *Not applicable* as a fourth state for IC-01 (inter-agent message authentication) under the single-agent reference deployment. Conventions extended to four states with explicit definition of *Not applicable* and the explicit rationale that the state is recorded so the evaluation status is visible rather than implicit.
+
+**CHANGELOG v0.8.2 entry annotated for the superseded OWASP coverage claim.** The v0.8.2 entry's "Coverage is comprehensive across all ten OWASP categories, with dedicated controls for every category" predates the v0.8.7 ASI05 taxonomy correction and the v0.8.14 coverage-framing calibration. A short `*(Superseded in v0.8.14: ...)*` note inline preserves the historical text while pointing readers forward.
+
+**v0.8.16 entry post-tag note added.** A brief post-tag-update note in the v0.8.16 entry records the v0.8.15 and v0.8.16 DOI deposits and points to the v0.8.17 commit as where the citation surface was updated.
+
+**Versions bumped to v0.8.17; date-released 2026-05-22.**
+
 ## v0.8.16 — May 2026
 
 Fourth-audit propagation pass. The audit identified places where prior calibrations (v0.8.13 EchoLeak guardrail re-framing; v0.8.14 OWASP coverage correction) did not propagate to all surfaces. No substantive change to the methodology.
@@ -17,6 +37,8 @@ Fourth-audit propagation pass. The audit identified places where prior calibrati
 **CITATION.cff and README DOI surface acknowledges the temporal lag between tag and Zenodo deposit.** The v0.8.15 tag was created before its Zenodo DOI was minted; the v0.8.16 commit is made before either v0.8.15 or v0.8.16 DOIs are minted. The CITATION.cff identifier description and the README Citation section now explicitly say the v0.8.14 archive is the most recently DOI-minted release, and that v0.8.15 and v0.8.16 will receive their own DOIs as Zenodo processes them. The BibTeX snippet pairs version and DOI consistently at v0.8.14 / 10.5281/zenodo.20320343, the most recently DOI-minted citation point. CITATION metadata will be updated as the v0.8.15 and v0.8.16 DOIs land.
 
 **Versions bumped to v0.8.16; date-released held at 2026-05-21.**
+
+*(Post-tag update.)* The v0.8.15 and v0.8.16 release tags have since been deposited to Zenodo with DOIs [10.5281/zenodo.20344199](https://doi.org/10.5281/zenodo.20344199) and [10.5281/zenodo.20344315](https://doi.org/10.5281/zenodo.20344315) respectively. CITATION.cff identifiers and the README citation surface (badge, Citation section text, BibTeX) were updated in the v0.8.17 commit to reflect the current archived state.
 
 ## v0.8.15 — May 2026
 
@@ -277,7 +299,7 @@ Full control matrix v1.0 added as a companion document at `paper/control_matrix.
 
 References in the paper to "Appendix B" or "a forthcoming companion artifact" updated to reference the now-existing matrix at `paper/control_matrix.md`. The §4.4 paragraph titled "The full control matrix is forthcoming" updated to "The full control matrix" with corrected body text.
 
-The matrix's coverage notes document which OWASP categories, cross-cutting patterns, design principles, and regulatory anchors each control engages. Coverage is comprehensive across all ten OWASP categories, with dedicated controls for every category.
+The matrix's coverage notes document which OWASP categories, cross-cutting patterns, design principles, and regulatory anchors each control engages. Coverage is comprehensive across all ten OWASP categories, with dedicated controls for every category. *(Superseded in v0.8.14: the coverage framing was calibrated to "maps all ten OWASP categories and covers nine, with ASI05 Unexpected Code Execution acknowledged as a coverage gap in v1.0." See the v0.8.14 entry below.)*
 
 ## v0.8.1 — May 2026
 
