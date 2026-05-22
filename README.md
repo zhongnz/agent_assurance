@@ -77,7 +77,7 @@ For sensitive disclosures (security concerns about the methodology, identificati
 
 ## Status
 
-The repository is at v0.8.14 (see CHANGELOG) and is maintained by Peter Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.14 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, the correctness and structural fixes documented in the CHANGELOG, the project-level roadmap, the contribution-template scaffolding under `.github/`, the open-source consistency pass, post-public-release calibrations, and the third-audit traceability and release-integrity pass; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
+The repository is at v0.8.15 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary sources, editorial compression applied. Versions v0.8.2 through v0.8.14 added the control matrix, the reference application materials, repository hygiene infrastructure, the cleanup of internal scaffolding, the correctness and structural fixes documented in the CHANGELOG, the project-level roadmap, the contribution-template scaffolding under `.github/`, the open-source consistency pass, post-public-release calibrations, and the third-audit traceability and release-integrity pass; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 
@@ -101,11 +101,11 @@ A copy-and-paste BibTeX entry for the current release:
 
 ```bibtex
 @misc{zhong2026agentassurance,
-  author    = {Zhong, Peter},
+  author    = {Zhong, Fengze},
   title     = {Agent Assurance in Regulated Financial Services},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {v0.8.14},
+  version   = {v0.8.15},
   doi       = {10.5281/zenodo.20320343},
   url       = {https://github.com/zhongnz/agent_assurance}
 }

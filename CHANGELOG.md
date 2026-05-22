@@ -2,6 +2,20 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.15 — May 2026
+
+Author name corrected from "Peter Zhong" to "Fengze Zhong" across all citation surfaces. The change is a name correction, not a change of author; the same individual maintains the work. The previous use of "Peter" reflected a placeholder during the pre-public-release period; the published work uses the author's preferred full name.
+
+- `LICENSE` copyright line: `Peter Zhong` → `Fengze Zhong`
+- `CITATION.cff`: `given-names` updated in both the top-level `authors` block and the `preferred-citation.authors` block
+- `README.md` Status section: maintainer name updated
+- `README.md` BibTeX snippet: `author = {Zhong, Fengze}` and version bumped to v0.8.15
+- `CHANGELOG.md` v0.8.12 entry historical reference updated for consistency
+
+Zenodo archives of v0.8.11, v0.8.12, and v0.8.14 retain "Peter Zhong" as a frozen-in-time citation record; v0.8.15 onward uses "Fengze Zhong." When the v0.8.15 release is tagged, Zenodo will mint a new DOI for the corrected archive.
+
+Versions bumped to v0.8.15; date-released held at 2026-05-21.
+
 ## v0.8.14 — May 2026
 
 Third-audit traceability and release-integrity pass. No substantive change to the methodology; the fixes address overstated coverage claims, an internal contradiction in the reference application, evidence-register imprecision, and the security-disclosure channel.
@@ -54,7 +68,7 @@ Open-source consistency pass following a deep audit against OSS conventions. No 
 
 `ROADMAP.md` v0.9 anticipation paragraph reframed to reference the paper's substantive-content level (v0.8.1, stable through v0.8.12) rather than the now-stale v0.8.8 anchor. The "continuous-assurance platform" out-of-scope entry rewritten to describe what the platform would be in repository-facing terms, removing private-business-plan framing.
 
-`README.md` opening tagline and "What's here" reconciled to the same five-artifact framing (position paper, control matrix, case study, reference application, supporting documents) carried in the CITATION.cff abstract. The Status section's "final pre-public-release content trim" qualifier removed. The maintainer's name (Peter Zhong) added to the Status section. A copy-and-paste BibTeX citation snippet added to the Citation section.
+`README.md` opening tagline and "What's here" reconciled to the same five-artifact framing (position paper, control matrix, case study, reference application, supporting documents) carried in the CITATION.cff abstract. The Status section's "final pre-public-release content trim" qualifier removed. The maintainer's name (Fengze Zhong; corrected from "Peter Zhong" in v0.8.15) added to the Status section. A copy-and-paste BibTeX citation snippet added to the Citation section.
 
 `CHANGELOG.md` v0.8.10 entry's trailing "ahead of the transition from private working repository to public open-source project" clause trimmed; the deletion description stands on its own.
 

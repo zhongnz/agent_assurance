@@ -4,7 +4,7 @@ message: "If you cite this work, please include the version (see CHANGELOG) and 
 type: software
 authors:
   - family-names: "Zhong"
-    given-names: "Peter"
+    given-names: "Fengze"
 repository-code: "https://github.com/zhongnz/agent_assurance"
 url: "https://github.com/zhongnz/agent_assurance"
 abstract: >-
@@ -27,7 +27,7 @@ keywords:
   - cybersecurity
   - OWASP Top 10 for Agentic Applications
 license: CC-BY-4.0
-version: "0.8.14"
+version: "0.8.15"
 date-released: "2026-05-21"
 identifiers:
   - type: doi
@@ -44,7 +44,7 @@ preferred-citation:
   title: "Agent Assurance in Regulated Financial Services"
   authors:
     - family-names: "Zhong"
-      given-names: "Peter"
+      given-names: "Fengze"
   year: 2026
   url: "https://github.com/zhongnz/agent_assurance"
   doi: "10.5281/zenodo.20320343"
