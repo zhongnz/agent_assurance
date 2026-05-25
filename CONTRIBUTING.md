@@ -6,7 +6,7 @@ The work in this repository is offered as a contribution to a developing field. 
 
 **Substantive critique.** The methodology is preliminary and is described as v1.0 of an artifact that will revise as it meets engagement reality. Disagreement with the architectural argument, the necessary-but-insufficient critique of the established disciplines, the threat taxonomy, the design principles, the control matrix's specific controls, the case study's analytical moves, or the reference application's findings is welcome. The methodology improves through testing against serious objection.
 
-**Corrections.** Factual errors, mistaken citations, miscoded mapping-strength labels, broken cross-references, and similar specific corrections are useful and easy to incorporate. The paper has been through three rounds of peer review and four rounds of source verification, but errors remain plausible.
+**Corrections.** Factual errors, mistaken citations, miscoded mapping-strength labels, broken cross-references, and similar specific corrections are useful and easy to incorporate. The paper has been through three rounds of structured self-review by the author and four rounds of source verification, but external review has not yet occurred and errors remain plausible — a fresh set of eyes typically surfaces things the author has missed.
 
 **Extension proposals.** Additional case studies (other documented agent-security incidents that would benefit from methodology application), additional controls for the matrix (where the OWASP categories or the design principles motivate them), and extensions to non-EU regulatory regimes are areas where the work has acknowledged gaps. Proposals for any of these are welcome.
 

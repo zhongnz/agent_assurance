@@ -6,7 +6,7 @@
 
 Subsequent point-version revisions are expected to incorporate, in roughly the following order of likelihood:
 
-- **External-reviewer feedback.** The position paper's substantive content (at the v0.8.1 level, stable through subsequent point versions) has been through three rounds of peer review and four rounds of source verification; further review by external readers will inform v0.9 revisions to the argument and supporting evidence.
+- **External-reviewer feedback.** The position paper's substantive content (at the v0.8.1 level, stable through subsequent point versions) has been through three rounds of structured self-review by the author and four rounds of source verification. *External review has not yet occurred.* The v0.9 milestone explicitly anticipates external readers' feedback — from researchers, second-line risk practitioners, supervisory-adjacent staff, and the technical AI security community — informing revisions to the argument and supporting evidence. Reviewers willing to engage are welcome to do so via the channels in `CONTRIBUTING.md`.
 
 - **Additional case studies.** The EchoLeak case study at `case_studies/echoleak.md` is the first applied demonstration of the methodology against a documented incident. Subsequent disclosed incidents that exercise the methodology's analytical content — incidents that exhibit different combinations of the §3.2 cross-cutting patterns, that occur in different deployment contexts, or that surface methodology gaps — are likely candidates.
 

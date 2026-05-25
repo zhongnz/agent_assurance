@@ -2,6 +2,25 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.24 — May 2026
+
+Honest-framing correction. No methodology change.
+
+The position paper's revision history was previously described in four places as *three rounds of peer review*. In academic usage *peer review* means review by external experts in the field; the three review rounds the paper has been through were author-conducted structured self-review against editorial criteria, not external peer review. The framing overstated the work's external validation and is corrected here.
+
+**Updated wording across four files:**
+
+- `README.md` Status section: "three rounds of peer review" → "three rounds of structured self-review by the author," with an explicit note that *external review has not yet occurred* and that external-reviewer feedback is the v0.9 milestone.
+- `ROADMAP.md` v0.9 anticipated paragraph: same wording fix, plus expanded framing that names the kinds of external reviewers the v0.9 milestone anticipates (researchers, second-line risk practitioners, supervisory-adjacent staff, technical AI security community).
+- `CONTRIBUTING.md` Corrections paragraph: same wording fix, plus the explicit invitation that fresh-eyes corrections are welcome because the author has not yet had external review.
+- `CHANGELOG.md` v0.8.6 entry: "following peer review" → "following structured self-review by the author," with an inline annotation noting the correction was made in v0.8.24. The historical CHANGELOG entry is updated rather than left to misrepresent the v0.8.6 state.
+
+The "four rounds of source verification" framing is preserved — that describes work done (checking claims against primary sources), which the author conducted directly. The framing does not overstate external validation; it accurately describes work effort.
+
+The repository's positioning is now consistent: the paper has had structured author-conducted self-review (three rounds) and primary-source verification (four rounds); external review remains the explicit v0.9 milestone. The CITATION.cff abstract and the position paper's argument do not claim peer-review status and remain unchanged.
+
+Version bumped to v0.8.24; date-released held at 2026-05-25.
+
 ## v0.8.23 — May 2026
 
 Post-audit citation-currency catch-up plus release-checklist addition. No methodology change.
@@ -325,7 +344,7 @@ Second round of correctness fixes following deeper audit. The fixes do not chang
 
 ## v0.8.6 — May 2026
 
-Correctness and consistency fixes following peer review. The fixes do not change the methodology or its claims; they correct factual errors and traceability gaps in the v0.8.5 release.
+Correctness and consistency fixes following structured self-review by the author. (The v0.8.6 entry originally said "following peer review"; the framing was corrected in v0.8.24 — the reviews were author-conducted self-review, not external peer review.) The fixes do not change the methodology or its claims; they correct factual errors and traceability gaps in the v0.8.5 release.
 
 §6.2 (`paper/full.md`, `paper/section_06_regulatory_horizon.md`) and the verification log entry — Digital Omnibus state updated. The provisional agreement reached in the early hours of 7 May 2026, confirming the deferred dates of 2 December 2027 (Annex III) and 2 August 2028 (Annex I), is now reflected; the prior framing of the trilogue process as "in motion at the time of writing" has been replaced with a post-agreement framing acknowledging that formal adoption is pending. Sources include the Council of the EU press release of 7 May 2026 and convergent law-firm analyses (Bird & Bird, IAPP, DLA Piper, Hogan Lovells, Timelex, Ropes & Gray, A&O Shearman, NicFab).
 
