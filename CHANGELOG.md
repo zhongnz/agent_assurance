@@ -2,6 +2,16 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.20 — May 2026
+
+Scope positioning made explicit. No substantive change to the methodology.
+
+**`README.md` "Scope" section added** between "What's here" and "Repository layout." Articulates the *EU-first, not EU-only* positioning: the architectural argument, design principles, threat taxonomy, and control-matrix structure are cross-jurisdictional; the operational specifications in v1.0 are calibrated to EU regulatory architecture (DORA, AI Act, ISO/IEC 42001, NIST AI RMF, OWASP Top 10 for Agentic Applications, GDPR); jurisdictional adaptations to other supervisory regimes are welcome contributions. This addresses an ambiguity in the prior framing, which carried "European banks and insurers" wording throughout without explicitly inviting non-EU readers or contributors.
+
+**`ROADMAP.md` "Non-EU regulatory regimes" entry softened.** Previously said extensions to non-EU regimes "are not in scope" — phrased as closed scope. Updated to clarify that the canonical methodology remains EU-calibrated through v1.0, but jurisdictional adaptations are welcome as community contributions and would be reviewed for inclusion in future versions as community-contributed or experimental profiles. The entry now references OSFI E-23 and MAS as further plausible jurisdictional targets alongside UK and US, and cross-references the README's Scope section. The scope discipline for the canonical work is preserved; the contribution door is explicit.
+
+Versions bumped to v0.8.20; date-released held at 2026-05-22.
+
 ## v0.8.19 — May 2026
 
 Author metadata additions. No methodology or substantive-artifact change.

@@ -10,6 +10,12 @@ The repository hosts six substantive artifacts: a position paper articulating a 
 
 The position paper is the conceptual foundation. The control matrix populates the framework the paper describes. The case study and reference application are the methodology's two demonstrations — retrospective against a real incident, prospective against a constructed deployment. The briefing surface compresses the paper for readers who need orientation rather than depth.
 
+## Scope
+
+The methodology is **EU-first, not EU-only.** The architectural argument, design principles, threat taxonomy, and control-matrix structure are cross-jurisdictional — they address properties of autonomous AI agents that do not change at borders. The operational specifications in v1.0 are calibrated to EU regulatory architecture (DORA, EU AI Act, ISO/IEC 42001, NIST AI RMF, OWASP Top 10 for Agentic Applications, GDPR).
+
+Adaptation to UK, US, Singaporean, Canadian, or other supervisory regimes is welcome as community contribution. The canonical methodology remains EU-calibrated through v1.0; jurisdictional adaptations would be reviewed for inclusion in future versions as community-contributed or experimental profiles. Readers from outside the EU are welcome — the architectural content is portable, and the regulatory anchoring layer is the part that adaptation would replace. See `CONTRIBUTING.md` for the engagement channels and `ROADMAP.md` for what is anticipated through v1.0.
+
 ## Repository layout
 
 ```
@@ -77,7 +83,7 @@ For sensitive disclosures (security concerns about the methodology, identificati
 
 ## Status
 
-The repository is at v0.8.19 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary or directly-corroborating sources, editorial compression applied. Subsequent point versions (v0.8.2 through v0.8.17) added the control matrix, the reference application materials, repository hygiene infrastructure, the project-level roadmap, contribution scaffolding, and successive rounds of correctness, traceability, and citation-currency fixes documented in the CHANGELOG; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
+The repository is at v0.8.20 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary or directly-corroborating sources, editorial compression applied. Subsequent point versions (v0.8.2 through v0.8.17) added the control matrix, the reference application materials, repository hygiene infrastructure, the project-level roadmap, contribution scaffolding, and successive rounds of correctness, traceability, and citation-currency fixes documented in the CHANGELOG; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 

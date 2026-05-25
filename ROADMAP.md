@@ -24,7 +24,7 @@ What v1.0 does *not* require: completeness across all deployment configurations,
 
 The following are not in scope for any version through v1.0. The methodology may be adapted to these by others under the project's license; the published methodology does not undertake the adaptations.
 
-- **Non-EU regulatory regimes.** The methodology is calibrated to the EU regulatory architecture (AI Act, DORA, ISO/IEC 42001, NIST AI RMF, OWASP Top 10 for Agentic Applications). Extensions to UK PRA / FCA, US FRB / OCC / FDIC, or Asian supervisory regimes are not in scope; the regulatory anchoring that the methodology depends on would need substantial re-grounding for each.
+- **Non-EU regulatory regimes as canonical work.** The canonical methodology in v1.0 is calibrated to the EU regulatory architecture (AI Act, DORA, ISO/IEC 42001, NIST AI RMF, OWASP Top 10 for Agentic Applications). Extensions to UK PRA / FCA, US FRB / OCC / FDIC, OSFI E-23, MAS, or other supervisory regimes are not in scope for the canonical work through v1.0 — the regulatory anchoring layer would need substantial re-grounding for each. *Jurisdictional adaptations are welcome as community contributions,* however, and would be reviewed for inclusion in future versions as community-contributed or experimental profiles. The methodology is *EU-first, not EU-only*; see the README's Scope section.
 
 - **Foundation-model layer engagement.** The methodology addresses deployers of agent systems, not providers of foundation models. Provider-side assurance is downstream of the foundation-model vendor's own work and outside the methodology's scope.
 
