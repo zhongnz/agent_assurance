@@ -2,6 +2,26 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.23 — May 2026
+
+Post-audit citation-currency catch-up plus release-checklist addition. No methodology change.
+
+**Citation surface updated to the v0.8.21 Zenodo archive.** The fifth-audit citation-currency pass in v0.8.17 last updated DOI references through v0.8.14; the v0.8.21 deposit at [10.5281/zenodo.20379437](https://doi.org/10.5281/zenodo.20379437) is now reflected in:
+
+- `CITATION.cff` `identifiers` block (v0.8.21 added as the most recently DOI-minted; v0.8.16 retained as prior historical)
+- `CITATION.cff` `preferred-citation.doi` field (updated to v0.8.21's DOI)
+- README badge URL (updated)
+- README Citation section text (v0.8.21 as current; prior-releases list extended; note added that DOIs for v0.8.17, v0.8.19, v0.8.20, v0.8.22 are pending as of this commit)
+- README BibTeX snippet (`version` and `doi` paired with v0.8.21)
+
+**`RELEASE_CHECKLIST.md` added at the repository root.** Documents the steps to follow when cutting a new tagged release — version bump discipline, `CITATION.cff` and README updates, post-tag DOI follow-up, sanity checks, and common pitfalls observed in the v0.8.x cycle (DOI lag drift, untagged maintenance commits, version-range drift, date drift). Addresses the repeated citation-staleness audit finding by giving the release process explicit operational structure.
+
+**README Status version range updated** from "v0.8.2 through v0.8.17" (stale since v0.8.17) to "v0.8.2 through v0.8.23" with the assurance-kit, MVA, and release-checklist additions named alongside the prior correctness/traceability rounds.
+
+**`CHANGELOG.md` v0.8.18 entry annotated** as untagged maintenance captured in the v0.8.19 archive. v0.8.18 has a substantive CHANGELOG entry but no separate git tag or Zenodo archive — the prior framing left this implicit, which the audit correctly flagged as drift. The annotation makes the status explicit.
+
+**Version bumped to v0.8.23; date-released 2026-05-25.**
+
 ## v0.8.22 — May 2026
 
 Deep-audit fixes to the v0.8.21 operational-layer additions. No substantive change to the methodology.
@@ -76,6 +96,8 @@ Author metadata additions. No methodology or substantive-artifact change.
 Version bumped to v0.8.19; date-released held at 2026-05-22.
 
 ## v0.8.18 — May 2026
+
+*Untagged maintenance commit, captured in v0.8.19's release archive.* v0.8.18 was committed and pushed to `main` but never separately tagged or DOI-minted; its changes are present in the v0.8.19 tag and onward. The entry is preserved as a historical record of what landed; for citation purposes use v0.8.19's archive.
 
 Operational maintenance additions to support active-maintenance signalling for the repository as an open-source project. No methodology or substantive-artifact change.
 
