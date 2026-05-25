@@ -5,6 +5,8 @@ type: software
 authors:
   - family-names: "Zhong"
     given-names: "Fengze"
+    orcid: "https://orcid.org/0009-0004-7926-8495"
+    affiliation: "Independent researcher"
 repository-code: "https://github.com/zhongnz/agent_assurance"
 url: "https://github.com/zhongnz/agent_assurance"
 abstract: >-
@@ -27,7 +29,7 @@ keywords:
   - cybersecurity
   - OWASP Top 10 for Agentic Applications
 license: CC-BY-4.0
-version: "0.8.18"
+version: "0.8.19"
 date-released: "2026-05-22"
 identifiers:
   - type: doi
@@ -51,6 +53,8 @@ preferred-citation:
   authors:
     - family-names: "Zhong"
       given-names: "Fengze"
+      orcid: "https://orcid.org/0009-0004-7926-8495"
+      affiliation: "Independent researcher"
   year: 2026
   url: "https://github.com/zhongnz/agent_assurance"
   doi: "10.5281/zenodo.20344315"

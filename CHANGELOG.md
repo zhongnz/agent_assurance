@@ -2,6 +2,16 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.19 — May 2026
+
+Author metadata additions. No methodology or substantive-artifact change.
+
+**ORCID and affiliation added to `CITATION.cff`.** The top-level `authors` block and the `preferred-citation.authors` block now both carry the author's ORCID ([0009-0004-7926-8495](https://orcid.org/0009-0004-7926-8495)) and affiliation ("Independent researcher"). This supports academic-discovery tooling that uses ORCID for researcher disambiguation, and lets subsequent Zenodo deposits surface under the researcher's ORCID profile automatically.
+
+**`README.md` "About the author" section added** between the Citation and License sections. Names the author, prior affiliation (NYU Center for Data Science, working on agentic governance for financial services), ORCID, and contact channels. Previously the author appeared only in the LICENSE copyright line, the CITATION.cff `authors` block, the README Status section's "maintained by" line, and the BibTeX snippet — none of which give a reader cold-landing on the README a quick answer to "who is this person."
+
+Version bumped to v0.8.19; date-released held at 2026-05-22.
+
 ## v0.8.18 — May 2026
 
 Operational maintenance additions to support active-maintenance signalling for the repository as an open-source project. No methodology or substantive-artifact change.
