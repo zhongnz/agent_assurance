@@ -10,7 +10,7 @@ The work in this repository is offered as a contribution to a developing field. 
 
 **Extension proposals.** Additional case studies (other documented agent-security incidents that would benefit from methodology application), additional controls for the matrix (where the OWASP categories or the design principles motivate them), and extensions to non-EU regulatory regimes are areas where the work has acknowledged gaps. Proposals for any of these are welcome.
 
-**Engagement experience.** Application of the methodology to live regulated production deployments produces empirical learning the public-record-only development cannot. Engagement experience that can be shared (with appropriate institutional consent) is the highest-leverage contribution; the methodology depends on it.
+**Engagement experience.** Application of the methodology to live regulated production deployments produces empirical learning the public-record-only development cannot. Engagement experience that can be shared (with appropriate institutional consent) is the highest-leverage contribution; the methodology depends on it. The templates in `assurance_kit/` and the ten-control subset in `MINIMUM_VIABLE_ASSURANCE.md` (repository root) provide the operational scaffolding most engagement-experience contributions are usefully framed against — what worked, what required adaptation, what the templates missed.
 
 **Editorial feedback.** The paper, case study, and reference application materials are written for serious readers and aim to be precise without being inaccessible. Editorial feedback on places where precision could be improved, terminology could be refined, or argument could be tightened is welcome.
 
