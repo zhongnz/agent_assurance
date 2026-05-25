@@ -37,7 +37,7 @@ identifiers:
     description: "Zenodo archive of v0.8.21 (most recently DOI-minted release confirmed at the time of this commit); each subsequent tagged release receives its own version-specific DOI. CITATION metadata is updated as DOIs land."
   - type: doi
     value: "10.5281/zenodo.20344315"
-    description: "Zenodo archive of v0.8.16."
+    description: "Zenodo archive of v0.8.16 (fourth-audit propagation fixes)."
   - type: doi
     value: "10.5281/zenodo.20344199"
     description: "Zenodo archive of v0.8.15 (author-name correction release)."
