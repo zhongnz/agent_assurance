@@ -2,6 +2,31 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.21 — May 2026
+
+Operational layer added to bridge "read the paper" and "run an assessment." The position paper's argument, the control matrix's control set, and the reference application's worked example are unchanged.
+
+**`assurance_kit/` directory added** with eight markdown templates corresponding to the methodology's named outputs:
+
+- `agent_inventory_template.md` — institution-wide inventory of agent deployments (the 30-day artifact per §7).
+- `deployment_specification_template.md` — per-deployment specification (architecture, tools, principal model, authority surface, data flows, regulatory anchoring).
+- `threat_register_template.md` — structured threat enumeration organised by OWASP ASI categories and cross-cutting patterns.
+- `gap_analysis_template.md` — control-by-control evaluation against the v1.0 control matrix in the four-state taxonomy (Present, Partially present, Absent, Not applicable).
+- `finding_template.md` — engagement-style finding anchored to regulatory and standards references, mirroring the structure of `reference_application/findings/*.md`.
+- `residual_risk_acceptance_template.md` — accountable-executive sign-off with explicit assumptions naming.
+- `supervisory_engagement_pack_template.md` — consolidated supervisory-engageable repository (implements HC-01 from the matrix).
+- `evidence_capture_checklist.md` — runtime evidence-capture requirements (AT-01, AT-02, AT-03 operationalised).
+
+Plus `assurance_kit/README.md` orienting users to the kit. The templates mirror the structure of `reference_application/`'s worked examples; the reference application stays as the canonical worked example, the kit is the starting point for adoption against new deployments.
+
+**`MINIMUM_VIABLE_ASSURANCE.md` added at the repository root.** Selects ten of the twenty-six matrix controls as a first-pass adoption subset: LT-01, TF-01, IA-01, IA-03, TP-01, MC-01, ZC-01, AT-01, GP-01, HC-01. Selection criterion: a control belongs in the MVA if its absence would be the first thing a serious second-line or supervisory reviewer would identify as a gap. The MVA is not a substitute for the full matrix; it is the tractable entry point after which the full matrix populates the assurance posture. The document explains the selection rationale, sequences the controls for first adoption, and is explicit about what the MVA does not establish (full-matrix coverage, residual-risk acceptance, formal attestation).
+
+**`README.md` "Quick start for practitioners" section added** between the tagline and "What's here." Buyer-facing block that articulates what to use the methodology for and what it produces in two to four weeks. Speaks in the practitioner's voice (risk lead, CISO, audit lead, accountable executive) rather than the researcher's voice, and directs to the assurance kit, the reference application, and the MVA. The repository layout block is updated to reference the new `assurance_kit/` directory and `MINIMUM_VIABLE_ASSURANCE.md`.
+
+These additions bridge the gap from "credible methodology artifact" to "usable assurance toolkit." The methodology's argument, the position paper's substantive content, and the matrix's control set are unchanged.
+
+Versions bumped to v0.8.21; date-released held at 2026-05-22.
+
 ## v0.8.20 — May 2026
 
 Scope positioning made explicit. No substantive change to the methodology.

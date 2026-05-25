@@ -4,6 +4,29 @@
 
 A position paper, control matrix, applied case study, reference application, briefing surface, and supporting credibility documents on assurance methodology for autonomous AI agents deployed by European banks and insurers. The methodology is preliminary; the architectural argument is not.
 
+## Quick start for practitioners
+
+**Use this if you need to answer:**
+
+- What tools can our agent call, and what authority does it exercise?
+- Can untrusted input reach sensitive data and an egress channel?
+- What evidence would we show a supervisor about residual risk?
+- What's been accepted, by whom, and against what compensating controls?
+
+**In two to four weeks, the methodology produces:**
+
+- Agent inventory and tool-authority map
+- Deployment specification documenting architecture and principal model
+- Threat register (OWASP ASI + cross-cutting patterns) with severity classification
+- Toxic-flow analysis of the authorised tool inventory
+- Gap analysis against the v1.0 control matrix
+- Engagement-style findings with regulatory and standards anchoring
+- Residual-risk acceptance(s) by accountable executive
+- Evidence-capture inventory and gaps
+- Consolidated supervisor-engageable repository
+
+The `assurance_kit/` directory carries markdown templates for each of these outputs. The reference application at `reference_application/` shows a completed example against a hypothetical insurance claims-processing deployment. `MINIMUM_VIABLE_ASSURANCE.md` (root) selects ten of the matrix's twenty-six controls as a first-pass adoption subset.
+
 ## What's here
 
 The repository hosts six substantive artifacts: a position paper articulating a synthesis methodology for agent assurance, a control matrix populating the methodology with operational specifications, an applied case study demonstrating the methodology against a documented incident (EchoLeak / CVE-2025-32711), a reference application demonstrating the methodology against a hypothetical deployment, a general-audience briefing surface, and supporting evidentiary documentation that makes the work auditable.
@@ -44,6 +67,17 @@ Adaptation to UK, US, Singaporean, Canadian, or other supervisory regimes is wel
 ├── supporting/
 │   ├── verification_log.md                audit trail for 51 verified claims
 │   └── source_status.md                   sources catalogued into four evidentiary buckets
+├── assurance_kit/                          markdown templates for applying the methodology
+│   ├── README.md
+│   ├── agent_inventory_template.md
+│   ├── deployment_specification_template.md
+│   ├── threat_register_template.md
+│   ├── gap_analysis_template.md
+│   ├── finding_template.md
+│   ├── residual_risk_acceptance_template.md
+│   ├── supervisory_engagement_pack_template.md
+│   └── evidence_capture_checklist.md
+├── MINIMUM_VIABLE_ASSURANCE.md             ten-control subset for first-pass adoption
 └── ROADMAP.md                              direction for v0.9, v1.0, and what is out of scope
 ```
 
@@ -83,7 +117,7 @@ For sensitive disclosures (security concerns about the methodology, identificati
 
 ## Status
 
-The repository is at v0.8.20 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary or directly-corroborating sources, editorial compression applied. Subsequent point versions (v0.8.2 through v0.8.17) added the control matrix, the reference application materials, repository hygiene infrastructure, the project-level roadmap, contribution scaffolding, and successive rounds of correctness, traceability, and citation-currency fixes documented in the CHANGELOG; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
+The repository is at v0.8.21 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary or directly-corroborating sources, editorial compression applied. Subsequent point versions (v0.8.2 through v0.8.17) added the control matrix, the reference application materials, repository hygiene infrastructure, the project-level roadmap, contribution scaffolding, and successive rounds of correctness, traceability, and citation-currency fixes documented in the CHANGELOG; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 
