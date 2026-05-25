@@ -1,6 +1,6 @@
 # Agent Assurance in Regulated Financial Services
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20379437.svg)](https://doi.org/10.5281/zenodo.20379437)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20379746.svg)](https://doi.org/10.5281/zenodo.20379746)
 
 A position paper, control matrix, applied case study, reference application, briefing surface, and supporting credibility documents on assurance methodology for autonomous AI agents deployed by European banks and insurers. The methodology is preliminary; the architectural argument is not.
 
@@ -138,7 +138,23 @@ The methodology is anchored in the regulatory and standards stack that European 
 
 The working title for the paper is *Agent Assurance in Regulated Financial Services*. If you cite the work, please include the version (see CHANGELOG) and the DOI of the specific release you are citing.
 
-The most recently DOI-minted release confirmed at the time of this commit is v0.8.21 ([10.5281/zenodo.20379437](https://doi.org/10.5281/zenodo.20379437)). Prior releases are archived at [10.5281/zenodo.20344315](https://doi.org/10.5281/zenodo.20344315) (v0.8.16), [10.5281/zenodo.20344199](https://doi.org/10.5281/zenodo.20344199) (v0.8.15, author-name correction), [10.5281/zenodo.20320343](https://doi.org/10.5281/zenodo.20320343) (v0.8.14), [10.5281/zenodo.20308910](https://doi.org/10.5281/zenodo.20308910) (v0.8.12), and [10.5281/zenodo.20308659](https://doi.org/10.5281/zenodo.20308659) (v0.8.11). Each subsequent tagged release receives its own version-specific DOI; CITATION metadata is updated as DOIs land. (DOIs for v0.8.17, v0.8.19, v0.8.20, and v0.8.22 are pending as of this commit and will be added when confirmed.)
+The most recently DOI-minted release is v0.8.23 ([10.5281/zenodo.20379746](https://doi.org/10.5281/zenodo.20379746)). Each tagged release receives its own version-specific DOI; the version-by-version archive trail is:
+
+| Version | DOI | Release theme |
+|---|---|---|
+| v0.8.23 | [zenodo.20379746](https://doi.org/10.5281/zenodo.20379746) | post-audit citation-currency catch-up; release checklist |
+| v0.8.22 | [zenodo.20379642](https://doi.org/10.5281/zenodo.20379642) | deep-audit fixes to v0.8.21 operational layer |
+| v0.8.21 | [zenodo.20379437](https://doi.org/10.5281/zenodo.20379437) | assurance kit, MVA, practitioner quick-start |
+| v0.8.20 | [zenodo.20379193](https://doi.org/10.5281/zenodo.20379193) | scope positioning (EU-first, not EU-only) |
+| v0.8.19 | [zenodo.20379095](https://doi.org/10.5281/zenodo.20379095) | author metadata (ORCID, bio); captures v0.8.18 |
+| v0.8.17 | [zenodo.20344693](https://doi.org/10.5281/zenodo.20344693) | citation currency + convention completeness |
+| v0.8.16 | [zenodo.20344315](https://doi.org/10.5281/zenodo.20344315) | fourth-audit propagation fixes |
+| v0.8.15 | [zenodo.20344199](https://doi.org/10.5281/zenodo.20344199) | author-name correction |
+| v0.8.14 | [zenodo.20320343](https://doi.org/10.5281/zenodo.20320343) | third-audit traceability; captures v0.8.13 |
+| v0.8.12 | [zenodo.20308910](https://doi.org/10.5281/zenodo.20308910) | open-source consistency pass |
+| v0.8.11 | [zenodo.20308659](https://doi.org/10.5281/zenodo.20308659) | initial public release |
+
+v0.8.13 and v0.8.18 were untagged maintenance commits; their changes are captured in v0.8.14 and v0.8.19's archives respectively.
 
 A copy-and-paste BibTeX entry for the most recently DOI-minted release:
 
@@ -148,8 +164,8 @@ A copy-and-paste BibTeX entry for the most recently DOI-minted release:
   title     = {Agent Assurance in Regulated Financial Services},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {v0.8.21},
-  doi       = {10.5281/zenodo.20379437},
+  version   = {v0.8.23},
+  doi       = {10.5281/zenodo.20379746},
   url       = {https://github.com/zhongnz/agent_assurance}
 }
 ```

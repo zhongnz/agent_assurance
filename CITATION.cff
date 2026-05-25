@@ -33,17 +33,32 @@ version: "0.8.23"
 date-released: "2026-05-25"
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.20379746"
+    description: "Zenodo archive of v0.8.23 (most recently DOI-minted release; post-audit citation-currency catch-up and release-checklist addition). Each subsequent tagged release receives its own version-specific DOI; CITATION metadata is updated as DOIs land."
+  - type: doi
+    value: "10.5281/zenodo.20379642"
+    description: "Zenodo archive of v0.8.22 (deep-audit fixes to v0.8.21 operational layer)."
+  - type: doi
     value: "10.5281/zenodo.20379437"
-    description: "Zenodo archive of v0.8.21 (most recently DOI-minted release confirmed at the time of this commit); each subsequent tagged release receives its own version-specific DOI. CITATION metadata is updated as DOIs land."
+    description: "Zenodo archive of v0.8.21 (assurance kit, MVA, practitioner quick-start)."
+  - type: doi
+    value: "10.5281/zenodo.20379193"
+    description: "Zenodo archive of v0.8.20 (scope positioning — EU-first, not EU-only)."
+  - type: doi
+    value: "10.5281/zenodo.20379095"
+    description: "Zenodo archive of v0.8.19 (author metadata — ORCID, affiliation, bio; also captures v0.8.18's lint CI workflow and issue-template labels)."
+  - type: doi
+    value: "10.5281/zenodo.20344693"
+    description: "Zenodo archive of v0.8.17 (fifth-audit citation-currency and convention-completeness pass)."
   - type: doi
     value: "10.5281/zenodo.20344315"
     description: "Zenodo archive of v0.8.16 (fourth-audit propagation fixes)."
   - type: doi
     value: "10.5281/zenodo.20344199"
-    description: "Zenodo archive of v0.8.15 (author-name correction release)."
+    description: "Zenodo archive of v0.8.15 (author-name correction)."
   - type: doi
     value: "10.5281/zenodo.20320343"
-    description: "Zenodo archive of v0.8.14 (third-audit traceability and release-integrity pass)."
+    description: "Zenodo archive of v0.8.14 (third-audit traceability and release-integrity pass; also captures v0.8.13's post-public-release calibration commit)."
   - type: doi
     value: "10.5281/zenodo.20308910"
     description: "Zenodo archive of v0.8.12 (open-source consistency pass)."
@@ -60,7 +75,7 @@ preferred-citation:
       affiliation: "Independent researcher"
   year: 2026
   url: "https://github.com/zhongnz/agent_assurance"
-  doi: "10.5281/zenodo.20379437"
+  doi: "10.5281/zenodo.20379746"
   abstract: >-
     A position paper on assurance methodology for autonomous AI agents
     deployed by European banks and insurers, articulated as five design

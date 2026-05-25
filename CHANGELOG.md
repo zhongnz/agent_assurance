@@ -22,6 +22,8 @@ Post-audit citation-currency catch-up plus release-checklist addition. No method
 
 **Version bumped to v0.8.23; date-released 2026-05-25.**
 
+*(Post-tag update.)* Zenodo subsequently minted DOIs for the previously pending releases: v0.8.17 ([10.5281/zenodo.20344693](https://doi.org/10.5281/zenodo.20344693)), v0.8.19 ([10.5281/zenodo.20379095](https://doi.org/10.5281/zenodo.20379095)), v0.8.20 ([10.5281/zenodo.20379193](https://doi.org/10.5281/zenodo.20379193)), v0.8.22 ([10.5281/zenodo.20379642](https://doi.org/10.5281/zenodo.20379642)), and v0.8.23 itself ([10.5281/zenodo.20379746](https://doi.org/10.5281/zenodo.20379746)). The CITATION.cff identifiers block and the README Citation section now reflect the full version-by-version archive trail (eleven DOIs from v0.8.11 through v0.8.23). Per the new `RELEASE_CHECKLIST.md`, this DOI catch-up was committed as a follow-up without a version bump.
+
 ## v0.8.22 — May 2026
 
 Deep-audit fixes to the v0.8.21 operational-layer additions. No substantive change to the methodology.
@@ -178,6 +180,8 @@ Third-audit traceability and release-integrity pass. No substantive change to th
 **Versions bumped to v0.8.14; date-released 2026-05-21.** README status section updated.
 
 ## v0.8.13 — May 2026
+
+*Untagged maintenance commit, captured in v0.8.14's release archive.* v0.8.13 was committed and pushed to `main` but never separately tagged or DOI-minted; its changes are present in the v0.8.14 tag and onward. The entry is preserved as a historical record of what landed; for citation purposes use v0.8.14's archive.
 
 Post-public-release calibration pass following a second deep audit. The fixes correct a small number of substantive and rhetorical issues that the audit surfaced; the methodology is unchanged.
 
