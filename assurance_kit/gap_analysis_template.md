@@ -126,7 +126,7 @@ For each Partially-present and Absent control, the gap analysis specifies the ga
 
 **IC-01 — Inter-agent message authentication and policy enforcement — [state]**
 
-[For single-agent deployments, this is Not applicable; cross-deployment infrastructure concerns belong under TF-02 and CF-01.]
+[For multi-agent deployments — where the agent communicates directly with other agents — evaluate against the control's substantive requirements. For single-agent deployments, mark *Not applicable in current configuration* explicitly, and note that cross-deployment shared-infrastructure concerns belong under TF-02 (cross-deployment flow review) and CF-01 (failure-domain isolation) rather than under IC-01.]
 
 ### Cascading failures (CF)
 

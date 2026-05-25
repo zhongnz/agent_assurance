@@ -2,11 +2,39 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.22 — May 2026
+
+Deep-audit fixes to the v0.8.21 operational-layer additions. No substantive change to the methodology.
+
+**`assurance_kit/toxic_flow_analysis_template.md` added** as the ninth kit template. The v0.8.21 Quick-start in the README promised nine outputs in 2–4 weeks; the kit shipped only eight templates, with toxic-flow analysis embedded in the threat register and gap analysis. TF-01's evidence artifact is independently load-bearing in LT-01 and HC-01 (per `paper/control_matrix.md`), so the cleaner fix was to add the dedicated template. `assurance_kit/README.md` updated to a nine-row table; README's repository-layout block updated.
+
+**`assurance_kit/finding_template.md` restructured to match the worked findings' shape.** The v0.8.21 template had fixed Configuration / Threat realised body sections that did not match the variable analytical bodies in `reference_application/findings/*.md`. The template now has a "[Body — adapt to finding type]" section with guidance on the variable section names worked findings use, plus the three trailing sections the worked findings carry that were missing from the template: *Ownership and accountability*, *Implementation considerations*, *Connection to other findings*. The duplicate Acceptance block (which conflicted with `residual_risk_acceptance_template.md`) is replaced with a pointer to the acceptance artifact.
+
+**`assurance_kit/gap_analysis_template.md` IC-01 instruction softened.** The v0.8.21 wording said "For single-agent deployments, this is Not applicable" — too prescriptive, since multi-agent deployments are within the methodology's scope and IC-01 is applicable there. The new wording allows either evaluation: evaluate for multi-agent deployments; mark *Not applicable in current configuration* for single-agent deployments, with the cross-deployment shared-infrastructure note still pointing at TF-02 / CF-01.
+
+**`assurance_kit/threat_register_template.md` Conventions extended.** The Conventions section now explicitly states that *memory and context poisoning* is treated under ASI06 only and not duplicated as a cross-cutting section — addressing an omission that would surface if a practitioner reads paper §3.2 against the template. The aggregate-severity instruction also clarifies that totals cover ASI categories, cross-cutting patterns, and out-of-OWASP-taxonomy concerns combined (with optional split into subtotals).
+
+**`assurance_kit/supervisory_engagement_pack_template.md` ambiguities resolved.** The "Agent inventory entry" row now specifies "the single row for this deployment, copied from the institution-wide inventory" rather than the ambiguous full-inventory framing. The "Adversarial test results" row now notes the kit does not template this and that institutions typically use their existing TLPT artifacts.
+
+**`assurance_kit/agent_inventory_template.md` "Tool inventory" column renamed.** "Tool inventory (count + sensitive-flag)" was ambiguous on whether the field expected per-tool flags or aggregate counts. Renamed to "Tool count / sensitive-data-tool count" with a `7 / 3`-style placeholder; field definition updated to match.
+
+**`MINIMUM_VIABLE_ASSURANCE.md` applicability notes added.** ZC-01's entry now flags that synchronous deployments may mark it *Not applicable* explicitly. AT-01's entry now notes that AT-01's evidence is functionally usable only when AT-03 (reconstruction queryability) is also in place, and that the MVA places AT-03 in the remaining sixteen on the judgement that AT-01 can be stood up first with AT-03 as immediate follow-up.
+
+**`README.md` Quick-start scope qualified.** The "In two to four weeks, the methodology produces…" framing now reads "can produce a first-pass draft of…" with an explicit note that full operationalisation follows §7's 30/90/180-day cadence in the position paper. This addresses the apparent overpromise relative to §7's longer cadence.
+
+**Cross-doc backlinks to the new operational layer added.** `reference_application/README.md` now has a *Relation to the assurance kit* section explicitly mapping each reference-application artifact to its template. `ROADMAP.md` and `CONTRIBUTING.md` now reference the kit and the MVA in their engagement-contribution paragraphs. The kit and the MVA are no longer floating additions; the existing methodology surface references them where engagement experience would draw on them.
+
+**`assurance_kit/README.md` "How to use" sequence renumbered to nine steps** (was eight) with explicit anchors to §7's 30/90/180-day cadence and a note about the Quick-start's first-pass-draft framing.
+
+**v0.8.21 entry updated** to note that the ninth template was added in v0.8.22.
+
+Versions bumped to v0.8.22; date-released held at 2026-05-22.
+
 ## v0.8.21 — May 2026
 
 Operational layer added to bridge "read the paper" and "run an assessment." The position paper's argument, the control matrix's control set, and the reference application's worked example are unchanged.
 
-**`assurance_kit/` directory added** with eight markdown templates corresponding to the methodology's named outputs:
+**`assurance_kit/` directory added** with eight markdown templates corresponding to the methodology's named outputs (a ninth template was added in v0.8.22; see the v0.8.22 entry):
 
 - `agent_inventory_template.md` — institution-wide inventory of agent deployments (the 30-day artifact per §7).
 - `deployment_specification_template.md` — per-deployment specification (architecture, tools, principal model, authority surface, data flows, regulatory anchoring).

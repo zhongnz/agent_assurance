@@ -8,7 +8,7 @@ The pack consolidates the following artifacts, dated and version-tagged. The pac
 
 | Artifact | Source template | Date | Version |
 |---|---|---|---|
-| Agent inventory entry | `agent_inventory_template.md` | [YYYY-MM-DD] | [vX.Y] |
+| Agent inventory entry (the single row for this deployment, copied from the institution-wide inventory) | `agent_inventory_template.md` | [YYYY-MM-DD] | [vX.Y] |
 | Deployment specification | `deployment_specification_template.md` | [YYYY-MM-DD] | [vX.Y] |
 | Regulatory mapping | (Regulatory mapping section below) | [YYYY-MM-DD] | [vX.Y] |
 | Accountability documentation | (Accountability section below) | [YYYY-MM-DD] | [vX.Y] |
@@ -16,7 +16,7 @@ The pack consolidates the following artifacts, dated and version-tagged. The pac
 | Gap analysis | `gap_analysis_template.md` | [YYYY-MM-DD] | [vX.Y] |
 | Findings | `finding_template.md` × N | [YYYY-MM-DD] | [vX.Y] |
 | Residual-risk acceptances | `residual_risk_acceptance_template.md` × N | [YYYY-MM-DD] | [vX.Y] |
-| Adversarial test results | (institution-specific; references GP-02) | [YYYY-MM-DD] | [vX.Y] |
+| Adversarial test results | (institution-specific; references GP-02; the kit does not template this — institutions typically use their existing threat-led penetration-testing artifacts) | [YYYY-MM-DD] | [vX.Y] |
 | Evidence-capture inventory | `evidence_capture_checklist.md` | [YYYY-MM-DD] | [vX.Y] |
 | Runtime evidence references | (data-room reference or storage path) | continuous | n/a |
 

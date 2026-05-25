@@ -10,9 +10,9 @@ The inventory is a living artifact. Material change to any field — new tool, c
 
 ## Inventory
 
-| Agent ID | Business function | Foundation model | Orchestration framework | Tool inventory (count + sensitive-flag) | Principal model | Authority surface | Volume / consequence | Oversight regime | Accountable executive | Last review date |
+| Agent ID | Business function | Foundation model | Orchestration framework | Tool count / sensitive-data-tool count | Principal model | Authority surface | Volume / consequence | Oversight regime | Accountable executive | Last review date |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [e.g., CLM-AGT-01] | [e.g., Insurance claims processing] | [e.g., Claude / Anthropic API] | [e.g., LangGraph] | [e.g., 7 tools, 3 with sensitive-data access] | [e.g., single service account `claims_agent`] | [e.g., auto-approve <€2,500; route to adjuster otherwise] | [e.g., low tens of thousands / month] | [e.g., quarterly second-line; no real-time human-in-the-loop below auto-approval] | [e.g., CRO] | [YYYY-MM-DD] |
+| [e.g., CLM-AGT-01] | [e.g., Insurance claims processing] | [e.g., Claude / Anthropic API] | [e.g., LangGraph] | [e.g., 7 / 3] | [e.g., single service account `claims_agent`] | [e.g., auto-approve <€2,500; route to adjuster otherwise] | [e.g., low tens of thousands / month] | [e.g., quarterly second-line; no real-time human-in-the-loop below auto-approval] | [e.g., CRO] | [YYYY-MM-DD] |
 | | | | | | | | | | | |
 
 ## Field definitions
@@ -25,7 +25,7 @@ The inventory is a living artifact. Material change to any field — new tool, c
 
 **Orchestration framework.** The agent framework managing tool invocation, state, and reasoning steps (LangGraph, custom, etc.). Note the framework's version pinning policy.
 
-**Tool inventory (count + sensitive-flag).** Count of tools the agent can invoke, with the count of tools that access sensitive data flagged separately. Detailed tool inventory belongs in the deployment specification, not the inventory entry.
+**Tool count / sensitive-data-tool count.** Two numbers: total count of tools the agent can invoke, and count of those tools that access sensitive data. Detailed tool inventory belongs in the deployment specification, not the inventory entry.
 
 **Principal model.** Whether the agent operates under a single service account, propagates the requesting principal's identity, or uses a hybrid model. The principal model is the methodology's primary identity-and-authority concern (LT-01, IA-01).
 

@@ -34,11 +34,11 @@ The selection criterion was simple: a control belongs in the MVA if its absence 
 
 ### Asynchronous processing
 
-**7. ZC-01 — Asynchronous-processing risk gating.** Where the agent processes content without a human-in-the-loop at the moment of action (background indexing, queue-driven workflows), runtime policy gates control outbound actions triggered by background content.
+**7. ZC-01 — Asynchronous-processing risk gating.** Where the agent processes content without a human-in-the-loop at the moment of action (background indexing, queue-driven workflows), runtime policy gates control outbound actions triggered by background content. *Applicability:* where the deployment is synchronous — every action triggered by an in-the-loop user — ZC-01 may be *Not applicable*; mark explicitly in the gap analysis rather than implicitly.
 
 ### Evidence
 
-**8. AT-01 — Runtime evidence capture.** Per-invocation capture of the assembled prompt, retrieved context, tool definitions, tool calls and outputs, model response, and final action, supporting after-the-fact reconstruction.
+**8. AT-01 — Runtime evidence capture.** Per-invocation capture of the assembled prompt, retrieved context, tool definitions, tool calls and outputs, model response, and final action, supporting after-the-fact reconstruction. *Note:* AT-01's evidence is functionally usable only when AT-03 (reconstruction queryability) is also in place; AT-03 is in the "remaining sixteen" rather than the MVA on the judgement that institutions can stand up AT-01 capture first and add queryability later, but the gap analysis should track AT-03 as the immediate follow-up to AT-01.
 
 ### Institutional infrastructure
 

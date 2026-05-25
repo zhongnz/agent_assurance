@@ -8,7 +8,7 @@ Severity classifications follow a four-tier scale: *Critical* (high likelihood o
 
 For each threat, the entry below has four fields: configuration exposure (how the deployment exhibits the threat), compensating controls in current configuration, evidence requirements (what runtime evidence would be needed to detect, verify, or refute), and recommended controls (which matrix controls address the gap).
 
-The §3.2 patterns of *tool poisoning* and *identity and privilege abuse* are treated within the matching ASI categories (ASI04 and ASI03 respectively) rather than as standalone cross-cutting sections. *Lethal trifecta*, *toxic flows*, and *zero-click exfiltration* are treated as standalone cross-cutting sections.
+The §3.2 patterns of *tool poisoning* and *identity and privilege abuse* are treated within the matching ASI categories (ASI04 and ASI03 respectively) rather than as standalone cross-cutting sections — their content overlaps the ASI categories materially. *Memory and context poisoning* is treated under ASI06 only and is not duplicated as a cross-cutting section. *Lethal trifecta*, *toxic flows*, and *zero-click exfiltration* are treated as standalone cross-cutting sections.
 
 ## OWASP Top 10 for Agentic Applications
 
@@ -82,7 +82,7 @@ The §3.2 patterns of *tool poisoning* and *identity and privilege abuse* are tr
 
 ## Aggregate severity assessment
 
-[Total counts: X Critical / X High / X Medium / X Low / X Not present / X Not applicable. Brief commentary on whether the aggregate reflects a stress-case configuration, a conservative one, or somewhere between.]
+[Total counts across all sections above — ASI categories, cross-cutting patterns, and out-of-OWASP-taxonomy operational concerns combined: X Critical / X High / X Medium / X Low / X Not present / X Not applicable. Brief commentary on whether the aggregate reflects a stress-case configuration, a conservative one, or somewhere between. Where useful, split the count into ASI-section subtotals and cross-cutting-section subtotals.]
 
 ## Evidence-requirements summary
 

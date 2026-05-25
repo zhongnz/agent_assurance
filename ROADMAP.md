@@ -44,7 +44,7 @@ Contributions most welcome:
 - **Engagement experience** from applying the methodology to live or simulated deployments — particularly observations about which controls translated cleanly into operational specifications and which required substantial adaptation.
 - **Editorial feedback** on prose clarity, structural organisation, or accessibility for the methodology's named audiences (senior risk and compliance leaders, supervisory staff, technical AI security community).
 
-The forms of contribution above are tracked through GitHub Issues and pull requests; see `CONTRIBUTING.md` for conventions, and `SECURITY.md` for the channel for sensitive disclosures.
+The forms of contribution above are tracked through GitHub Issues and pull requests; see `CONTRIBUTING.md` for conventions, and `SECURITY.md` for the channel for sensitive disclosures. The `assurance_kit/` directory and `MINIMUM_VIABLE_ASSURANCE.md` provide the operational templates and the first-pass adoption subset that engagement-experience contributions are most usefully built against.
 
 ## No timeline
 

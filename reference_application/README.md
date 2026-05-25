@@ -19,6 +19,18 @@ This directory contains the methodology's outputs against the §5 reference depl
 
 The full engagement output would include findings of comparable structure for each High-severity Absent or Partially-present control the gap analysis identifies — approximately fifteen such controls in the reference deployment — plus a larger set of secondary findings covering operational hygiene, documentation gaps, and lower-severity issues. The three findings included demonstrate the form across different control families and severity levels.
 
+## Relation to the assurance kit
+
+The reference application's artifacts are the worked examples for the templates in `assurance_kit/` (at the repository root). Each artifact here corresponds to a template there:
+
+- `deployment_specification.md` ↔ `assurance_kit/deployment_specification_template.md`
+- `threat_register.md` ↔ `assurance_kit/threat_register_template.md`
+- `gap_analysis.md` ↔ `assurance_kit/gap_analysis_template.md`
+- `findings/*.md` ↔ `assurance_kit/finding_template.md`
+- `findings/tf_01_01_toxic_flow.md` is also the worked example for `assurance_kit/toxic_flow_analysis_template.md`
+
+Practitioners applying the methodology to their own deployment start with the templates; the worked examples here are the reference for what populated outputs look like.
+
 ## Relation to the rest of the repository
 
 The reference application is one of two worked applications of the methodology in the repository. The case study at `case_studies/echoleak.md` applies the methodology retrospectively to a real documented incident (CVE-2025-32711). The reference application here applies it prospectively to a hypothetical deployment matching patterns observable in production European insurer AI deployments.

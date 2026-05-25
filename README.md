@@ -13,7 +13,7 @@ A position paper, control matrix, applied case study, reference application, bri
 - What evidence would we show a supervisor about residual risk?
 - What's been accepted, by whom, and against what compensating controls?
 
-**In two to four weeks, the methodology produces:**
+**In two to four weeks, the methodology can produce a first-pass draft of:**
 
 - Agent inventory and tool-authority map
 - Deployment specification documenting architecture and principal model
@@ -25,7 +25,9 @@ A position paper, control matrix, applied case study, reference application, bri
 - Evidence-capture inventory and gaps
 - Consolidated supervisor-engageable repository
 
-The `assurance_kit/` directory carries markdown templates for each of these outputs. The reference application at `reference_application/` shows a completed example against a hypothetical insurance claims-processing deployment. `MINIMUM_VIABLE_ASSURANCE.md` (root) selects ten of the matrix's twenty-six controls as a first-pass adoption subset.
+The `assurance_kit/` directory carries nine markdown templates corresponding to these outputs. The reference application at `reference_application/` shows a completed example against a hypothetical insurance claims-processing deployment. `MINIMUM_VIABLE_ASSURANCE.md` (root) selects ten of the matrix's twenty-six controls as a first-pass adoption subset.
+
+Full operationalisation — institution-wide inventory, second-line review cadence, adversarial testing programme, runtime evidence-capture infrastructure, supervisor-engagement repository under change-control — follows the 30/90/180-day cadence in §7 of the position paper. The two-to-four-week framing above is the first-pass draft; §7 is the operational target.
 
 ## What's here
 
@@ -72,6 +74,7 @@ Adaptation to UK, US, Singaporean, Canadian, or other supervisory regimes is wel
 │   ├── agent_inventory_template.md
 │   ├── deployment_specification_template.md
 │   ├── threat_register_template.md
+│   ├── toxic_flow_analysis_template.md
 │   ├── gap_analysis_template.md
 │   ├── finding_template.md
 │   ├── residual_risk_acceptance_template.md
@@ -117,7 +120,7 @@ For sensitive disclosures (security concerns about the methodology, identificati
 
 ## Status
 
-The repository is at v0.8.21 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary or directly-corroborating sources, editorial compression applied. Subsequent point versions (v0.8.2 through v0.8.17) added the control matrix, the reference application materials, repository hygiene infrastructure, the project-level roadmap, contribution scaffolding, and successive rounds of correctness, traceability, and citation-currency fixes documented in the CHANGELOG; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
+The repository is at v0.8.22 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of peer review, four rounds of source verification, all 51 verification markers resolved against primary or directly-corroborating sources, editorial compression applied. Subsequent point versions (v0.8.2 through v0.8.17) added the control matrix, the reference application materials, repository hygiene infrastructure, the project-level roadmap, contribution scaffolding, and successive rounds of correctness, traceability, and citation-currency fixes documented in the CHANGELOG; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 
