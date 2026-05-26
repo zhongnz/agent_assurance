@@ -2,6 +2,30 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.26 — May 2026
+
+Five audit findings addressed in one commit: DOI catch-up to v0.8.24, citation-drift CI enforcement, LICENSE preamble removed for SPDX detection, governance scaffolding added (CODE_OF_CONDUCT, MAINTAINERS, decision policy), and historical release-body editorial fix.
+
+**DOI catch-up for v0.8.24 (10.5281/zenodo.20383327).** CITATION.cff `identifiers` list now leads with v0.8.24's DOI; `preferred-citation.doi` updated. README badge, citation table, BibTeX block updated. The post-tag DOI lag was the v0.8.x cycle's recurring failure mode; v0.8.25 had not been DOI-minted at commit time, so its entry will land in a future follow-up (also for v0.8.26 itself).
+
+**Citation-drift CI enforcement.** Added `scripts/check_citation_drift.py` and `.github/workflows/citation-drift.yml`. The check verifies internal consistency across the citation surface (CITATION.cff first identifier, CITATION.cff preferred-citation.doi, README badge DOI, README citation-table "most recently DOI-minted" sentence DOI, README BibTeX doi field). It does *not* compare against external Zenodo state, because DOI minting has expected lag during the post-tag follow-up window. The release checklist's discipline is preserved as the source-of-truth; the CI check makes drift visible automatically, catching the failure mode that v0.8.17, v0.8.19, v0.8.20, v0.8.21, v0.8.22 all hit before the checklist was introduced. Runs on push to `main` and on pull requests touching CITATION.cff, README.md, or the check itself.
+
+**LICENSE SPDX detection fix.** The copyright preamble (`Copyright (c) 2026 Fengze Zhong` followed by a "license follows" notice) was preventing GitHub's licensee detector from matching LICENSE to canonical CC BY 4.0. Preamble removed; LICENSE now starts with the canonical SPDX-registered text. Author attribution and license intent remain documented in CITATION.cff (`license: CC-BY-4.0`), README's License section, and the badge.
+
+**Governance scaffolding.** Added three artifacts addressing the "still solo-maintainer informal" audit finding:
+
+- **`CODE_OF_CONDUCT.md`.** Adopts the [Contributor Covenant 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/) by reference, with reporting channel pointed to the maintainer's GitHub profile and `SECURITY.md`. Solo-maintainer enforcement state is named explicitly.
+- **`MAINTAINERS.md`.** Documents Fengze Zhong as solo maintainer with ORCID and prior NYU CDS affiliation; names maintainer responsibilities; explains the (informal) co-maintenance pathway as engagement scale grows.
+- **`CONTRIBUTING.md` decision policy section.** Five-step protocol the maintainer uses to evaluate substantive methodology proposals: identify the locus, evaluate against design principles, evaluate against regulatory anchoring, consider engagement experience, decide. The protocol is informal but documented so contributors know what shape their proposals benefit from taking.
+
+Full GOVERNANCE.md is not added — overhead disproportionate to solo-maintained scale. The three additions above cover the substance.
+
+**Historical release-body editorial fix.** The v0.8.11 GitHub release body still claimed "three rounds of peer review and four rounds of source verification." The v0.8.24 fix corrected this in the repository tree (paper, README, ROADMAP, CONTRIBUTING) but did not propagate to historical release bodies on GitHub. The v0.8.11 release body is updated with an editor's note clarifying that the review rounds were author-conducted structured self-review, not external peer review. (The v0.8.24 release body mentions "peer review" only in editorial context — describing what was corrected — and is left as-is.) Other release bodies swept and clean.
+
+**Release checklist updated.** Step 25 now mentions both lint and citation-drift CI workflows, with the local `python3 scripts/check_citation_drift.py` invocation called out.
+
+Version bumped to v0.8.26; date-released held at 2026-05-25.
+
 ## v0.8.25 — May 2026
 
 Audit-driven corrections to factual regulatory citations in the control matrix, plus a batch of P2/P3 polish surfaced by the same audit round. No methodology change.
