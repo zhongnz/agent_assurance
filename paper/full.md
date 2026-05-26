@@ -2,6 +2,53 @@
 
 Autonomous AI agents are entering production in European regulated financial services faster than the assurance disciplines that govern those institutions are equipped to handle them. The systems at issue reason over runtime-constructed context, invoke tools with delegated authority, and act over composite chains of permitted operations. None of these properties is what the established assurance disciplines were built for. Model risk management presumes models whose inputs and outputs can be specified at validation time. AI governance presumes systems whose risks can be addressed through management-system controls. Cybersecurity presumes adversaries whose actions are caught at the perimeter or by per-action access checks. Agents satisfy none of these presumptions. The paper argues that agent assurance in regulated financial services is therefore a structural problem rather than an incremental one, and that addressing it requires a synthesis methodology drawn from all three disciplines without being subsumed by any of them. The synthesis is articulated as five design principles operationalised through a control matrix anchored to the AI Act, DORA, ISO/IEC 42001, NIST AI RMF, and OWASP's agent-specific threat taxonomy, applied to a reference deployment, and calibrated to the supervisory record now in active formation. The contribution is preliminary and bounded; the architectural argument is not.
 
+## Table of contents
+
+- [Abstract](#abstract)
+- [Section 1 — The Shape of the Problem](#section-1-the-shape-of-the-problem)
+  - [1.1 EchoLeak: a vignette](#11-echoleak-a-vignette)
+  - [1.2 What is an agent](#12-what-is-an-agent)
+  - [1.3 Deployment in regulated financial services](#13-deployment-in-regulated-financial-services)
+  - [1.4 Five architectural properties that disrupt existing controls](#14-five-architectural-properties-that-disrupt-existing-controls)
+  - [Bridge to Section 2](#bridge-to-section-2)
+- [Section 2 — Framework Insufficiency](#section-2-framework-insufficiency)
+  - [2.1 Model risk management](#21-model-risk-management)
+  - [2.2 AI governance](#22-ai-governance)
+  - [2.3 Cybersecurity](#23-cybersecurity)
+  - [2.4 The structural shape of the gap](#24-the-structural-shape-of-the-gap)
+- [Section 3 — Threat Taxonomy](#section-3-threat-taxonomy)
+  - [3.1 The OWASP Top 10 for Agentic Applications as structural spine](#31-the-owasp-top-10-for-agentic-applications-as-structural-spine)
+  - [3.2 Five cross-cutting attack patterns](#32-five-cross-cutting-attack-patterns)
+  - [3.3 Financial-services amplifications](#33-financial-services-amplifications)
+  - [3.4 Bridge to Section 4](#34-bridge-to-section-4)
+- [Section 4 — A Synthesis Framework](#section-4-a-synthesis-framework)
+  - [4.1 Five design principles](#41-five-design-principles)
+  - [4.2 The control matrix](#42-the-control-matrix)
+  - [4.3 Illustrative controls](#43-illustrative-controls)
+  - [4.4 What the framework requires that it does not yet deliver](#44-what-the-framework-requires-that-it-does-not-yet-deliver)
+- [Section 5 — Illustrative Reference Application](#section-5-illustrative-reference-application)
+  - [5.1 Scope of the reference application](#51-scope-of-the-reference-application)
+  - [5.2 The reference deployment](#52-the-reference-deployment)
+  - [5.3 Methodology application](#53-methodology-application)
+  - [5.4 Output: a sample finding](#54-output-a-sample-finding)
+  - [5.5 What this reference application establishes and what it does not](#55-what-this-reference-application-establishes-and-what-it-does-not)
+- [Section 6 — The Regulatory Horizon](#section-6-the-regulatory-horizon)
+  - [6.1 DORA as anchor](#61-dora-as-anchor)
+  - [6.2 The AI Act and the Digital Omnibus question](#62-the-ai-act-and-the-digital-omnibus-question)
+  - [6.3 Sectoral supervisory convergence](#63-sectoral-supervisory-convergence)
+  - [6.4 The precedent and the position](#64-the-precedent-and-the-position)
+- [Section 7 — Recommendations](#section-7-recommendations)
+  - [7.1 The next 30 days](#71-the-next-30-days)
+  - [7.2 The next 90 days](#72-the-next-90-days)
+  - [7.3 The next 180 days](#73-the-next-180-days)
+  - [7.4 What these recommendations do not solve](#74-what-these-recommendations-do-not-solve)
+- [Section 8 — Closing](#section-8-closing)
+  - [8.1 What the paper has done](#81-what-the-paper-has-done)
+  - [8.2 What the paper has not done](#82-what-the-paper-has-not-done)
+  - [8.3 The audiences the paper addresses](#83-the-audiences-the-paper-addresses)
+  - [8.4 What comes next](#84-what-comes-next)
+  - [8.5 The paper as one input](#85-the-paper-as-one-input)
+
 # Section 1: The Shape of the Problem
 
 ## 1.1 EchoLeak: a vignette
