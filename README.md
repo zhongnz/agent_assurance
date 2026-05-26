@@ -1,6 +1,6 @@
 # Agent Assurance in Regulated Financial Services
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20379746.svg)](https://doi.org/10.5281/zenodo.20379746)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20383327.svg)](https://doi.org/10.5281/zenodo.20383327)
 
 A position paper, control matrix, applied case study, reference application, briefing surface, and supporting credibility documents on assurance methodology for autonomous AI agents deployed by European banks and insurers. The methodology is preliminary; the architectural argument is not.
 
@@ -120,7 +120,7 @@ For sensitive disclosures (security concerns about the methodology, identificati
 
 ## Status
 
-The repository is at v0.8.25 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of structured self-review by the author, four rounds of source verification, all 51 verification markers resolved against primary or directly-corroborating sources, editorial compression applied. External review has not yet occurred; external-reviewer feedback is the explicit v0.9 milestone per `ROADMAP.md`. Subsequent point versions (v0.8.2 through v0.8.23) added the control matrix, the reference application materials, repository hygiene infrastructure, the project-level roadmap, contribution scaffolding, the assurance kit and MVA operational layer, a release checklist, and successive rounds of correctness, traceability, and citation-currency fixes documented in the CHANGELOG; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
+The repository is at v0.8.26 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of structured self-review by the author, four rounds of source verification, all 51 verification markers resolved against primary or directly-corroborating sources, editorial compression applied. External review has not yet occurred; external-reviewer feedback is the explicit v0.9 milestone per `ROADMAP.md`. Subsequent point versions (v0.8.2 through v0.8.26) added the control matrix, the reference application materials, repository hygiene infrastructure, the project-level roadmap, contribution scaffolding, the assurance kit and MVA operational layer, a release checklist, citation-drift CI enforcement, governance scaffolding (CODE_OF_CONDUCT, MAINTAINERS, decision policy), and successive rounds of correctness, traceability, and citation-currency fixes documented in the CHANGELOG; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 
@@ -138,10 +138,11 @@ The methodology is anchored in the regulatory and standards stack that European 
 
 The working title for the paper is *Agent Assurance in Regulated Financial Services*. If you cite the work, please include the version (see CHANGELOG) and the DOI of the specific release you are citing.
 
-The most recently DOI-minted release is v0.8.23 ([10.5281/zenodo.20379746](https://doi.org/10.5281/zenodo.20379746)). Each tagged release receives its own version-specific DOI; the version-by-version archive trail is:
+The most recently DOI-minted release is v0.8.24 ([10.5281/zenodo.20383327](https://doi.org/10.5281/zenodo.20383327)). Each tagged release receives its own version-specific DOI; the version-by-version archive trail is:
 
 | Version | DOI | Release theme |
 |---|---|---|
+| v0.8.24 | [zenodo.20383327](https://doi.org/10.5281/zenodo.20383327) | structured-self-review honest-framing correction |
 | v0.8.23 | [zenodo.20379746](https://doi.org/10.5281/zenodo.20379746) | post-audit citation-currency catch-up; release checklist |
 | v0.8.22 | [zenodo.20379642](https://doi.org/10.5281/zenodo.20379642) | deep-audit fixes to v0.8.21 operational layer |
 | v0.8.21 | [zenodo.20379437](https://doi.org/10.5281/zenodo.20379437) | assurance kit, MVA, practitioner quick-start |
@@ -154,7 +155,7 @@ The most recently DOI-minted release is v0.8.23 ([10.5281/zenodo.20379746](https
 | v0.8.12 | [zenodo.20308910](https://doi.org/10.5281/zenodo.20308910) | open-source consistency pass |
 | v0.8.11 | [zenodo.20308659](https://doi.org/10.5281/zenodo.20308659) | initial public release |
 
-v0.8.13 and v0.8.18 were untagged maintenance commits; their changes are captured in v0.8.14 and v0.8.19's archives respectively.
+v0.8.13 and v0.8.18 were untagged maintenance commits; their changes are captured in v0.8.14 and v0.8.19's archives respectively. v0.8.25 and v0.8.26 are tagged but DOIs have not been minted at the time of writing; their entries will land here as they appear.
 
 A copy-and-paste BibTeX entry for the most recently DOI-minted release:
 
@@ -164,8 +165,8 @@ A copy-and-paste BibTeX entry for the most recently DOI-minted release:
   title     = {Agent Assurance in Regulated Financial Services},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {v0.8.23},
-  doi       = {10.5281/zenodo.20379746},
+  version   = {v0.8.24},
+  doi       = {10.5281/zenodo.20383327},
   url       = {https://github.com/zhongnz/agent_assurance}
 }
 ```

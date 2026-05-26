@@ -22,7 +22,7 @@
 
 ## After the commit
 
-- [ ] Verify the lint CI workflow passes on the new commit (`gh run list --limit 1`).
+- [ ] Verify the lint and citation-drift CI workflows pass on the new commit (`gh run list --limit 2`). The citation-drift check (added v0.8.26) verifies the badge, citation table, and BibTeX in README all reference the same DOI as CITATION.cff's most-recent identifier — it catches the post-tag drift pattern automatically. Run locally before committing with `python3 scripts/check_citation_drift.py`.
 - [ ] If the commit warrants a tag, create the GitHub release: `gh release create vX.Y.Z --title "vX.Y.Z" --notes "$(...)"` with a notes block describing the release substantively, not just pointing at CHANGELOG.
 - [ ] Wait for Zenodo to mint a new DOI for the tag (typically minutes; sometimes hours; check Zenodo's email notification or the GitHub-integration page at `https://zenodo.org/account/settings/github/repository/zhongnz/agent_assurance`).
 - [ ] Once the DOI is minted, run the post-tag DOI update — a follow-up commit (no version bump) that updates:

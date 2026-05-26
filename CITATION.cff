@@ -29,12 +29,15 @@ keywords:
   - cybersecurity
   - OWASP Top 10 for Agentic Applications
 license: CC-BY-4.0
-version: "0.8.25"
+version: "0.8.26"
 date-released: "2026-05-25"
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.20383327"
+    description: "Zenodo archive of v0.8.24 (most recently DOI-minted release; structured-self-review honest-framing correction across paper, README, ROADMAP, CONTRIBUTING). Each subsequent tagged release receives its own version-specific DOI; CITATION metadata is updated as DOIs land."
+  - type: doi
     value: "10.5281/zenodo.20379746"
-    description: "Zenodo archive of v0.8.23 (most recently DOI-minted release; post-audit citation-currency catch-up and release-checklist addition). Each subsequent tagged release receives its own version-specific DOI; CITATION metadata is updated as DOIs land."
+    description: "Zenodo archive of v0.8.23 (post-audit citation-currency catch-up and release-checklist addition)."
   - type: doi
     value: "10.5281/zenodo.20379642"
     description: "Zenodo archive of v0.8.22 (deep-audit fixes to v0.8.21 operational layer)."
@@ -75,7 +78,7 @@ preferred-citation:
       affiliation: "Independent researcher"
   year: 2026
   url: "https://github.com/zhongnz/agent_assurance"
-  doi: "10.5281/zenodo.20379746"
+  doi: "10.5281/zenodo.20383327"
   abstract: >-
     A position paper on assurance methodology for autonomous AI agents
     deployed by European banks and insurers, articulated as five design

@@ -1,0 +1,32 @@
+name: Citation drift
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "CITATION.cff"
+      - "README.md"
+      - "scripts/check_citation_drift.py"
+      - ".github/workflows/citation-drift.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "CITATION.cff"
+      - "README.md"
+      - "scripts/check_citation_drift.py"
+      - ".github/workflows/citation-drift.yml"
+  workflow_dispatch:
+
+jobs:
+  citation-drift:
+    runs-on: ubuntu-latest
+    name: Check citation-surface internal consistency
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install PyYAML
+        run: pip install PyYAML
+      - name: Run citation-drift check
+        run: python3 scripts/check_citation_drift.py

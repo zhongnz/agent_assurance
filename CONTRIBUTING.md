@@ -61,3 +61,20 @@ This repository is not a substitute for assurance engagement. The methodology pr
 Issues and pull requests are reviewed on a rolling basis. The maintainer's response time depends on the volume and substance of incoming engagement; thoughtful issues receive thoughtful replies, and the response should be expected within reasonable bounds rather than within specific service-level commitments.
 
 Substantive contributions accepted into the work are credited in the CHANGELOG entry for the version that incorporates them. Authorship of specific contributions can be acknowledged in the relevant document at the contributor's request.
+
+## Decision policy for methodology disputes
+
+When a contribution proposes a substantive change to the methodology — the architectural argument, the design principles, the threat taxonomy, the control matrix's controls, the regulatory anchoring, or the reference application's structural moves — the maintainer evaluates it against a brief decision protocol. The protocol is informal at present (the project is solo-maintained) and is documented here primarily so contributors know what shape their proposal benefits from taking.
+
+1. **Identify the locus.** Is the proposed change about the paper's architectural argument (§1–§4), the threat taxonomy (§3), specific controls in the matrix (`paper/control_matrix.md`), the case study's analytical moves (`case_studies/echoleak.md`), the reference application's deployment specification or findings, or the assurance kit templates? The locus determines what other parts of the repository the change might propagate into.
+2. **Evaluate against the design principles.** Does the change preserve evidence-first, framework-anchored, regulator-legible, composable-and-continuous, and principal-bound (paper §4.2)? Where the change tensions with one principle, the proposal is strengthened by naming the trade-off explicitly rather than eliding it.
+3. **Evaluate against the regulatory anchoring.** If the change affects which regulatory articles or standards clauses are cited (AI Act, DORA, ISO/IEC 42001, NIST AI RMF, OWASP Top 10 for Agentic Applications, GDPR), verification against the primary source is expected. The methodology's "regulator-legible" design principle depends on the anchors being accurately labelled.
+4. **Consider engagement experience.** Proposals grounded in experience applying the methodology to an actual deployment (with appropriate institutional consent for what is shared publicly) carry particular weight. The methodology is articulated as v1.0 of an artifact that revises as it meets engagement reality; engagement learning is the methodology's intended source of revision pressure.
+5. **Decide.**
+    - If the proposal is well-grounded and consistent with the methodology's frame, incorporate via PR with the contributor credited in the CHANGELOG entry.
+    - If the proposal requires methodology revision rather than a point fix, queue for the next minor version (v0.9 onward) with the relevant ROADMAP.md entry updated.
+    - If the proposal represents a different methodology rather than a refinement of this one, decline with reasoning and recommend it as a separate work; engagement on the difference of approach is welcome via Issues.
+
+The maintainer's response is expected to engage the substance of the proposal — agreement or disagreement is welcome, but engagement that names the proposal's specific moves and the reasons for the response is what the contributor benefits from. This is the same standard the work asks of its own arguments.
+
+Formal governance — multi-maintainer review, voting procedures, a code-of-conduct-enforcement committee — will be added if the project's engagement scale grows to require it. See `MAINTAINERS.md` for the current solo-maintainer state and `CODE_OF_CONDUCT.md` for the conduct expectations.
