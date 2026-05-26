@@ -22,6 +22,8 @@ Cadence target: monthly substantive posts with episodic flex. The next post is p
 
 Version bumped to v0.8.28; date-released held at 2026-05-26.
 
+*Post-tag DOI catch-up (2026-05-26, no version bump):* Zenodo has minted the four pending DOIs in this batch — v0.8.25 (10.5281/zenodo.20389125), v0.8.26 (10.5281/zenodo.20389238), v0.8.27 (10.5281/zenodo.20389342), and v0.8.28 (10.5281/zenodo.20389967). CITATION.cff, the README badge / citation table / BibTeX block, and the preferred-citation reference all updated to lead with v0.8.28. Fifteen DOIs now archived in CITATION.cff.
+
 ## v0.8.27 — May 2026
 
 Paper navigation improvements. No content change.

@@ -1,6 +1,6 @@
 # Agent Assurance in Regulated Financial Services
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20383327.svg)](https://doi.org/10.5281/zenodo.20383327) [![Substack: Agent Assurance Briefing](https://img.shields.io/badge/Substack-Agent_Assurance_Briefing-FF6719?logo=substack&logoColor=white)](https://agentassurance.substack.com)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20389967.svg)](https://doi.org/10.5281/zenodo.20389967) [![Substack: Agent Assurance Briefing](https://img.shields.io/badge/Substack-Agent_Assurance_Briefing-FF6719?logo=substack&logoColor=white)](https://agentassurance.substack.com)
 
 A position paper, control matrix, applied case study, reference application, briefing surface, and supporting credibility documents on assurance methodology for autonomous AI agents deployed by European banks and insurers. The methodology is preliminary; the architectural argument is not.
 
@@ -158,10 +158,14 @@ The methodology is anchored in the regulatory and standards stack that European 
 
 The working title for the paper is *Agent Assurance in Regulated Financial Services*. If you cite the work, please include the version (see CHANGELOG) and the DOI of the specific release you are citing.
 
-The most recently DOI-minted release is v0.8.24 ([10.5281/zenodo.20383327](https://doi.org/10.5281/zenodo.20383327)). Each tagged release receives its own version-specific DOI; the version-by-version archive trail is:
+The most recently DOI-minted release is v0.8.28 ([10.5281/zenodo.20389967](https://doi.org/10.5281/zenodo.20389967)). Each tagged release receives its own version-specific DOI; the version-by-version archive trail is:
 
 | Version | DOI | Release theme |
 |---|---|---|
+| v0.8.28 | [zenodo.20389967](https://doi.org/10.5281/zenodo.20389967) | Substack publication launched and wired into the repo |
+| v0.8.27 | [zenodo.20389342](https://doi.org/10.5281/zenodo.20389342) | paper TOC and README section navigation |
+| v0.8.26 | [zenodo.20389238](https://doi.org/10.5281/zenodo.20389238) | post-tag DOI catch-up; citation-drift CI; governance scaffolding |
+| v0.8.25 | [zenodo.20389125](https://doi.org/10.5281/zenodo.20389125) | audit-driven AI Act article corrections + P2/P3 polish |
 | v0.8.24 | [zenodo.20383327](https://doi.org/10.5281/zenodo.20383327) | structured-self-review honest-framing correction |
 | v0.8.23 | [zenodo.20379746](https://doi.org/10.5281/zenodo.20379746) | post-audit citation-currency catch-up; release checklist |
 | v0.8.22 | [zenodo.20379642](https://doi.org/10.5281/zenodo.20379642) | deep-audit fixes to v0.8.21 operational layer |
@@ -175,7 +179,7 @@ The most recently DOI-minted release is v0.8.24 ([10.5281/zenodo.20383327](https
 | v0.8.12 | [zenodo.20308910](https://doi.org/10.5281/zenodo.20308910) | open-source consistency pass |
 | v0.8.11 | [zenodo.20308659](https://doi.org/10.5281/zenodo.20308659) | initial public release |
 
-v0.8.13 and v0.8.18 were untagged maintenance commits; their changes are captured in v0.8.14 and v0.8.19's archives respectively. v0.8.25 and v0.8.26 are tagged but DOIs have not been minted at the time of writing; their entries will land here as they appear.
+v0.8.13 and v0.8.18 were untagged maintenance commits; their changes are captured in v0.8.14 and v0.8.19's archives respectively.
 
 A copy-and-paste BibTeX entry for the most recently DOI-minted release:
 
@@ -185,8 +189,8 @@ A copy-and-paste BibTeX entry for the most recently DOI-minted release:
   title     = {Agent Assurance in Regulated Financial Services},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {v0.8.24},
-  doi       = {10.5281/zenodo.20383327},
+  version   = {v0.8.28},
+  doi       = {10.5281/zenodo.20389967},
   url       = {https://github.com/zhongnz/agent_assurance}
 }
 ```
