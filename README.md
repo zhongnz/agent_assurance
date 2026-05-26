@@ -1,6 +1,6 @@
 # Agent Assurance in Regulated Financial Services
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20383327.svg)](https://doi.org/10.5281/zenodo.20383327)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20383327.svg)](https://doi.org/10.5281/zenodo.20383327) [![Substack: Agent Assurance Briefing](https://img.shields.io/badge/Substack-Agent_Assurance_Briefing-FF6719?logo=substack&logoColor=white)](https://agentassurance.substack.com)
 
 A position paper, control matrix, applied case study, reference application, briefing surface, and supporting credibility documents on assurance methodology for autonomous AI agents deployed by European banks and insurers. The methodology is preliminary; the architectural argument is not.
 
@@ -132,9 +132,15 @@ For private feedback, professional inquiries, or engagement opportunities, reach
 
 For sensitive disclosures (security concerns about the methodology, identification of confidential information, or similar concerns warranting non-public channels), see `SECURITY.md`.
 
+## Follow the project
+
+Substantive monthly posts on the methodology, supervisory developments, incident analyses, and field notes from applying the work are published at [*Agent Assurance Briefing*](https://agentassurance.substack.com) — `agentassurance.substack.com`. The first post — [*An open methodology for agent assurance*](https://agentassurance.substack.com/p/an-open-methodology-for-agent-assurance) — introduces the methodology and the publication's editorial frame.
+
+The publication is the interpretation layer: each post explains one piece of the methodology in the context of a current situation, links back to the canonical artifact in this repository, and invites critique via GitHub Issues. The repository remains the canonical, citable, DOI-archived source.
+
 ## Status
 
-The repository is at v0.8.27 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of structured self-review by the author, four rounds of source verification, all 51 verification markers resolved against primary or directly-corroborating sources, editorial compression applied. External review has not yet occurred; external-reviewer feedback is the explicit v0.9 milestone per `ROADMAP.md`. Subsequent point versions (v0.8.2 through v0.8.27) added the control matrix, the reference application materials, repository hygiene infrastructure, the project-level roadmap, contribution scaffolding, the assurance kit and MVA operational layer, a release checklist, citation-drift CI enforcement, governance scaffolding (CODE_OF_CONDUCT, MAINTAINERS, decision policy), paper-internal table of contents and section navigation from README, and successive rounds of correctness, traceability, and citation-currency fixes documented in the CHANGELOG; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
+The repository is at v0.8.28 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of structured self-review by the author, four rounds of source verification, all 51 verification markers resolved against primary or directly-corroborating sources, editorial compression applied. External review has not yet occurred; external-reviewer feedback is the explicit v0.9 milestone per `ROADMAP.md`. Subsequent point versions (v0.8.2 through v0.8.28) added the control matrix, the reference application materials, repository hygiene infrastructure, the project-level roadmap, contribution scaffolding, the assurance kit and MVA operational layer, a release checklist, citation-drift CI enforcement, governance scaffolding (CODE_OF_CONDUCT, MAINTAINERS, decision policy), paper-internal table of contents and section navigation from README, the *Agent Assurance Briefing* Substack publication as the interpretation layer, and successive rounds of correctness, traceability, and citation-currency fixes documented in the CHANGELOG; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 

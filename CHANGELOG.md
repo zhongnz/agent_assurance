@@ -2,6 +2,26 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.28 — May 2026
+
+Substack publication launched and wired into the repository.
+
+**Agent Assurance Briefing** — the publication is live at [agentassurance.substack.com](https://agentassurance.substack.com). First post *An open methodology for agent assurance* introduces the methodology and the publication's editorial frame, with CTAs pointing back to the briefing note, the assurance kit, the MVA subset, and the Issues queue.
+
+The publication is the **interpretation layer** described in the v0.8.x cycle: substantive monthly posts on methodology applications, supervisory developments, and incident analyses. The repository remains the **canonical home** for the methodology — every post links back; the publication does not duplicate the artifacts, only explains and applies them.
+
+Repository changes in this release:
+
+- README badge row gains a Substack badge alongside License and DOI.
+- README adds a *Follow the project* section after *How to engage* with publication URL, first-post link, and editorial framing.
+- README Status section advanced to v0.8.28 with Substack noted in the version-range summary.
+
+Deferred per the scaled-down launch shape: custom domain, Substack Notes, Substack Recommendations, Sections, LinkedIn cross-posting, paid subscriptions. The publication starts as a single free feed at the Substack subdomain. These can be added if and when usage indicates they're worth the maintenance cost.
+
+Cadence target: monthly substantive posts with episodic flex. The next post is planned for ~30 days out — supervisory publications from Q1–Q2 2025 and what they tell us about how agent assurance expectations are forming.
+
+Version bumped to v0.8.28; date-released held at 2026-05-26.
+
 ## v0.8.27 — May 2026
 
 Paper navigation improvements. No content change.
