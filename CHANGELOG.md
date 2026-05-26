@@ -2,6 +2,18 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.27 — May 2026
+
+Paper navigation improvements. No content change.
+
+**Table of contents added to `paper/full.md`** — a full TOC sits between the abstract and Section 1, with bullet-list entries for each of the eight sections and every subsection, each linking via GitHub-flavored anchors. The 27k-word paper is now navigable from a single jump point inside the file itself, addressing the long-document reading-experience concern without fragmenting the canonical text into separate files.
+
+**"By section" navigation added to README** — under *Suggested reading order*, alongside the existing "by time available" and "by interest" routings, a new block deep-links the eight section headings of `paper/full.md` with one-line summaries. Readers who know which section they want can jump straight in without opening the paper from the top.
+
+The decision against splitting `paper/full.md` into separate per-section files (as briefly existed in pre-v0.8.10 versions) is upheld: splitting fragments the through-line of the argument, complicates Zenodo's single-DOI-per-paper model, and introduces cross-reference fragility. Better internal navigation gets the reader-routing benefits without those costs.
+
+Version bumped to v0.8.27; date-released advanced to 2026-05-26.
+
 ## v0.8.26 — May 2026
 
 Five audit findings addressed in one commit: DOI catch-up to v0.8.24, citation-drift CI enforcement, LICENSE preamble removed for SPDX detection, governance scaffolding added (CODE_OF_CONDUCT, MAINTAINERS, decision policy), and historical release-body editorial fix.

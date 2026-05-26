@@ -108,6 +108,20 @@ By interest:
 
 **For the evidentiary discipline**: `supporting/verification_log.md` and `supporting/source_status.md`. The verification log documents the audit trail for the 51 load-bearing claims identified in the position paper's v0.7 verification round, resolved against primary or directly-corroborating sources; the source status document catalogues sources into four evidentiary buckets. The control matrix, case study, and reference application carry their own citations and are not exhaustively audited in the verification log.
 
+By section:
+
+The paper's eight sections are deep-linked here for direct access; the paper itself opens with a full table of contents to its subsections.
+
+- [Abstract](paper/full.md#abstract) — the architectural argument in ~240 words.
+- [Section 1 — The Shape of the Problem](paper/full.md#section-1-the-shape-of-the-problem) — agents as a structurally distinct assurance object, anchored to the EchoLeak vignette.
+- [Section 2 — Framework Insufficiency](paper/full.md#section-2-framework-insufficiency) — the necessary-but-insufficient critique of model risk management, AI governance, and cybersecurity.
+- [Section 3 — Threat Taxonomy](paper/full.md#section-3-threat-taxonomy) — OWASP Top 10 for Agentic Applications as structural spine, plus five cross-cutting patterns.
+- [Section 4 — A Synthesis Framework](paper/full.md#section-4-a-synthesis-framework) — five design principles operationalised through the control matrix.
+- [Section 5 — Illustrative Reference Application](paper/full.md#section-5-illustrative-reference-application) — the methodology applied to a hypothetical insurance claims-processing deployment.
+- [Section 6 — The Regulatory Horizon](paper/full.md#section-6-the-regulatory-horizon) — DORA, the AI Act, the Digital Omnibus question, and sectoral supervisory convergence.
+- [Section 7 — Recommendations](paper/full.md#section-7-recommendations) — operational recommendations on the 30/90/180-day cadence.
+- [Section 8 — Closing](paper/full.md#section-8-closing) — what the paper has and has not done; the audiences it addresses; what comes next.
+
 ## How to engage
 
 The work is offered as a contribution to a developing field, not as a definitive statement of it. Reactions of any kind are welcome.
@@ -120,7 +134,7 @@ For sensitive disclosures (security concerns about the methodology, identificati
 
 ## Status
 
-The repository is at v0.8.26 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of structured self-review by the author, four rounds of source verification, all 51 verification markers resolved against primary or directly-corroborating sources, editorial compression applied. External review has not yet occurred; external-reviewer feedback is the explicit v0.9 milestone per `ROADMAP.md`. Subsequent point versions (v0.8.2 through v0.8.26) added the control matrix, the reference application materials, repository hygiene infrastructure, the project-level roadmap, contribution scaffolding, the assurance kit and MVA operational layer, a release checklist, citation-drift CI enforcement, governance scaffolding (CODE_OF_CONDUCT, MAINTAINERS, decision policy), and successive rounds of correctness, traceability, and citation-currency fixes documented in the CHANGELOG; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
+The repository is at v0.8.27 (see CHANGELOG) and is maintained by Fengze Zhong. The position paper's substantive content is at the v0.8.1 level — three rounds of structured self-review by the author, four rounds of source verification, all 51 verification markers resolved against primary or directly-corroborating sources, editorial compression applied. External review has not yet occurred; external-reviewer feedback is the explicit v0.9 milestone per `ROADMAP.md`. Subsequent point versions (v0.8.2 through v0.8.27) added the control matrix, the reference application materials, repository hygiene infrastructure, the project-level roadmap, contribution scaffolding, the assurance kit and MVA operational layer, a release checklist, citation-drift CI enforcement, governance scaffolding (CODE_OF_CONDUCT, MAINTAINERS, decision policy), paper-internal table of contents and section navigation from README, and successive rounds of correctness, traceability, and citation-currency fixes documented in the CHANGELOG; the paper's argument and citations are stable across these. The roadmap at `ROADMAP.md` articulates anticipated direction for v0.9 and v1.0.
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 
