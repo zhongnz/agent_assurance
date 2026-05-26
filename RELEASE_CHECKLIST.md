@@ -45,7 +45,7 @@
 ## Common pitfalls observed in the v0.8.x cycle
 
 - **DOI lag drift.** Tagging triggers a Zenodo deposit, but the DOI doesn't appear in CITATION/README until the post-tag follow-up commit. Don't forget the second commit. (Caused: v0.8.17, v0.8.19, v0.8.20, v0.8.21, v0.8.22 metadata staleness.)
-- **Untagged maintenance commits.** v0.8.18 was committed with a CHANGELOG entry but never tagged; its changes were captured in v0.8.19's archive. CHANGELOG should mark such entries explicitly or the next tag should absorb them.
+- **Untagged maintenance commits.** v0.8.13 and v0.8.18 were each committed with a CHANGELOG entry but never separately tagged; their changes were captured in v0.8.14's and v0.8.19's archives respectively. CHANGELOG should mark such entries explicitly (the inline-annotation pattern used in v0.8.13 and v0.8.18 entries works) or the next tag should absorb them.
 - **Version-range drift.** README's "v0.8.2 through v0.X.Y" range needs updating *each* release; easy to miss because the lead `vX.Y.Z` reference is the obvious thing to update. The range is the same line, two clauses later.
 - **Date drift.** `date-released` should match the actual tag/release date, not when CITATION.cff was last edited. Confirm with `date -u` before committing.
 - **CHANGELOG narrative claiming forward-pointing language that isn't in CITATION.cff.** Earlier audits found CHANGELOG entries describing forward-pointing DOI language ("each subsequent tagged release receives its own version-specific DOI") that had been trimmed from CITATION.cff in a later edit. Keep the two in sync.

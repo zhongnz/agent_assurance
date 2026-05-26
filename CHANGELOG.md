@@ -2,6 +2,38 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.25 — May 2026
+
+Audit-driven corrections to factual regulatory citations in the control matrix, plus a batch of P2/P3 polish surfaced by the same audit round. No methodology change.
+
+**Two AI Act article misnamings corrected in the control matrix:**
+
+- **`paper/control_matrix.md` AT-01 regulatory anchors:** "AI Act Article 19 (technical documentation retention)" → "AI Act Article 19 (automatically generated logs; provider-side log retention)." Article 19 is titled "Automatically generated logs"; the previous label was wrong. The substance (log retention) is correct for AT-01.
+- **`paper/control_matrix.md` HC-01 regulatory anchors:** "AI Act Article 19 (technical documentation retention) — *Direct*; AI Act Article 23 (cooperation with competent authorities) — *Direct*" → "AI Act Article 26 (obligations of deployers of high-risk AI systems, including cooperation with competent authorities and incident notification) — *Direct*." Article 23 is "Obligations of importers," not cooperation; Article 19 is a provider-side log obligation, not a deployer-side technical-documentation-retention obligation. For a deployer-side supervisory-engagement repository, the correct anchor is Article 26. Inline annotation in the matrix records the prior misnaming.
+- **`paper/control_matrix.md` Coverage notes** article enumeration updated to drop Article 23 (no longer cited) with an explicit note about the misnaming.
+
+These corrections matter disproportionately for the methodology's *regulator-legible* design principle: a reader checking the matrix's regulatory anchors against the AI Act text needs the citations to be accurate. The substantive design of AT-01 and HC-01 is unchanged; the anchors are now correctly labelled.
+
+**AT-01 OWASP ASI reference clarified.** Previously the field read simply "ASI09 (Human-Agent Trust Exploitation)," which understated the control's cross-cutting reach (the Coverage notes correctly list AT-01 as supporting multiple ASI categories). Updated to clarify ASI09 as primary anchor while noting the broader contribution.
+
+**ZC-02 test procedure softened.** The v0.8.21 wording — "verifies the agent's output displays provenance markers regardless; provenance preservation is independent of the agent's content-generation path" — claimed unconditional non-suppressibility that the EchoLeak case study itself concedes is empirically difficult. Updated to test against "a defined adversarial test set" and acknowledge realistic-robustness rather than absolute unsuppressibility, consistent with the v0.8.13 calibration distinguishing security guardrails (bypassed) from UI provenance signals (instructed-away).
+
+**`assurance_kit/threat_register_template.md` ASI07 instruction reworded.** Previously said "cross-deployment shared-infrastructure concerns belong under TF-02 and CF-01 rather than under IC-01" — but in the threat register's structure, ASI07 is the threat category and IC-01 is the recommended control, so "rather than under IC-01" reads as confused categorisation. Reworded to clarify that IC-01 is the control corresponding to ASI07 for multi-agent deployments, and that the cross-deployment shared-infrastructure concerns are categorically different (addressed by TF-02 and CF-01).
+
+**`assurance_kit/finding_template.md` "Acceptance" section renamed.** "## Acceptance" → "## Acceptance reference" — signals the section is a pointer to the canonical `residual_risk_acceptance_template.md` artifact, not the acceptance itself.
+
+**`RELEASE_CHECKLIST.md` v0.8.13 added to untagged-maintenance pitfall.** Previously the pitfall named only v0.8.18; v0.8.13 was the other untagged maintenance commit (captured in v0.8.14's archive). Symmetry restored.
+
+**`CHANGELOG.md` v0.6 entry annotated.** "Peer review feedback incorporated" → "Structured self-review feedback incorporated," with inline note about the v0.8.24 correction. The v0.8.24 fix updated the v0.8.6 entry but missed the v0.6 entry; this completes the propagation.
+
+**`paper/full.md` §2.3 two minor edits.** "The disciplines does not analyse" → "The discipline does not analyse" (subject-verb agreement); "the disciplines's own incident-response methodology" → "the discipline's own incident-response methodology" (possessive form).
+
+**`paper/full.md` §1.3 CSSF statistic disambiguated.** "(86% response rate, with 402 use cases identified)" → "(86% response rate; 402 AI use cases identified across respondents)." The previous phrasing implied 402 was the response count; 402 is use cases, and 86% × 461 ≈ 396 responses. Separating the two clarifies.
+
+**Deferred for further verification:** the ISO/IEC 42001:2023 Annex sub-clause numbering (e.g., A.6.2 cited for third-party relationships) was flagged by the audit but the recommended fix rests on widely-circulated summary sources rather than direct access to the standard text. Verification against the published standard is required before changing the matrix's ISO references; flagged here for a future revision.
+
+Versions bumped to v0.8.25; date-released held at 2026-05-25.
+
 ## v0.8.24 — May 2026
 
 Honest-framing correction. No methodology change.
@@ -463,7 +495,7 @@ Section 1 verification round. EIOPA-BoS-25-360 verified directly from primary-so
 
 ## v0.6 — May 2026
 
-Peer review feedback incorporated. SR 26-2 supersession of SR 11-7 reflected throughout §2.1. Lingering DORA RTS reference in §2.3 corrected (2025/532 is subcontracting; 2025/1190 is TLPT). EchoLeak CVSS scoring split between Microsoft CNA (9.3 Critical) and NVD (7.5 High). MCPTox publication-status precision improved (arXiv August 2025; AAAI 2026 proceedings). Toxic-flow sourcing tightened to separate MCPTox metadata-poisoning support, Snyk/Invariant compositional methodology, and the paper's regulator-legible contribution. Privacy and data-minimisation caveat added to the evidence-first principle in §4.1. Ownership column added to the control matrix in §4.2 and applied to the five illustrative controls in §4.3. Section 5 retitled to "Illustrative Reference Application." §2.3 cybersecurity critique sharpened to recognise the discipline's breadth and locate the precise gap at semantic instruction-following inside authorised workflows and compositions of permitted calls. Section 8 compressed from 2,205 to 1,015 words.
+Structured self-review feedback incorporated. (The v0.6 entry originally said "Peer review feedback incorporated"; the framing was corrected in v0.8.24 — the reviews were author-conducted self-review, not external peer review.) SR 26-2 supersession of SR 11-7 reflected throughout §2.1. Lingering DORA RTS reference in §2.3 corrected (2025/532 is subcontracting; 2025/1190 is TLPT). EchoLeak CVSS scoring split between Microsoft CNA (9.3 Critical) and NVD (7.5 High). MCPTox publication-status precision improved (arXiv August 2025; AAAI 2026 proceedings). Toxic-flow sourcing tightened to separate MCPTox metadata-poisoning support, Snyk/Invariant compositional methodology, and the paper's regulator-legible contribution. Privacy and data-minimisation caveat added to the evidence-first principle in §4.1. Ownership column added to the control matrix in §4.2 and applied to the five illustrative controls in §4.3. Section 5 retitled to "Illustrative Reference Application." §2.3 cybersecurity critique sharpened to recognise the discipline's breadth and locate the precise gap at semantic instruction-following inside authorised workflows and compositions of permitted calls. Section 8 compressed from 2,205 to 1,015 words.
 
 ## v0.5 — May 2026
 

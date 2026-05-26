@@ -54,11 +54,11 @@ Ownership is named here to make the recommendation actionable; formal residual-r
 - Findings that compose (e.g., "this finding + LT-01-XX together address the lethal-trifecta configuration's exposure").
 - Findings that depend on this one (e.g., "AT-03 finding depends on AT-01 finding's evidence capture being in place").]
 
-## Acceptance
+## Acceptance reference
 
-*If the residual risk is formally accepted, the acceptance is recorded in `residual_risk_acceptance_template.md` and referenced here once signed.*
+*This section is a pointer rather than the acceptance artifact itself. The acceptance — accountable executive's signature, acceptance date, compensating controls relied upon, assumptions named, review cadence — is recorded in `residual_risk_acceptance_template.md` when the residual risk is formally accepted.*
 
-- *Acceptance reference:* [residual_risk_acceptance_template.md entry, or "pending" while the recommendation is under implementation].
+- *Acceptance reference:* [link or path to the `residual_risk_acceptance_template.md` entry, or "pending" while the recommendation is under implementation].
 - *Acceptance date:* [YYYY-MM-DD if signed; else "pending"].
 - *Review cadence:* [from the acceptance artifact].
 

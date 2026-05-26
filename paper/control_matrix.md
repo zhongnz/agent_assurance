@@ -298,9 +298,9 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Standards references.** ISO/IEC 42001:2023 Annex A.6.2.4 (logging) — *Direct*; NIST AI RMF Govern (GV-1) — *Indirect*; Manage (MG-3) — *Indirect*.
 
-**Test procedure.** Adversarial testing introduces content instructing the agent to suppress source attribution, then verifies the agent's output displays provenance markers regardless. Provenance preservation is independent of the agent's content-generation path.
+**Test procedure.** Adversarial testing introduces content instructing the agent to suppress source attribution, then verifies the agent's output displays provenance markers across a defined adversarial test set. Provenance preservation is designed to be robust against content-generation-path attempts to suppress markers, recognising that complete unsuppressibility is empirically difficult and depends on the rendering layer's enforcement (per the EchoLeak case study, reference-mention markers were instructed-away by a directive within the attacker-controlled content rather than bypassed at the system layer; the methodology's discipline is to test for the realistic robustness range, not to claim absolute unsuppressibility).
 
-**Evidence artifact.** Provenance-preservation architecture documentation; per-output provenance records; adversarial test results demonstrating non-suppressibility.
+**Evidence artifact.** Provenance-preservation architecture documentation; per-output provenance records; adversarial test results characterising suppression-resistance across the defined test set.
 
 **Frequency.** Per-deployment for architecture; continuous for per-output records; quarterly for adversarial testing.
 
@@ -386,11 +386,11 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Statement.** Each agent invocation must produce a runtime evidence record containing the assembled prompt, the retrieved context, the tool definitions available at the moment of invocation, the model's reasoning trace where available, the tool calls selected, the tool outputs returned, and the final action. Capture must support after-the-fact reconstruction of the invocation from any starting point.
 
-**OWASP ASI references.** ASI09 (Human-Agent Trust Exploitation).
+**OWASP ASI references.** ASI09 (Human-Agent Trust Exploitation) as primary anchor; AT-01 contributes evidence support across multiple ASI categories per the Coverage notes, with ASI09 the most direct because runtime evidence is what allows trust-exploitation manipulations to be reconstructed after the fact.
 
 **Cross-cutting patterns.** Applies across all five §3.2 cross-cutting patterns; runtime evidence is the operational expression of the *evidence-first* design principle and the precondition for after-the-fact reconstruction in any of the patterns.
 
-**Regulatory anchors.** AI Act Article 12 (record-keeping) — *Direct*; AI Act Article 26(6) (six-month minimum log retention) — *Direct*; AI Act Article 19 (technical documentation retention) — *Indirect*; DORA Article 9 — *Indirect*; GDPR Article 25 (data protection by design) — *Direct* for the privacy corollary applied across the capture infrastructure.
+**Regulatory anchors.** AI Act Article 12 (record-keeping) — *Direct*; AI Act Article 26(6) (six-month minimum log retention for deployers of high-risk AI systems) — *Direct*; AI Act Article 19 (automatically generated logs; provider-side log retention) — *Indirect*; DORA Article 9 — *Indirect*; GDPR Article 25 (data protection by design) — *Direct* for the privacy corollary applied across the capture infrastructure.
 
 **Standards references.** ISO/IEC 42001:2023 Annex A.6.2.4 (logging) — *Direct*; ISO/IEC 27001:2022 Annex A.8.15 (logging) — *Direct*; NIST AI RMF Manage (MG-3) — *Indirect*.
 
@@ -462,7 +462,7 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Cross-cutting patterns.** Applies across all five §3.2 patterns; the repository consolidates findings, evidence, and residual-risk acceptances across all pattern-specific controls.
 
-**Regulatory anchors.** AI Act Article 19 (technical documentation retention) — *Direct*; AI Act Article 23 (cooperation with competent authorities) — *Direct*; DORA Article 5 (ICT risk management framework) — *Indirect*; DORA Article 6 (governance and organisation) — *Indirect*.
+**Regulatory anchors.** AI Act Article 26 (obligations of deployers of high-risk AI systems, including cooperation with competent authorities and incident notification) — *Direct*; DORA Article 5 (ICT risk management framework) — *Indirect*; DORA Article 6 (governance and organisation) — *Indirect*. *(The matrix v1.0 previously cited AI Act Article 19 with the label "technical documentation retention" and AI Act Article 23 with the label "cooperation with competent authorities" — both were misnamings. Article 19 is "Automatically generated logs" (a provider obligation); Article 23 is "Obligations of importers." The corrected anchor for a deployer-side supervisory-engagement repository is Article 26.)*
 
 **Standards references.** ISO/IEC 42001:2023 Annex A.6.1 (organisational roles, responsibilities and authorities) — *Direct*; NIST AI RMF Govern (GV-1) — *Direct*.
 
@@ -654,7 +654,7 @@ The matrix is structured for readability rather than for tooling ingestion; inst
 
 **Design-principle coverage.** Each of the five design principles is the explicit derivation source for at least three controls. *Evidence-first* anchors AT-01, AT-02, AT-03, RA-01, plus contributions to most others. *Framework-anchored* anchors TP-02, GP-01, plus contributions throughout. *Regulator-legible* anchors HC-01 directly; the regulator-legibility quality is built into evidence and reporting structure across the matrix. *Composable and continuous* anchors LT-01, LT-02, TF-01, TF-02, GP-02, GP-03, IC-01, CF-01, RA-01. *Principal-bound* anchors IA-01, IA-02, IA-03, IC-01, with contributions to ZC-01 and RA-01.
 
-**Regulatory-anchor coverage.** AI Act: Articles 9, 10, 11, 12, 13, 14, 15, 17, 19, 23, 26 across the matrix. DORA: Articles 5, 6, 8, 9, 11, 12, 13, 17, 18, 25, 26, 27, 28, 29, 30. ISO/IEC 42001:2023: Annexes A.5.4, A.5.5, A.6.1, A.6.2 (sub-clauses .2, .4, .6), A.7, A.8.1, A.8.3, A.8.4, A.10. ISO/IEC 27001:2022: Annexes A.5.14, A.5.15, A.5.16, A.5.29, A.5.30, A.5.34, A.8.6, A.8.15, A.8.20, A.8.32. NIST AI RMF: Govern (GV-1, GV-2, GV-3), Map (MP-1, MP-3, MP-5), Measure (MS-1, MS-2), Manage (MG-1, MG-3, MG-4). NIST SP 800-207. GDPR Articles 25, 32. ISO/IEC 27701.
+**Regulatory-anchor coverage.** AI Act: Articles 9, 10, 11, 12, 13, 14, 15, 17, 19, 26 across the matrix (Article 23 was previously listed in this enumeration and in HC-01's anchors as "cooperation with competent authorities"; that was a misnaming — Article 23 is "Obligations of importers," and the correct deployer-cooperation anchor is Article 26, applied throughout). DORA: Articles 5, 6, 8, 9, 11, 12, 13, 17, 18, 25, 26, 27, 28, 29, 30. ISO/IEC 42001:2023: Annexes A.5.4, A.5.5, A.6.1, A.6.2 (sub-clauses .2, .4, .6), A.7, A.8.1, A.8.3, A.8.4, A.10. ISO/IEC 27001:2022: Annexes A.5.14, A.5.15, A.5.16, A.5.29, A.5.30, A.5.34, A.8.6, A.8.15, A.8.20, A.8.32. NIST AI RMF: Govern (GV-1, GV-2, GV-3), Map (MP-1, MP-3, MP-5), Measure (MS-1, MS-2), Manage (MG-1, MG-3, MG-4). NIST SP 800-207. GDPR Articles 25, 32. ISO/IEC 27701.
 
 **Total controls.** Twenty-six, organised across thirteen control families (TP, IA, LT, TF, ZC, MC, RO, AT, HC, GP, IC, CF, RA). Five reproduced from §4.3 of the paper; twenty-one introduced in this matrix.
 

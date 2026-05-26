@@ -46,7 +46,7 @@ The §3.2 patterns of *tool poisoning* and *identity and privilege abuse* are tr
 
 ### ASI07: Insecure Inter-Agent Communication — [severity OR Not applicable]
 
-[For single-agent deployments, mark Not applicable explicitly and note that cross-deployment shared-infrastructure concerns belong under TF-02 (cross-deployment flow review) and CF-01 (failure-domain isolation) rather than under IC-01.]
+[For multi-agent deployments — where the agent communicates with other agents — evaluate against the ASI07 threat surface; the corresponding matrix control is IC-01. For single-agent deployments, mark *Not applicable* explicitly. Cross-deployment shared-infrastructure concerns (shared retrieval stores, shared evidence-capture infrastructure, shared foundation-model APIs) are not inter-agent communication; they belong under TF-02 (cross-deployment flow review) and CF-01 (failure-domain isolation), which the matrix specifies as the controls IC-01 does not address.]
 
 ### ASI08: Cascading Failures — [severity]
 
