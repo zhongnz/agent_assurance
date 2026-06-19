@@ -2,6 +2,26 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.29 — June 2026
+
+New reader-facing one-pager. No methodology change.
+
+**`OVERVIEW.md` added at the repository root** — a single-page orientation (~385 words plus one diagram) calibrated for a distinct reader: a senior practitioner, reviewer, or industry contact deciding whether the work merits their attention. It opens with a value-forward bottom line (a first-pass engagement produces nine supervisor-engageable artifacts in two to four weeks), lists those deliverables as a scannable set, states the structural problem (an agent is not a model; the composition is the gap) anchored to EchoLeak, names the five design principles and the 26-control / 13-family matrix, and closes with the honest-framing discipline and an increasing-depth "Start here" path. Includes one Mermaid toxic-flow diagram (untrusted input → model reasoning → tool call with delegated authority → sensitive data → egress) that renders on GitHub.
+
+The one-pager fills a tier the existing briefing surfaces did not serve: `briefing/general_audience_abstract.md` (~180 words) is calibrated for lay readers, and `briefing/briefing_note.md` (~580 words) is argument-shaped for a reader deciding whether to read the full paper. OVERVIEW.md is the "decide whether to engage" tier — value-forward and holistic. The two existing briefing surfaces are unchanged; each still serves its own reader.
+
+**README wiring:**
+
+- A pointer to `OVERVIEW.md` added directly under the repository intro, framed as the best single entry point.
+- `OVERVIEW.md` added to the repository-layout tree.
+- README Status section advanced to v0.8.29; OVERVIEW noted in the version-range summary.
+
+The "six substantive artifacts" framing in *What's here* is deliberately unchanged: OVERVIEW.md is an orientation surface over the existing artifacts, not a seventh substantive artifact.
+
+The draft was produced through a multi-draft, judge-panel, adversarially-verified process: three independent drafts from distinct lead-angles (problem-first, value-first, artifact-first), scored by a two-lens judge panel (a simulated second-line risk leader and an editorial critic), synthesized from the highest-ranked draft with the best elements of the others grafted in, then audited on two independent axes — factual accuracy against the repository and adherence to the honest-framing discipline — both returning clean.
+
+Version bumped to v0.8.29; date-released 2026-06-19.
+
 ## v0.8.28 — May 2026
 
 Substack publication launched and wired into the repository.

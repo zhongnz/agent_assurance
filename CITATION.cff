@@ -29,8 +29,8 @@ keywords:
   - cybersecurity
   - OWASP Top 10 for Agentic Applications
 license: CC-BY-4.0
-version: "0.8.28"
-date-released: "2026-05-26"
+version: "0.8.29"
+date-released: "2026-06-19"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20389967"
