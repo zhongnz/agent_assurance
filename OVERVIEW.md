@@ -22,7 +22,7 @@ These are **assurance-ready evidence** for your team and your auditors to use in
 
 An autonomous agent is a *runtime system* — model reasoning plus retrieved context, tools, delegated authority, memory, and egress. Model risk management, AI governance, and cybersecurity each govern part of it. Each is necessary. None is sufficient. No single second-line function currently owns the composition, which is where the risk lives — inside fully-authorised workflows.
 
-EchoLeak (CVE-2025-32711, June 2025) is the reference case: Microsoft 365 Copilot read an attacker's email, followed an embedded instruction, retrieved enterprise data through authorised tools, and exfiltrated it through legitimate egress. Zero-click. No single control failed. The composition was the vulnerability.
+EchoLeak (CVE-2025-32711, June 2025) is the reference case: Microsoft 365 Copilot read an attacker's email, followed an embedded instruction, retrieved enterprise data through authorised tools, and exfiltrated it through legitimate egress. Zero-click. No single control failure explains it. The composition was the vulnerability.
 
 ```mermaid
 ---

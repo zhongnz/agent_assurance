@@ -2,6 +2,16 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.30 — June 2026
+
+Honest-framing precision fix in `OVERVIEW.md`. No methodology change.
+
+**EchoLeak framing corrected.** The OVERVIEW's EchoLeak paragraph read "Zero-click. No single control failed. The composition was the vulnerability." → "Zero-click. No single control failure explains it. The composition was the vulnerability." The case study (`case_studies/echoleak.md`) is precise that the EchoLeak chain *circumvented four security guardrails* (XPIA classifier, external-link redaction, image redaction, Content Security Policy) and manipulated one UI provenance signal — "None caught the chain." Controls *were* bypassed; the methodology's thesis is that no single control failure is *sufficient* to explain the breach, because "it is not a vulnerability in any component — it is a property of how the components compose." "No single control failed" could read as "every control worked as intended," which understates the bypasses. The corrected phrasing is faithful to the case study and preserves the composition thesis.
+
+This is the project's honest-framing discipline applied at fine grain — the same category of correction as the v0.8.24 "structured self-review, not peer review" fix. It was surfaced by adversarial verification of a derived leave-behind slide deck (kept outside this repository) whose fact-checker read `case_studies/echoleak.md` directly and caught a precision slip that prior OVERVIEW verification, working from a summary, had missed.
+
+Version bumped to v0.8.30; date-released 2026-06-20.
+
 ## v0.8.29 — June 2026
 
 New reader-facing one-pager. No methodology change.
