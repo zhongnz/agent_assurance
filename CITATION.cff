@@ -33,8 +33,11 @@ version: "0.8.31"
 date-released: "2026-09-18"
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.22836362"
+    description: "Zenodo archive of v0.8.31 (most recently DOI-minted release; Digital Omnibus on AI adoption reflected in paper §6.2, plus honest-framing and hygiene fixes). Each subsequent tagged release receives its own version-specific DOI; CITATION metadata is updated as DOIs land."
+  - type: doi
     value: "10.5281/zenodo.20773952"
-    description: "Zenodo archive of v0.8.30 (most recently DOI-minted release; EchoLeak framing precision fix in OVERVIEW.md). Each subsequent tagged release receives its own version-specific DOI; CITATION metadata is updated as DOIs land."
+    description: "Zenodo archive of v0.8.30 (EchoLeak framing precision fix in OVERVIEW.md)."
   - type: doi
     value: "10.5281/zenodo.20756796"
     description: "Zenodo archive of v0.8.29 (OVERVIEW.md one-page orientation added at the repository root)."
@@ -99,7 +102,7 @@ preferred-citation:
       affiliation: "Independent researcher"
   year: 2026
   url: "https://github.com/zhongnz/agent_assurance"
-  doi: "10.5281/zenodo.20773952"
+  doi: "10.5281/zenodo.22836362"
   abstract: >-
     A position paper on assurance methodology for autonomous AI agents
     deployed by European banks and insurers, articulated as five design

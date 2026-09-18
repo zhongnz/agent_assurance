@@ -22,6 +22,8 @@ Regulatory-currency update to the position paper plus repository hygiene. No met
 
 Version bumped to v0.8.31; date-released 2026-09-18.
 
+*Post-tag DOI update (2026-09-18, no version bump):* Zenodo minted [10.5281/zenodo.22836362](https://doi.org/10.5281/zenodo.22836362) for v0.8.31. CITATION.cff, the README badge / citation table / BibTeX block, the OVERVIEW footer, and the preferred-citation reference all updated to lead with v0.8.31. Eighteen version-specific DOIs plus the concept DOI now archived in CITATION.cff.
+
 ## v0.8.30 — June 2026
 
 Honest-framing precision fix in `OVERVIEW.md`. No methodology change.

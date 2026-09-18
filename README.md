@@ -1,6 +1,6 @@
 # Agent Assurance in Regulated Financial Services
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20773952.svg)](https://doi.org/10.5281/zenodo.20773952) [![Substack: Agent Assurance Briefing](https://img.shields.io/badge/Substack-Agent_Assurance_Briefing-FF6719?logo=substack&logoColor=white)](https://agentassurance.substack.com)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22836362.svg)](https://doi.org/10.5281/zenodo.22836362) [![Substack: Agent Assurance Briefing](https://img.shields.io/badge/Substack-Agent_Assurance_Briefing-FF6719?logo=substack&logoColor=white)](https://agentassurance.substack.com)
 
 A position paper, control matrix, applied case study, reference application, briefing surface, and supporting credibility documents on assurance methodology for autonomous AI agents deployed by European banks and insurers. The methodology is preliminary; the architectural argument is not.
 
@@ -167,10 +167,11 @@ The methodology is anchored in the regulatory and standards stack that European 
 
 The working title for the paper is *Agent Assurance in Regulated Financial Services*. If you cite the work, please include the version (see CHANGELOG) and the DOI of the specific release you are citing.
 
-The most recently DOI-minted release is v0.8.30 ([10.5281/zenodo.20773952](https://doi.org/10.5281/zenodo.20773952)). Each tagged release receives its own version-specific DOI; the concept DOI [10.5281/zenodo.20308658](https://doi.org/10.5281/zenodo.20308658) always resolves to the most recently archived version. The version-by-version archive trail is:
+The most recently DOI-minted release is v0.8.31 ([10.5281/zenodo.22836362](https://doi.org/10.5281/zenodo.22836362)). Each tagged release receives its own version-specific DOI; the concept DOI [10.5281/zenodo.20308658](https://doi.org/10.5281/zenodo.20308658) always resolves to the most recently archived version. The version-by-version archive trail is:
 
 | Version | DOI | Release theme |
 |---|---|---|
+| v0.8.31 | [zenodo.22836362](https://doi.org/10.5281/zenodo.22836362) | Digital Omnibus on AI adoption reflected in §6.2; honest-framing and hygiene fixes |
 | v0.8.30 | [zenodo.20773952](https://doi.org/10.5281/zenodo.20773952) | EchoLeak framing precision fix in OVERVIEW.md |
 | v0.8.29 | [zenodo.20756796](https://doi.org/10.5281/zenodo.20756796) | OVERVIEW.md one-page orientation |
 | v0.8.28 | [zenodo.20389967](https://doi.org/10.5281/zenodo.20389967) | Substack publication launched and wired into the repo |
@@ -200,8 +201,8 @@ A copy-and-paste BibTeX entry for the most recently DOI-minted release:
   title     = {Agent Assurance in Regulated Financial Services},
   year      = {2026},
   publisher = {Zenodo},
-  version   = {v0.8.30},
-  doi       = {10.5281/zenodo.20773952},
+  version   = {v0.8.31},
+  doi       = {10.5281/zenodo.22836362},
   url       = {https://github.com/zhongnz/agent_assurance}
 }
 ```

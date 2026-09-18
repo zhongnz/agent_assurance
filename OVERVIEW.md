@@ -53,4 +53,4 @@ In increasing depth: **briefing note** (`briefing/briefing_note.md`) → **Minim
 
 ---
 
-Fengze Zhong — independent researcher; previously NYU Center for Data Science (not NYU-endorsed). CC BY 4.0; DOI-archived per release on Zenodo (latest: [10.5281/zenodo.20773952](https://doi.org/10.5281/zenodo.20773952), v0.8.30). Repository: [github.com/zhongnz/agent_assurance](https://github.com/zhongnz/agent_assurance) · Briefing: [agentassurance.substack.com](https://agentassurance.substack.com). Engagement channels in `CONTRIBUTING.md`.
+Fengze Zhong — independent researcher; previously NYU Center for Data Science (not NYU-endorsed). CC BY 4.0; DOI-archived per release on Zenodo (latest: [10.5281/zenodo.22836362](https://doi.org/10.5281/zenodo.22836362), v0.8.31). Repository: [github.com/zhongnz/agent_assurance](https://github.com/zhongnz/agent_assurance) · Briefing: [agentassurance.substack.com](https://agentassurance.substack.com). Engagement channels in `CONTRIBUTING.md`.
