@@ -16,7 +16,7 @@ The following classes of concern warrant the dedicated channel below rather than
 
 ## How to report
 
-Use the repository's **Private Vulnerability Reporting** channel. GitHub provides a private reporting form at the repository's Security tab (or directly at `https://github.com/zhongnz/agent_assurance/security/advisories/new`). Reports submitted through this channel are visible only to the maintainer and to any collaborators explicitly added to the advisory; they do not become public unless the maintainer chooses to publish them. See GitHub's documentation on [privately reporting a security vulnerability](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability) for details.
+Use the repository's **Private Vulnerability Reporting** channel. GitHub provides a private reporting form at the repository's Security tab (or directly at `https://github.com/zhongnz/agent_assurance/security/advisories/new`). Reports submitted through this channel are visible only to the maintainer and to any collaborators explicitly added to the advisory; they do not become public unless the maintainer chooses to publish them. See GitHub's documentation on [privately reporting a security vulnerability](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/report-privately) for details.
 
 Do not open public GitHub issues for the classes of concern enumerated above.
 

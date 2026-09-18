@@ -17,7 +17,7 @@ Verification of each source's identifier, date, and substantive content was perf
 
 ### EU regulation
 - AI Act (Regulation (EU) 2024/1689) — entered into force 1 August 2024; Article 6(2) referenced for high-risk classification; Articles 9, 10, 11, 12, 13, 14, 15, 17, 19, 23, and 26 cited across the position paper and the control matrix; Annex III sections 5(b) and 5(c) cited
-- Digital Omnibus on AI proposal (COM(2025) 836, 19 November 2025) — proposes deferral of high-risk obligations to 2 December 2027 (stand-alone) and 2 August 2028 (product-embedded); provisional trilogue agreement reached 7 May 2026
+- Digital Omnibus on AI — proposed as COM(2025) 836 on 19 November 2025; provisional trilogue agreement 7 May 2026; adopted as Regulation (EU) 2026/1744 of 8 July 2026 (Official Journal 24 July 2026; in force 27 July 2026) — defers high-risk obligations to 2 December 2027 (stand-alone, Annex III) and 2 August 2028 (product-embedded, Annex I)
 - DORA (Regulation (EU) 2022/2554) — Articles 5, 6, 8, 9, 11, 12, 13, 17, 18, 25, 26, 27, 28, 29, and 30 cited across the position paper and the control matrix
 - DORA RTS — 2024/1774 (ICT risk management), 2025/532 (subcontracting), 2025/1190 (threat-led penetration testing)
 - GDPR (Regulation (EU) 2016/679) — articles 25, 32, 33, and 34 cited

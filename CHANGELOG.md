@@ -2,6 +2,26 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## v0.8.31 — September 2026
+
+Regulatory-currency update to the position paper plus repository hygiene. No methodology change.
+
+**Digital Omnibus on AI: formal adoption reflected in §6.2.** The paper's §6.2 previously read "Formal adoption is pending at the time of writing … if adoption slips past 2 August 2026 the original timeline applies as written." That contingency has resolved. The European Parliament endorsed the agreed text in plenary on 16 June 2026 (423 in favour, 57 against, 174 abstentions); the Council gave its final approval on 29 June 2026; the act was signed on 8 July 2026 and published in the Official Journal on 24 July 2026 as Regulation (EU) 2026/1744, entering into force on 27 July 2026 — six days before the original 2 August 2026 application date for Annex III high-risk obligations. Stand-alone high-risk obligations (Annex III) now apply from 2 December 2027; product-embedded high-risk obligations (Annex I) from 2 August 2028. §6.2's contingent paragraphs are rewritten with the adoption facts; §6.4's "on whichever timeline the trilogue resolves" is replaced with the fixed date; the §6 section intro is adjusted to match. The argument is unchanged — the paper explicitly did not depend on the timing outcome — but the framework's AI Act anchors now carry a fixed application date rather than a contested one, and the paper now directs readers to the consolidated text as amended. Sources: EUR-Lex record for Regulation (EU) 2026/1744; Council of the EU press release of 29 June 2026; European Parliament Legislative Train Schedule entry for file 2025/0359(COD). `supporting/verification_log.md` (§6.1 entry and preamble) and `supporting/source_status.md` (Bucket 1) updated to match.
+
+**README Substack cadence claim corrected.** "Substantive monthly posts … are published" overstated the publication's realised cadence: one post has been published (26 May 2026). Reworded to "Substantive posts", per the honest-framing discipline. The v0.8.28 entry's "monthly with episodic flex" cadence target is left as the historical statement of intent it was.
+
+**README paper-abstract word count corrected.** "~240 words" → "~200 words" (the abstract is 202 words).
+
+**README repository-layout tree completed.** `CODE_OF_CONDUCT.md`, `MAINTAINERS.md`, `RELEASE_CHECKLIST.md`, `scripts/check_citation_drift.py`, and `.github/` (issue and PR templates, lint and citation-drift workflows) were absent from the tree; added. README's §6 by-section summary now notes the Digital Omnibus deferral's adoption.
+
+**CHANGELOG v0.8.29 word-count correction.** The entry (and the v0.8.29 GitHub release notes) described `OVERVIEW.md` as "~385 words plus one diagram"; the body text is ~520 words excluding the diagram and the footer line. Annotated inline below rather than silently rewritten; the GitHub release body carries a matching editor's note.
+
+**Lint workflow re-enabled; MD060 disabled in `.markdownlint.json`.** GitHub had automatically disabled the Lint workflow's weekly schedule (state `disabled_inactivity`) after 60 days without repository activity; the last scheduled link check ran on 23 August 2026. Re-enabled on 2026-09-18. `.markdownlint.json` additionally disables MD060 (table-column-style), a rule added in markdownlint releases later than the 0.35.0 the CI action currently pins; the repository's compact table-delimiter rows would trip it once the action's pinned version advances. No table content changes.
+
+**`SECURITY.md` GitHub-docs link updated** to the page's current location (the previous URL had become a redirect).
+
+Version bumped to v0.8.31; date-released 2026-09-18.
+
 ## v0.8.30 — June 2026
 
 Honest-framing precision fix in `OVERVIEW.md`. No methodology change.
@@ -33,6 +53,8 @@ The "six substantive artifacts" framing in *What's here* is deliberately unchang
 The draft was produced through a multi-draft, judge-panel, adversarially-verified process: three independent drafts from distinct lead-angles (problem-first, value-first, artifact-first), scored by a two-lens judge panel (a simulated second-line risk leader and an editorial critic), synthesized from the highest-ranked draft with the best elements of the others grafted in, then audited on two independent axes — factual accuracy against the repository and adherence to the honest-framing discipline — both returning clean.
 
 Version bumped to v0.8.29; date-released 2026-06-19.
+
+*Correction (v0.8.31):* the "~385 words plus one diagram" description above undercounted; `OVERVIEW.md`'s body text is ~520 words excluding the Mermaid diagram and the footer line (~550 including the footer). The v0.8.29 GitHub release body carries a matching editor's note.
 
 ## v0.8.28 — May 2026
 
