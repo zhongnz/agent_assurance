@@ -127,7 +127,7 @@ The paper's eight sections are deep-linked here for direct access; the paper its
 - [Section 3 — Threat Taxonomy](paper/full.md#section-3-threat-taxonomy) — OWASP Top 10 for Agentic Applications as structural spine, plus five cross-cutting patterns.
 - [Section 4 — A Synthesis Framework](paper/full.md#section-4-a-synthesis-framework) — five design principles operationalised through the control matrix.
 - [Section 5 — Illustrative Reference Application](paper/full.md#section-5-illustrative-reference-application) — the methodology applied to a hypothetical insurance claims-processing deployment.
-- [Section 6 — The Regulatory Horizon](paper/full.md#section-6-the-regulatory-horizon) — DORA, the AI Act and the Digital Omnibus deferral (adopted July 2026), and sectoral supervisory convergence.
+- [Section 6 — The Regulatory Horizon](paper/full.md#section-6-the-regulatory-horizon) — DORA, the AI Act and the Digital Omnibus deferral (in force since July 2026), and sectoral supervisory convergence.
 - [Section 7 — Recommendations](paper/full.md#section-7-recommendations) — operational recommendations on the 30/90/180-day cadence.
 - [Section 8 — Closing](paper/full.md#section-8-closing) — what the paper has and has not done; the audiences it addresses; what comes next.
 
