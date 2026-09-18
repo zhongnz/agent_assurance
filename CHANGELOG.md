@@ -12,6 +12,8 @@ This is the project's honest-framing discipline applied at fine grain — the sa
 
 Version bumped to v0.8.30; date-released 2026-06-20.
 
+*Post-tag DOI catch-up (2026-09-18, no version bump):* Zenodo minted the DOIs for v0.8.29 ([10.5281/zenodo.20756796](https://doi.org/10.5281/zenodo.20756796)) and v0.8.30 ([10.5281/zenodo.20773952](https://doi.org/10.5281/zenodo.20773952)) on 19 and 20 June 2026 respectively; the citation surface was not updated until this follow-up commit, a lag of roughly three months — well outside the "few days" bound the release checklist sets, and recorded here so the drift is visible. CITATION.cff, the README badge / citation table / BibTeX block, the OVERVIEW footer, and the preferred-citation reference all updated to lead with v0.8.30. Seventeen version-specific DOIs now archived in CITATION.cff, plus the Zenodo concept DOI ([10.5281/zenodo.20308658](https://doi.org/10.5281/zenodo.20308658)), added to CITATION.cff and the README citation section as the always-latest resolver.
+
 ## v0.8.29 — June 2026
 
 New reader-facing one-pager. No methodology change.

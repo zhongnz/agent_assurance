@@ -33,8 +33,14 @@ version: "0.8.30"
 date-released: "2026-06-20"
 identifiers:
   - type: doi
+    value: "10.5281/zenodo.20773952"
+    description: "Zenodo archive of v0.8.30 (most recently DOI-minted release; EchoLeak framing precision fix in OVERVIEW.md). Each subsequent tagged release receives its own version-specific DOI; CITATION metadata is updated as DOIs land."
+  - type: doi
+    value: "10.5281/zenodo.20756796"
+    description: "Zenodo archive of v0.8.29 (OVERVIEW.md one-page orientation added at the repository root)."
+  - type: doi
     value: "10.5281/zenodo.20389967"
-    description: "Zenodo archive of v0.8.28 (most recently DOI-minted release; Substack publication launched and wired into the repo). Each subsequent tagged release receives its own version-specific DOI; CITATION metadata is updated as DOIs land."
+    description: "Zenodo archive of v0.8.28 (Substack publication launched and wired into the repo)."
   - type: doi
     value: "10.5281/zenodo.20389342"
     description: "Zenodo archive of v0.8.27 (paper TOC and README section navigation)."
@@ -80,6 +86,9 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.20308659"
     description: "Zenodo archive of v0.8.11 (initial public release)."
+  - type: doi
+    value: "10.5281/zenodo.20308658"
+    description: "Zenodo concept DOI for the record as a whole; resolves to the most recently archived version. Cite a version-specific DOI above when citing a particular release."
 preferred-citation:
   type: report
   title: "Agent Assurance in Regulated Financial Services"
@@ -90,7 +99,7 @@ preferred-citation:
       affiliation: "Independent researcher"
   year: 2026
   url: "https://github.com/zhongnz/agent_assurance"
-  doi: "10.5281/zenodo.20389967"
+  doi: "10.5281/zenodo.20773952"
   abstract: >-
     A position paper on assurance methodology for autonomous AI agents
     deployed by European banks and insurers, articulated as five design
