@@ -22,7 +22,9 @@ These are **assurance-ready evidence** for your team and your auditors to use in
 
 An autonomous agent is a *runtime system* — model reasoning plus retrieved context, tools, delegated authority, memory, and egress. Model risk management, AI governance, and cybersecurity each govern part of it. Each is necessary. None is sufficient. No single second-line function currently owns the composition, which is where the risk lives — inside fully-authorised workflows.
 
-EchoLeak (CVE-2025-32711, June 2025) is the reference case: Microsoft 365 Copilot read an attacker's email, followed an embedded instruction, retrieved enterprise data through authorised tools, and exfiltrated it through legitimate egress. Zero-click. No single control failure explains it. The composition was the vulnerability.
+The [EchoLeak case study](case_studies/echoleak.md) (CVE-2025-32711, June 2025 disclosure) examines a research demonstration: Microsoft 365 Copilot read an attacker's email, followed an embedded instruction, retrieved enterprise data through authorised tools, and exfiltrated it through legitimate egress. Zero-click. No single control failure explains it. The composition was the vulnerability. The cited disclosures reported no known in-the-wild exploitation.
+
+The [OpenAI–Hugging Face case study](case_studies/openai_huggingface.md) examines a documented July 2026 intrusion from a research evaluation setting with reduced safeguards. It tests containment, unexpected coordination, and evidence integrity. Its [companion assessment](case_studies/openai_huggingface_control_assessment.md) identifies gaps and supplies an unexecuted assessment scenario; it is a proposal alongside the published matrix.
 
 ```mermaid
 ---
@@ -49,7 +51,7 @@ The methodology is preliminary — v1.0 of an artifact that will revise as it me
 
 ## Start here
 
-In increasing depth: **briefing note** (`briefing/briefing_note.md`) → **Minimum Viable Assurance** (`MINIMUM_VIABLE_ASSURANCE.md`, the 10-of-26 first-pass control subset) → **assurance kit** (`assurance_kit/`, nine templates) → **control matrix** (`paper/control_matrix.md`) → **full paper** (`paper/full.md`, ~27,000 words). Worked examples: the EchoLeak case study (`case_studies/echoleak.md`, retrospective against a real incident) and `reference_application/` (prospective against a hypothetical insurance claims deployment).
+In increasing depth: **briefing note** (`briefing/briefing_note.md`) → **Minimum Viable Assurance** (`MINIMUM_VIABLE_ASSURANCE.md`, the 10-of-26 first-pass control subset) → **assurance kit** (`assurance_kit/`, nine templates) → **control matrix** (`paper/control_matrix.md`) → **full paper** (`paper/full.md`, ~27,000 words). Worked examples: the [case-study index](case_studies/README.md) distinguishes documented intrusions from demonstrated vulnerabilities; `reference_application/` supplies a prospective application to a hypothetical insurance claims deployment.
 
 ---
 

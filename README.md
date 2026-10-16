@@ -2,9 +2,18 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22836362.svg)](https://doi.org/10.5281/zenodo.22836362) [![Substack: Agent Assurance Briefing](https://img.shields.io/badge/Substack-Agent_Assurance_Briefing-FF6719?logo=substack&logoColor=white)](https://agentassurance.substack.com)
 
-A position paper, control matrix, applied case study, reference application, briefing surface, and supporting credibility documents on assurance methodology for autonomous AI agents deployed by European banks and insurers. The methodology is preliminary; the architectural argument is not.
+A position paper, control matrix, applied case studies, reference application, briefing surface, and supporting credibility documents on assurance methodology for autonomous AI agents deployed by European banks and insurers. The methodology is preliminary; the architectural argument is not.
 
 > **New here?** [`OVERVIEW.md`](OVERVIEW.md) is a one-page orientation — the problem, the methodology, what an engagement produces, and where to start. The best single entry point for practitioners, reviewers, or anyone deciding whether to engage.
+
+## Case studies: test the methodology against public evidence
+
+| Case | What it tests | Evidence status |
+|---|---|---|
+| [OpenAI–Hugging Face, July 2026](case_studies/openai_huggingface.md) | Containment, unexpected inter-agent communication, task boundaries, and evidence integrity | Documented intrusion; vendor accounts and a bounded independent investigation |
+| [EchoLeak / CVE-2025-32711](case_studies/echoleak.md) | Untrusted content, sensitive-data access, and response-rendering egress composing into exfiltration | Demonstrated vulnerability; no known in-the-wild exploitation reported by the cited disclosures |
+
+The OpenAI–Hugging Face case includes a [control-gap assessment and reusable scenario](case_studies/openai_huggingface_control_assessment.md) that tests the limits of the current matrix and proposes extensions. [Browse the case-study index](case_studies/README.md) for reading guidance and evidence conventions. These retrospective analyses do not establish preventive effectiveness.
 
 ## Quick start for practitioners
 
@@ -33,9 +42,9 @@ Full operationalisation — institution-wide inventory, second-line review caden
 
 ## What's here
 
-The repository hosts six substantive artifacts: a position paper articulating a synthesis methodology for agent assurance, a control matrix populating the methodology with operational specifications, an applied case study demonstrating the methodology against a documented incident (EchoLeak / CVE-2025-32711), a reference application demonstrating the methodology against a hypothetical deployment, a general-audience briefing surface, and supporting evidentiary documentation that makes the work auditable.
+The repository covers six substantive areas: a position paper articulating a synthesis methodology for agent assurance, a control matrix populating the methodology with operational specifications, applied case studies testing the methodology against public evidence, a reference application demonstrating the methodology against a hypothetical deployment, a general-audience briefing surface, and supporting evidentiary documentation that makes the work auditable.
 
-The position paper is the conceptual foundation. The control matrix populates the framework the paper describes. The case study and reference application are the methodology's two demonstrations — retrospective against a real incident, prospective against a constructed deployment. The briefing surface compresses the paper for readers who need orientation rather than depth.
+The position paper is the conceptual foundation. The control matrix populates the framework the paper describes. The case studies supply retrospective applications and identify methodology gaps; the reference application supplies a prospective demonstration against a constructed deployment. The briefing surface compresses the paper for readers who need orientation rather than depth.
 
 ## Scope
 
@@ -64,7 +73,10 @@ Adaptation to UK, US, Singaporean, Canadian, or other supervisory regimes is wel
 │   ├── full.md                            consolidated 27,000-word paper
 │   └── control_matrix.md                  v1.0 control matrix, 26 controls
 ├── case_studies/
-│   └── echoleak.md                        the case study (5,400 words)
+│   ├── README.md                         case index, evidence status, and reading guidance
+│   ├── echoleak.md                       compositional exfiltration; demonstrated vulnerability
+│   ├── openai_huggingface.md              containment, coordination, and evidence integrity
+│   └── openai_huggingface_control_assessment.md  control gaps and reusable assessment scenario
 ├── reference_application/
 │   ├── README.md                          orientation for the directory
 │   ├── deployment_specification.md        the §5 deployment, operationally detailed
@@ -101,7 +113,7 @@ By time available:
 
 **Twenty minutes** — read `briefing/briefing_note.md` and then `case_studies/echoleak.md`'s section 7 (the supervisory-engageable finding). Together they give you the methodology in compressed form plus a worked example of what it produces.
 
-**Half an hour** — read the full case study (`case_studies/echoleak.md`). The case study applies the methodology retrospectively to CVE-2025-32711 (EchoLeak), demonstrating each of the methodology's outputs — threat register, toxic-flow analysis, runtime context capture specification, control matrix application, supervisor-engageable finding — against a real documented incident.
+**Half an hour** — choose a case from the [case-study index](case_studies/README.md). [EchoLeak](case_studies/echoleak.md) demonstrates the methodology's outputs against a disclosed vulnerability. [OpenAI–Hugging Face](case_studies/openai_huggingface.md) examines a documented intrusion and links to a control-gap assessment with an unexecuted assessment scenario.
 
 **Two to three hours** — read the position paper at `paper/full.md`. The paper develops the architectural argument, examines the established assurance disciplines and develops the necessary-but-insufficient critique, articulates the threat taxonomy, develops the synthesis methodology with five design principles, applies the methodology to a reference deployment, maps the regulatory horizon, and offers operational recommendations.
 
@@ -111,11 +123,11 @@ By interest:
 
 **For the regulatory and supervisory framing**: paper sections 1.3 and 6. Section 1.3 surveys the supervisory communications that have made agent assurance an active concern; section 6 maps the regulatory horizon including DORA, the AI Act, and the supervisory expectations now forming.
 
-**For methodology in operation**: the case study, the reference application, and paper section 5 (the reference deployment specification). The case study at `case_studies/echoleak.md` applies the methodology retrospectively to a documented incident; the reference application at `reference_application/` applies it prospectively to a hypothetical deployment with full structured outputs (threat register, gap analysis, findings).
+**For methodology in operation**: the [case studies](case_studies/README.md), the reference application, and paper section 5 (the reference deployment specification). The case studies apply and challenge the methodology using public disclosures; the reference application at `reference_application/` applies it prospectively to a hypothetical deployment with full structured outputs (threat register, gap analysis, findings).
 
 **For the operational specification of the methodology**: `paper/control_matrix.md`. The matrix populates the methodology's framework with 26 controls mapping all ten OWASP Top 10 for Agentic Applications categories (with ASI05 Unexpected Code Execution acknowledged as a coverage gap in v1.0), the five cross-cutting threat patterns, and additional governance and evidence-capture areas, with full regulatory and standards anchoring.
 
-**For the evidentiary discipline**: `supporting/verification_log.md` and `supporting/source_status.md`. The verification log documents the audit trail for the 51 load-bearing claims identified in the position paper's v0.7 verification round, resolved against primary or directly-corroborating sources; the source status document catalogues sources into four evidentiary buckets. The control matrix, case study, and reference application carry their own citations and are not exhaustively audited in the verification log.
+**For the evidentiary discipline**: `supporting/verification_log.md` and `supporting/source_status.md`. The verification log documents the audit trail for the 51 load-bearing claims identified in the position paper's v0.7 verification round, resolved against primary or directly-corroborating sources; the source status document catalogues sources into four evidentiary buckets and adds a source supplement for the new case. The control matrix, case studies, and reference application carry their own citations and are not exhaustively audited in the verification log.
 
 By section:
 
@@ -153,7 +165,7 @@ The repository is at v0.8.31 (see CHANGELOG) and is maintained by Fengze Zhong. 
 
 The methodology is preliminary — described as v1.0 of an artifact that will revise as it meets engagement reality. Specific controls in the framework will be refined; the architectural argument and design principles are stable.
 
-The case study is the first applied demonstration of the methodology against a documented incident. The reference application is the first applied demonstration against a constructed deployment. Additional case studies and reference applications are likely as the work progresses.
+The latest tagged release is v0.8.31. The OpenAI–Hugging Face case study, companion assessment, and case index are unreleased additions documented in the CHANGELOG; their proposed extensions do not change the published control matrix. EchoLeak remains the first retrospective demonstration, and the reference application remains the first prospective demonstration against a constructed deployment. Additional case studies and reference applications are anticipated in the roadmap.
 
 ## A note on what the work does and does not claim
 

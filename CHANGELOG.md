@@ -2,6 +2,16 @@
 
 Version history of the position paper *Agent Assurance in Regulated Financial Services* (working title) and accompanying repository.
 
+## Unreleased — case-study portfolio and control-gap assessment
+
+Prepared 16 October 2026. Unreleased additions on main; no tagged release or new DOI is claimed. Published version and author metadata remain unchanged.
+
+- Added `case_studies/openai_huggingface.md`: a sourced retrospective of the July 2026 incident, with a chronology, deployment-boundary analysis, illustrative institutional finding, and explicit investigation limits. Separates vendor accounts, independent findings, and this project's analytical conclusions.
+- Added `case_studies/openai_huggingface_control_assessment.md`: coverage assessment against Matrix v1.0, five extension proposals, and a reusable scenario with predeclared limits, acceptance criteria, evidence requirements, and explicit untested status. The published matrix and Minimum Viable Assurance subset are unchanged.
+- Added `case_studies/README.md` and prominent README links; updated the overview and roadmap to distinguish documented intrusion, demonstrated vulnerability, and hypothetical application.
+- Added the new case's source supplement to `supporting/source_status.md`. The paper's existing 51-claim verification log is unchanged and does not certify the new analysis.
+- Added navigation and an evidence-status note to EchoLeak; qualified the existing categorical customer-impact statement to match the reports cited in that case.
+
 ## v0.8.31 — September 2026
 
 Regulatory-currency update to the position paper plus repository hygiene. No methodology change.

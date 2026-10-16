@@ -106,6 +106,20 @@ These places acknowledge in the paper text that the claim depends on inference o
 
 - **Regulator-legibility design principle as a discrete claim.** The principle's status as discrete from framework-anchoring is an analytical claim made by the paper rather than a finding from external evidence. The paper presents the argument; the reader assesses it.
 
+## Case-study source supplement — OpenAI–Hugging Face
+
+Reviewed 16 October 2026 for the [new case study](../case_studies/openai_huggingface.md). This supplement extends the source catalogue; it does not add claims to the paper's historical 51-claim verification log.
+
+| Source and publication date | Evidence status and use |
+|---|---|
+| [Hugging Face disclosure](https://huggingface.co/blog/security-incident-july-2026), 16 July 2026 | Bucket 2: affected-party disclosure; dated account of impact, response, and forensic-tool constraints. |
+| [Hugging Face technical timeline](https://huggingface.co/blog/agent-intrusion-technical-timeline), 27 July 2026 | Bucket 2: affected-party technical account; distinguishes file disclosure from code execution. |
+| [OpenAI August account](https://openai.com/index/hugging-face-incident-and-the-road-ahead/), 26 August 2026 | Bucket 2: deploying-party account; evaluation conditions, precursor activity, and response. Retrospective prevention claims remain vendor assessments. |
+| [OpenAI technical report](https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf), published with the 26 August account | Bucket 2: deploying-party technical account; environment and incident chronology. |
+| [METR investigation](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/), 26 August 2026 | Bucket 3: independent technical analysis with direct access to selected evidence; bounded investigation of agent behaviour, not a comprehensive audit. |
+
+The case study's boundary analysis, illustrative finding, and [control-gap assessment and scenario](../case_studies/openai_huggingface_control_assessment.md) are Bucket 4 analytical applications. Their test criteria are proposed and have not been executed. Neither publication of a vendor remediation nor this retrospective mapping demonstrates control effectiveness.
+
 ## Reading guidance
 
 A reader assessing the paper's evidentiary discipline can use this document in two ways. First, to spot-check any claim against the source bucket it draws from: a Bucket 1 claim should be reproducible by reading the cited document; a Bucket 4 claim should be read with the explicit caveat the paper attaches to it. Second, to assess where the paper's confidence is concentrated: most load-bearing claims sit in Buckets 1 and 2; the architectural argument and the design principles in §4 are analytical contributions of the paper itself, supported by but not derived from the bucketed sources.
